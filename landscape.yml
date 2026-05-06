@@ -389,7 +389,7 @@ categories:
 
           - name: Open MCT
             homepage_url: https://nasa.github.io/openmct/
-            logo: placeholder.svg
+            logo: openmct.svg
             description: >-
               Next-generation mission operations visualization framework.
               Used for displaying telemetry data via a customizable,
@@ -522,7 +522,7 @@ categories:
 
           - name: F´ (F Prime)
             homepage_url: https://nasa.github.io/fprime/
-            logo: placeholder.svg
+            logo: fprime.svg
             description: >-
               Component-driven flight software framework for spaceflight
               and embedded systems. Designed for small-scale flight systems
@@ -1375,7 +1375,7 @@ categories:
 
           - name: SLIM
             homepage_url: https://nasa-ammos.github.io/slim/
-            logo: placeholder.svg
+            logo: slim.svg
             description: >-
               Software Lifecycle Improvement & Modernization. A
               community-driven initiative that captures best practices for
