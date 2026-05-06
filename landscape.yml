@@ -1387,29 +1387,6 @@ categories:
                 nasa.sponsor_program: PDS
                 nasa.distribution: open-source
 
-          - name: PDS4 Information Model
-            homepage_url: https://nasa-pds.github.io/pds4-information-model/
-            logo: placeholder.svg
-            description: >-
-              Source of truth for the PDS4 Information Model —
-              schemas, schematrons, ontologies, and tooling that
-              defines how planetary data products are structured,
-              labeled, and exchanged across NASA's planetary
-              archives.
-            repo_url: https://github.com/nasa-pds/pds4-information-model
-            license: Apache-2.0
-            project: jpl
-            extra:
-              tag:
-                - nasa-center
-                - jpl
-              annotations:
-                submitter.org: JPL
-                submitter.type: nasa-center
-                nasa.center: JPL
-                nasa.sponsor_program: PDS
-                nasa.distribution: open-source
-
           - name: PyKE
             homepage_url: https://github.com/KeplerGO/PyKE
             logo: placeholder.svg
@@ -1580,6 +1557,32 @@ categories:
                 submitter.org: JPL
                 submitter.type: nasa-center
                 nasa.center: JPL
+                nasa.distribution: open-source
+
+      - name: Information Models
+        items:
+          - name: PDS4 Information Model
+            homepage_url: https://nasa-pds.github.io/pds4-information-model/
+            logo: placeholder.svg
+            description: >-
+              Source of truth for the PDS4 Information Model —
+              schemas, schematrons, ontologies, and tooling that
+              define how planetary data products are structured,
+              labeled, and exchanged across NASA's planetary
+              archives. The standard that PDS validate, transform,
+              and the wider PDS toolchain implement against.
+            repo_url: https://github.com/nasa-pds/pds4-information-model
+            license: Apache-2.0
+            project: jpl
+            extra:
+              tag:
+                - nasa-center
+                - jpl
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.sponsor_program: PDS
                 nasa.distribution: open-source
 
       - name: Verification & Formal Methods

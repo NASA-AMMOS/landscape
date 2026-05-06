@@ -155,6 +155,12 @@ categories:
       programs — best-practices automation, lifecycle modernization, and
       open specifications that standardize how mission software is built.
     subcategories:
+      - subcategory: Information Models
+        content: |
+          Schemas, ontologies, and information models that define how
+          mission and science data products are structured, labeled,
+          and exchanged — the canonical data dictionaries that flight
+          and ground tooling implement against.
       - subcategory: Verification & Formal Methods
         content: |
           Theorem provers, formal proof libraries, and software

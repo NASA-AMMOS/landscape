@@ -178,6 +178,7 @@ categories:
   - name: Developer Tools & Standards
     subcategories:
       - Best Practices & Lifecycle
+      - Information Models
       - Verification & Formal Methods
 
   # ---- Member categories (only visible inside the Members group) ----
