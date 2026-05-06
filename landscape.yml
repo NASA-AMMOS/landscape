@@ -66,7 +66,7 @@ categories:
       - name: Activity Planning & Scheduling
         items:
           - name: PlanDev
-            homepage_url: https://nasa-ammos.github.io/aerie-docs/
+            homepage_url: https://nasa-ammos.github.io/plandev-docs/
             logo: placeholder.svg
             description: >-
               Modeling and planning system for spacecraft missions
@@ -81,7 +81,7 @@ categories:
                 - submitter-nasa-center
                 - center-jpl
                 - ammos-mpsa
-              documentation_url: https://nasa-ammos.github.io/aerie-docs/
+              documentation_url: https://nasa-ammos.github.io/plandev-docs/
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
