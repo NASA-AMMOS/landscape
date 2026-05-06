@@ -63,6 +63,12 @@ groups:
 featured_items: []
 screenshot_width: 1920
 
+# Default item size in the grid. landscape2 hard-codes a discrete
+# zoom ladder per size; "large" gives both a bigger starting zoom
+# (80x72px cards vs 50x45) and a bigger ceiling (105x94 vs 75x68).
+# Recommended when the landscape has fewer items.
+grid_items_size: large
+
 categories:
   - name: Mission Design & Navigation
     subcategories:
