@@ -71,6 +71,12 @@ categories:
           software — mesh networks, peer-to-peer protocols, network
           emulation, and messaging middleware that bridges flight and
           ground assets.
+      - subcategory: Robotics & Autonomy
+        content: |
+          Robotics frameworks, perception engines, real-time control
+          libraries, and autonomy agents — software that gives mobile
+          and manipulator platforms the ability to sense, decide, and
+          act in mission environments.
 
   - category: Earth & Science Data Systems
     content: |
