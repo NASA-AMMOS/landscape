@@ -4,7 +4,7 @@
 # See https://github.com/cncf/landscape2/blob/main/docs/config/settings.yml
 # for the full reference.
 
-foundation: Open Mission Software
+foundation: NASA
 
 url: https://nasa-ammos.github.io/landscape
 

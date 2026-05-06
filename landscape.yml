@@ -27,6 +27,7 @@ categories:
               and coupled-systems analysis.
             repo_url: https://github.com/OpenMDAO/dymos
             license: Apache-2.0
+            project: grc
             extra:
               tag:
                 - nasa-center
@@ -48,6 +49,7 @@ categories:
               trajectories.
             repo_url: https://github.com/nasa/GMAT
             license: Apache-2.0
+            project: gsfc
             extra:
               tag:
                 - nasa-center
@@ -70,6 +72,7 @@ categories:
               analysis.
             repo_url: https://github.com/OpenMDAO/OpenMDAO
             license: Apache-2.0
+            project: grc
             extra:
               tag:
                 - nasa-center
@@ -96,6 +99,7 @@ categories:
               for time, resources, and constraint propagation.
             repo_url: https://github.com/nasa/europa
             license: NASA-1.3
+            project: arc
             extra:
               tag:
                 - nasa-center
@@ -117,6 +121,7 @@ categories:
               for next-generation activity planning.
             repo_url: https://github.com/NASA-AMMOS/plandev
             license: MIT
+            project: ammos
             extra:
               tag:
                 - nasa-center
@@ -144,6 +149,7 @@ categories:
               timing semantics.
             repo_url: https://github.com/nasa/PLEXIL5
             license: NASA-1.3
+            project: larc
             extra:
               tag:
                 - nasa-center
@@ -164,6 +170,7 @@ categories:
               AMMOS tools.
             repo_url: https://github.com/NASA-AMMOS/seq-json-schema
             license: MIT
+            project: ammos
             extra:
               tag:
                 - nasa-center
@@ -191,6 +198,7 @@ categories:
               relationships on planetary surfaces.
             repo_url: https://github.com/nasa/DERT
             license: NASA-1.3
+            project: arc
             extra:
               tag:
                 - nasa-center
@@ -211,6 +219,7 @@ categories:
               terrain reconstructions of the same area.
             repo_url: https://github.com/NASA-JPL/landmark_tools
             license: Apache-2.0
+            project: jpl
             extra:
               tag:
                 - nasa-center
@@ -231,6 +240,7 @@ categories:
               operations.
             repo_url: https://github.com/NASA-AMMOS/MMGIS
             license: Apache-2.0
+            project: ammos
             extra:
               tag:
                 - nasa-center
@@ -257,6 +267,7 @@ categories:
               explorers across the solar system.
             repo_url: https://github.com/NeoGeographyToolkit/StereoPipeline
             license: Apache-2.0
+            project: arc
             extra:
               tag:
                 - nasa-center
@@ -278,6 +289,7 @@ categories:
               missions, Cassini, Galileo, and many others.
             repo_url: https://github.com/nasa/VICAR
             license: NASA-1.3
+            project: jpl
             extra:
               tag:
                 - nasa-center
@@ -299,6 +311,7 @@ categories:
               Ames Stereo Pipeline is built on top of.
             repo_url: https://github.com/nasa/visionworkbench
             license: NASA-1.3
+            project: arc
             extra:
               tag:
                 - nasa-center
@@ -321,6 +334,7 @@ categories:
               missions.
             repo_url: https://github.com/NASA-AMMOS/AIT-Core
             license: MIT
+            project: ammos
             additional_repos:
               - repo_url: https://github.com/NASA-AMMOS/AIT-GUI
                 license: MIT
@@ -352,6 +366,7 @@ categories:
               hurricane and precipitation field campaigns.
             repo_url: https://github.com/nasa/PyAMPR
             license: NASA-1.3
+            project: msfc
             extra:
               tag:
                 - nasa-center
@@ -376,6 +391,7 @@ categories:
               GUI that adapts to a mission's EDS definitions.
             repo_url: https://github.com/nasa/cFS-EDS-GroundStation
             license: Apache-2.0
+            project: grc
             extra:
               tag:
                 - nasa-center
@@ -398,6 +414,7 @@ categories:
               Companion demo and tutorial repos listed below.
             repo_url: https://github.com/nasa/openmct
             license: Apache-2.0
+            project: ammos
             additional_repos:
               - repo_url: https://github.com/nasa/openmct-demo
                 license: NASA-1.3
@@ -431,6 +448,7 @@ categories:
               historical and realtime telemetry, EVRs, commands, and frames.
             repo_url: https://github.com/NASA-AMMOS/openmct-mcws
             license: Apache-2.0
+            project: ammos
             parent_project: Open MCT
             extra:
               tag:
@@ -459,6 +477,7 @@ categories:
               cFS-based flight software.
             repo_url: https://github.com/nasa/CCDD
             license: NASA-1.3
+            project: jsc
             extra:
               tag:
                 - nasa-center
@@ -481,6 +500,7 @@ categories:
               SBN, SC, SCA, SCH) listed below.
             repo_url: https://github.com/nasa/cFS
             license: Apache-2.0
+            project: gsfc
             additional_repos:
               - repo_url: https://github.com/nasa/CF
                 license: NASA-1.3
@@ -530,6 +550,7 @@ categories:
               (Ingenuity), CubeSats, and SmallSats.
             repo_url: https://github.com/nasa/fprime
             license: Apache-2.0
+            project: jpl
             extra:
               tag:
                 - nasa-center
@@ -553,6 +574,7 @@ categories:
               portability across operating systems and hardware.
             repo_url: https://github.com/nasa/osal
             license: NASA-1.3
+            project: gsfc
             extra:
               tag:
                 - nasa-center
@@ -576,6 +598,7 @@ categories:
               decouple device-independent code from hardware specifics.
             repo_url: https://github.com/nasa/idf
             license: NASA-1.3
+            project: jsc
             extra:
               tag:
                 - nasa-center
@@ -595,6 +618,7 @@ categories:
               for flight software development, testing, and operations.
             repo_url: https://github.com/nasa/nos3
             license: NASA-1.3
+            project: gsfc
             extra:
               tag:
                 - nasa-center
@@ -616,6 +640,7 @@ categories:
               spacecraft electrical-power V&V.
             repo_url: https://github.com/nasa/PrognosticsAlgorithmLibrary
             license: NASA-1.3
+            project: arc
             extra:
               tag:
                 - nasa-center
@@ -636,6 +661,7 @@ categories:
               Library.
             repo_url: https://github.com/nasa/PrognosticsModelLibrary
             license: NASA-1.3
+            project: arc
             parent_project: Prognostics Algorithm Library
             extra:
               tag:
@@ -657,6 +683,7 @@ categories:
               extensively for human spaceflight vehicle simulation at JSC.
             repo_url: https://github.com/nasa/trick
             license: NASA-1.3
+            project: jsc
             extra:
               tag:
                 - nasa-center
@@ -678,6 +705,7 @@ categories:
               the broader European simulation ecosystem.
             repo_url: https://github.com/nasa/TrickFMI
             license: NASA-1.3
+            project: jsc
             parent_project: Trick
             extra:
               tag:
@@ -701,6 +729,7 @@ categories:
               communications protocols.
             repo_url: https://github.com/nasa/channel-emulator
             license: NASA-1.3
+            project: grc
             extra:
               tag:
                 - nasa-center
@@ -721,6 +750,7 @@ categories:
               components across mission operations programs at GSFC.
             repo_url: https://github.com/nasa/GMSEC_API
             license: NASA-1.3
+            project: gsfc
             extra:
               tag:
                 - nasa-center
@@ -743,6 +773,7 @@ categories:
               pyion Python bindings listed below.
             repo_url: https://github.com/NASA-JPL/ION-DTN
             license: BSD-3-Clause
+            project: jpl
             additional_repos:
               - repo_url: https://github.com/NASA-JPL/ion-core
                 license: BSD-3-Clause
@@ -770,6 +801,7 @@ categories:
               smallsat communications work.
             repo_url: https://github.com/nasa/meshNetwork
             license: NASA-1.3
+            project: msfc
             extra:
               tag:
                 - nasa-center
@@ -792,6 +824,7 @@ categories:
               below.
             repo_url: https://github.com/NASA-JPL/fastcat
             license: BSD-3-Clause
+            project: jpl
             additional_repos:
               - repo_url: https://github.com/NASA-JPL/jsd
                 license: BSD-3-Clause
@@ -814,6 +847,7 @@ categories:
               data in browser-based interfaces.
             repo_url: https://github.com/NASA-JPL/honeycomb
             license: Apache-2.0
+            project: jpl
             extra:
               tag:
                 - nasa-center
@@ -834,6 +868,7 @@ categories:
               and command of robots through large language models.
             repo_url: https://github.com/NASA-JPL/rosa
             license: Apache-2.0
+            project: jpl
             extra:
               tag:
                 - nasa-center
@@ -854,6 +889,7 @@ categories:
               composability.
             repo_url: https://github.com/NASA-JPL/visual-perception-engine
             license: Apache-2.0
+            project: jpl
             extra:
               tag:
                 - nasa-center
@@ -878,6 +914,7 @@ categories:
               imagery time series.
             repo_url: https://github.com/nasa-jpl/autoRIFT
             license: Apache-2.0
+            project: jpl
             extra:
               tag:
                 - nasa-center
@@ -898,6 +935,7 @@ categories:
               standard.
             repo_url: https://github.com/nasa/cmr-opensearch
             license: NASA-1.3
+            project: gsfc
             extra:
               tag:
                 - nasa-center
@@ -921,6 +959,7 @@ categories:
               satellite imagery.
             repo_url: https://github.com/nasa/CrisisMappingToolkit
             license: NASA-1.3
+            project: arc
             extra:
               tag:
                 - nasa-center
@@ -941,6 +980,7 @@ categories:
               and Information System (EOSDIS) DAACs.
             repo_url: https://github.com/nasa/cumulus
             license: Apache-2.0
+            project: jpl
             extra:
               tag:
                 - nasa-center
@@ -963,6 +1003,7 @@ categories:
               state-of-the-art ML without specialized infrastructure.
             repo_url: https://github.com/nasa/delta
             license: Apache-2.0
+            project: arc
             extra:
               tag:
                 - nasa-center
@@ -983,6 +1024,7 @@ categories:
               and SRTM to identify potential landslide events.
             repo_url: https://github.com/NASA-DEVELOP/DRIP-SLIP
             license: NASA-1.3
+            project: gsfc
             extra:
               tag:
                 - nasa-center
@@ -1004,6 +1046,7 @@ categories:
               for Earth observation data discovery.
             repo_url: https://github.com/nasa/earthdata-search
             license: NASA-1.3
+            project: gsfc
             extra:
               tag:
                 - nasa-center
@@ -1025,6 +1068,7 @@ categories:
               support Harmony backend services and other data tooling.
             repo_url: https://github.com/nasa/earthdata-varinfo
             license: Apache-2.0
+            project: gsfc
             extra:
               tag:
                 - nasa-center
@@ -1047,6 +1091,7 @@ categories:
               science product.
             repo_url: https://github.com/NASA-IMPACT/hls-project
             license: MIT
+            project: msfc
             extra:
               tag:
                 - nasa-center
@@ -1069,6 +1114,7 @@ categories:
               data archives.
             repo_url: https://github.com/nasa/harmony
             license: Apache-2.0
+            project: jpl
             extra:
               tag:
                 - nasa-center
@@ -1090,6 +1136,7 @@ categories:
               propagation methods aligned with PACE protocols.
             repo_url: https://github.com/nasa/HyperInSPACE
             license: MIT
+            project: gsfc
             extra:
               tag:
                 - nasa-center
@@ -1111,6 +1158,7 @@ categories:
               ground-referenced coordinates.
             repo_url: https://github.com/nasa/ISS_Camera_Geolocate
             license: NASA-1.3
+            project: msfc
             extra:
               tag:
                 - nasa-center
@@ -1133,6 +1181,7 @@ categories:
               client listed below.
             repo_url: https://github.com/nasa-jpl/its_live
             license: MIT
+            project: jpl
             additional_repos:
               - repo_url: https://github.com/nasa-jpl/its_live_production
                 license: MIT
@@ -1160,6 +1209,7 @@ categories:
               short-cadence data.
             repo_url: https://github.com/nasa/kepler-pipeline
             license: NASA-1.3
+            project: arc
             extra:
               tag:
                 - nasa-center
@@ -1181,6 +1231,7 @@ categories:
               circulation, surface conditions, and seasonal cycles.
             repo_url: https://github.com/nasa/legacy-mars-global-climate-model
             license: NASA-1.3
+            project: arc
             extra:
               tag:
                 - nasa-center
@@ -1202,6 +1253,7 @@ categories:
               underlying HDF-EOS internals.
             repo_url: https://github.com/nasa/MISR-Toolkit
             license: NASA-1.3
+            project: jpl
             extra:
               tag:
                 - nasa-center
@@ -1223,6 +1275,7 @@ categories:
               for hydrological modeling.
             repo_url: https://github.com/nasa/NASAaccess
             license: NASA-1.3
+            project: gsfc
             extra:
               tag:
                 - nasa-center
@@ -1243,6 +1296,7 @@ categories:
               pixel-level data from the Kepler space telescope.
             repo_url: https://github.com/KeplerGO/PyKE
             license: NASA-1.3
+            project: arc
             extra:
               tag:
                 - nasa-center
@@ -1265,6 +1319,7 @@ categories:
               derive atmospheric CO2 from spectral observations.
             repo_url: https://github.com/nasa/RtRetrievalFramework
             license: NASA-1.3
+            project: jpl
             additional_repos:
               - repo_url: https://github.com/nasa/RtRetrievalFrameworkDoc
                 license: NASA-1.3
@@ -1289,6 +1344,7 @@ categories:
               for severe-weather research and nowcasting.
             repo_url: https://github.com/nasa/svrstormsig
             license: NASA-1.3
+            project: larc
             extra:
               tag:
                 - nasa-center
@@ -1310,6 +1366,7 @@ categories:
               GIBS (Global Imagery Browse Services).
             repo_url: https://github.com/nasa-gibs/worldview
             license: NASA-1.3
+            project: gsfc
             extra:
               tag:
                 - nasa-center
@@ -1332,6 +1389,7 @@ categories:
               Java SDK, Android SDK, and Server Kit listed below.
             repo_url: https://github.com/NASAWorldWind/WebWorldWind
             license: NASA-1.3
+            project: arc
             additional_repos:
               - repo_url: https://github.com/NASAWorldWind/WorldWindAndroid
                 license: NASA-1.3
@@ -1363,6 +1421,7 @@ categories:
               host-side instrumentation isn't viable.
             repo_url: https://github.com/NASA-JPL/embedded-gcov
             license: Apache-2.0
+            project: jpl
             extra:
               tag:
                 - nasa-center
@@ -1384,6 +1443,7 @@ categories:
               compliance across an org or set of repos.
             repo_url: https://github.com/NASA-AMMOS/slim
             license: Apache-2.0
+            project: jpl
             additional_repos:
               - repo_url: https://github.com/NASA-AMMOS/slim-leaderboard
                 license: Apache-2.0
@@ -1410,6 +1470,7 @@ categories:
               certification of safety-critical numerical software.
             repo_url: https://github.com/nasa/Kodiak
             license: NASA-1.3
+            project: larc
             extra:
               tag:
                 - nasa-center
@@ -1431,6 +1492,7 @@ categories:
               Companion VSCode-PVS IDE listed below.
             repo_url: https://github.com/nasa/pvslib
             license: NASA-1.3
+            project: larc
             additional_repos:
               - repo_url: https://github.com/nasa/vscode-pvs
                 license: NASA-1.3
