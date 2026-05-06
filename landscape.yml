@@ -29,6 +29,9 @@ categories:
             repo_url: https://github.com/nasa/GMAT
             license: Apache-2.0
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-gsfc
               documentation_url: https://documentation.help/GMAT/
               annotations:
                 submitter.org: GSFC
@@ -48,6 +51,9 @@ categories:
             repo_url: https://github.com/OpenMDAO/OpenMDAO
             license: Apache-2.0
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-grc
               documentation_url: https://openmdao.org/newdocs/versions/latest/main.html
               annotations:
                 submitter.org: GRC
@@ -71,6 +77,10 @@ categories:
             repo_url: https://github.com/NASA-AMMOS/aerie
             license: MIT
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-jpl
+                - ammos-mpsa
               documentation_url: https://nasa-ammos.github.io/aerie-docs/
               annotations:
                 submitter.org: JPL
@@ -93,6 +103,10 @@ categories:
             repo_url: https://github.com/NASA-AMMOS/seq-json-schema
             license: MIT
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-jpl
+                - ammos-mpsa
               specification: true
               annotations:
                 submitter.org: JPL
@@ -116,6 +130,10 @@ categories:
             repo_url: https://github.com/NASA-AMMOS/MMGIS
             license: Apache-2.0
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-jpl
+                - ammos-ids
               documentation_url: https://nasa-ammos.github.io/MMGIS/
               package_manager_url: https://pypi.org/project/mmgis-py/
               annotations:
@@ -144,6 +162,10 @@ categories:
               - repo_url: https://github.com/NASA-AMMOS/AIT-DSN
                 license: MIT
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-jpl
+                - ammos-ids
               documentation_url: https://ait-core.readthedocs.io/
               package_manager_url: https://pypi.org/project/ait-core/
               annotations:
@@ -168,6 +190,10 @@ categories:
             license: Apache-2.0
             parent_project: Open MCT
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-jpl
+                - ammos-ids
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -190,6 +216,11 @@ categories:
             repo_url: https://github.com/nasa/openmct
             license: Apache-2.0
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-jpl
+                - center-arc
+                - ammos-mcs
               documentation_url: https://nasa.github.io/openmct/documentation/
               package_manager_url: https://www.npmjs.com/package/openmct
               annotations:
@@ -216,6 +247,9 @@ categories:
             repo_url: https://github.com/nasa/cFS
             license: Apache-2.0
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-gsfc
               documentation_url: https://github.com/nasa/cFS/tree/main/docs
               annotations:
                 submitter.org: GSFC
@@ -235,6 +269,9 @@ categories:
             repo_url: https://github.com/nasa/fprime
             license: Apache-2.0
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-jpl
               documentation_url: https://nasa.github.io/fprime/UsersGuide/guide.html
               annotations:
                 submitter.org: JPL
@@ -255,6 +292,9 @@ categories:
             repo_url: https://github.com/nasa/nos3
             license: NASA-1.3
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -272,6 +312,9 @@ categories:
             repo_url: https://github.com/nasa/trick
             license: NASA-1.3
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-jsc
               documentation_url: https://nasa.github.io/trick/documentation/Documentation-Home.html
               annotations:
                 submitter.org: JSC
@@ -294,6 +337,9 @@ categories:
             repo_url: https://github.com/nasa/cumulus
             license: Apache-2.0
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-jpl
               documentation_url: https://nasa.github.io/cumulus/docs/cumulus-docs-readme
               annotations:
                 submitter.org: JPL
@@ -313,6 +359,9 @@ categories:
             repo_url: https://github.com/nasa/harmony
             license: Apache-2.0
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -332,6 +381,9 @@ categories:
             repo_url: https://github.com/nasa-gibs/worldview
             license: NASA-1.3
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -349,6 +401,9 @@ categories:
             repo_url: https://github.com/NASAWorldWind/WebWorldWind
             license: NASA-1.3
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -370,6 +425,9 @@ categories:
             repo_url: https://github.com/NASA-AMMOS/slim
             license: Apache-2.0
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-jpl
               documentation_url: https://nasa-ammos.github.io/slim/
               annotations:
                 submitter.org: JPL
@@ -387,6 +445,9 @@ categories:
             license: Apache-2.0
             parent_project: SLIM
             extra:
+              tag:
+                - submitter-nasa-center
+                - center-jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center

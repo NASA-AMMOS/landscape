@@ -27,4 +27,14 @@ docker run --rm \
   ghcr.io/cncf/landscape2:latest \
   validate guide --guide-file guide.yml
 
+echo "→ checking item tag/annotation sync ..."
+# Needs PyYAML. Prefer the project venv if present; otherwise fall back to uv.
+if [[ -x ".venv/bin/python3" ]]; then
+  .venv/bin/python3 tools/check_tag_sync.py
+elif command -v uv >/dev/null 2>&1; then
+  uv run --with-requirements tools/requirements.txt python3 tools/check_tag_sync.py
+else
+  python3 tools/check_tag_sync.py
+fi
+
 echo "✅ all validations passed"

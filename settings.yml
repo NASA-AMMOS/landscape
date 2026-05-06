@@ -23,7 +23,7 @@ header:
     github: https://github.com/NASA-AMMOS/landscape
 
 images:
-  favicon: https://nasa.github.io/openmct/favicon.ico
+  favicon: https://www.nasa.gov/favicon.ico
   header_logo: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 
 # Top-level groups: shape the navigation by source community rather than
@@ -74,29 +74,3 @@ categories:
   - name: Developer Tools & Standards
     subcategories:
       - Best Practices & Lifecycle
-
-# Tags rendered as filter chips. NASA-specific values from
-# `extra.annotations` should ALSO be added to each item's `tag:` list to
-# be filterable here (annotations alone are not rendered as filters).
-tags:
-  ammos:
-    - mdn
-    - mpsa
-    - ids
-    - mcs
-  centers:
-    - center-jpl
-    - center-gsfc
-    - center-arc
-    - center-jsc
-    - center-grc
-    - center-msfc
-    - center-larc
-    - center-ksc
-    - center-jhuapl
-  partners:
-    - partner-agency
-    - partner-university
-    - partner-commercial
-    - partner-foundation
-    - partner-individual
