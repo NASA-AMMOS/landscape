@@ -86,6 +86,24 @@ jobs:
             echo "WARNING: didn't find the 'all' magic-bypass; landscape2 may have changed the bundle." >&2
           fi
 
+      - name: Hide "Powered by CNCF" footer line
+        # landscape2 hardcodes a "Powered by [CNCF interactive
+        # landscapes generator]." line in the footer DOM template;
+        # there's no settings flag to suppress it. Inject a
+        # display:none style attribute on the wrapping <div> so the
+        # surrounding JS DOM-traversal still works (firstChild /
+        # nextSibling chain is preserved) but the line isn't visible.
+        # Our settings.yml `footer.text` quote renders above it.
+        run: |
+          set -e
+          before=$(grep -ohc '<div>Powered by ' build/assets/*.js | paste -sd+ - | bc || echo 0)
+          find build/assets -name '*.js' -exec sed -i 's|<div>Powered by |<div style="display:none">Powered by |g' {} +
+          after=$(grep -ohc '<div>Powered by ' build/assets/*.js | paste -sd+ - | bc || echo 0)
+          echo "hid powered-by line: $before occurrences -> $after"
+          if [ "$before" = "0" ]; then
+            echo "WARNING: didn't find the Powered by template; landscape2 may have changed it." >&2
+          fi
+
       - name: Override page title to "Open Mission Landscape"
         # landscape2's HTML template hardcodes `{{ foundation }} Landscape`
         # for <title>, og:title, twitter:title, and the JSON-LD name. With

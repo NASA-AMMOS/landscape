@@ -38,6 +38,13 @@ header:
 images:
   favicon: https://www.nasa.gov/favicon.ico
 
+# Footer text rendered above the (sed-suppressed) "Powered by" line.
+# Markdown is preserved by landscape2 via innerHTML.
+footer:
+  text: |
+    *"Somewhere, something incredible is waiting to be known."*
+    — Carl Sagan
+
 # Top-level groups: shape the navigation. The "All" group is listed
 # first so it's the default tab — without it, defining the other
 # groups hides anything not listed in one of them ("when groups are
