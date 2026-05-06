@@ -44,20 +44,22 @@ categories:
         content: |
           Web-based and desktop tools for visualizing science products on
           Earth, lunar, and planetary surfaces.
-      - subcategory: Instrument Toolkits & GDS
+      - subcategory: Instrument Toolkit
         content: |
-          Ground data system software — commanding, telemetry, sequencing,
-          and EGSE — typically Python-based for instrument-class missions.
-      - subcategory: Mission Control Integration
-        content: |
-          Plugins and adapters connecting instrument data flows to mission
-          control system frontends.
+          Instrument-side toolkits — commanding, telemetry, sequencing, and
+          data-handling libraries — typically Python-based for
+          instrument-class missions.
 
   - category: Mission Control System
     content: |
       Telemetry and command, secure uplink/downlink, data management,
       operations visualization, monitoring, and testbed support — the
       software that operations teams use to fly the spacecraft.
+    subcategories:
+      - subcategory: Mission Control Integration
+        content: |
+          Plugins and adapters connecting instrument data flows to mission
+          control system frontends.
 
   - category: Ground Software Foundations
     content: |

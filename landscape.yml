@@ -322,7 +322,7 @@ categories:
                 nasa.center: ARC
                 nasa.distribution: open-source
 
-      - name: Instrument Toolkits & GDS
+      - name: Instrument Toolkit
         items:
           - name: AIT-Core
             homepage_url: https://ait-core.readthedocs.io/

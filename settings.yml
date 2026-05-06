@@ -127,7 +127,7 @@ categories:
   - name: Instrument Data System
     subcategories:
       - Science Data Visualization & Mapping
-      - Instrument Toolkits & GDS
+      - Instrument Toolkit
   - name: Mission Control System
     subcategories:
       - Operations Visualization
