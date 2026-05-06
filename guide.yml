@@ -6,15 +6,27 @@
 categories:
   - category: Mission Design & Navigation
     content: |
-      Software supporting the design, analysis, and optimization of spacecraft
-      trajectories and orbits — from launch through end-of-mission. Includes
-      tools for trajectory search and optimization, orbit determination,
-      maneuver design and analysis, ephemerides, and gravity modeling.
+      Software supporting the design, analysis, and optimization of
+      spacecraft trajectories and orbits — from launch through
+      end-of-mission. Includes tools for trajectory search and
+      optimization, orbit determination, maneuver design and
+      analysis, ephemerides, and gravity modeling.
+
+      The domain is heavily standards-driven. Trajectory and ephemeris
+      data are exchanged using the
+      [CCSDS Navigation Data Messages](https://ccsds.org/Pubs/500x2g3.pdf)
+      family — the Orbit Parameter Message (OPM), Orbit Mean-Elements
+      Message (OMM), and Orbit Ephemeris Message (OEM) — alongside
+      JPL's [SPICE Ancillary Information System](https://naif.jpl.nasa.gov/naif/),
+      the de-facto exchange mechanism inside JPL Navigation and the
+      Deep Space Network.
     subcategories:
       - subcategory: Mission Analysis & Trajectory Design
         content: |
-          End-to-end mission analysis and multidisciplinary design optimization
-          frameworks.
+          End-to-end mission analysis, trajectory optimization, and
+          multidisciplinary design optimization frameworks — generally
+          interoperating via SPICE kernels and CCSDS Orbit Data
+          Messages.
 
   - category: Mission Planning, Sequencing & Analysis
     content: |
@@ -85,9 +97,21 @@ categories:
 
   - category: Earth & Science Data Systems
     content: |
-      Cloud-native pipelines, services, and visualization for Earth
-      observation and science data — ingest, transformation, archive
-      distribution, and browse imagery for NASA's science archives.
+      NASA's Earth Science Data Systems (ESDS) Program oversees the
+      full life cycle of NASA's Earth science data — from acquisition
+      through processing and distribution. NASA Earth science data has
+      been *free and open to all users for any purpose* since 1994,
+      with all software made available as open source since 2015.
+
+      The data is operated through the
+      [ESDIS Project](https://www.earthdata.nasa.gov/about/esdis),
+      which runs the Earth Observing System Data and Information
+      System (EOSDIS) — a network of **eleven Distributed Active
+      Archive Centers (DAACs)** including ASF, ASDC, CDDIS, GHRC,
+      GES DISC, LP DAAC, LAADS, NSIDC, ORNL DAAC, OB.DAAC, and
+      PO.DAAC. The category collects the cloud-native pipelines,
+      services, search/discovery, and browse imagery that move
+      science data from observation to analysis.
 
   - category: Developer Tools & Standards
     content: |
