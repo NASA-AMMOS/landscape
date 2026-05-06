@@ -261,23 +261,29 @@ categories:
           - name: VICAR
             homepage_url: https://www-mipl.jpl.nasa.gov/vicar_open.html
             logo: placeholder.svg
+            second_path:
+              - "AMMOS / IDS"
             description: >-
               Video Image Communication And Retrieval. JPL's
               general-purpose digital image processing system,
               continuously developed since 1966. Used to process
               multi-dimensional imaging data from Voyager, Mars
-              missions, Cassini, Galileo, and many others.
+              missions, Cassini, Galileo, and many others. Now
+              maintained as an AMMOS Instrument Data System (IDS)
+              element in github.com/NASA-AMMOS.
             repo_url: https://github.com/NASA-AMMOS/VICAR
             license: NASA-1.3
-            project: jpl
+            project: ammos
             extra:
               tag:
                 - nasa-center
                 - jpl
+                - ids
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
                 nasa.center: JPL
+                nasa.ammos_element: IDS
                 nasa.distribution: open-source
                 nasa.missions: "Voyager, Mars (multiple), Cassini, Galileo, many others"
 
