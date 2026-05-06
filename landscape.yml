@@ -166,6 +166,28 @@ categories:
     subcategories:
       - name: Science Data Visualization & Mapping
         items:
+          - name: AMES Stereo Pipeline
+            homepage_url: https://github.com/NeoGeographyToolkit/StereoPipeline
+            logo: placeholder.svg
+            description: >-
+              NASA Ames Stereo Pipeline (ASP). Suite of automated
+              geodesy and stereogrammetry tools for processing
+              planetary imagery — produces Digital Terrain Models
+              from imagery captured by orbiting and landed robotic
+              explorers across the solar system.
+            repo_url: https://github.com/NeoGeographyToolkit/StereoPipeline
+            license: Apache-2.0
+            project: arc
+            extra:
+              tag:
+                - nasa-center
+                - arc
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+
           - name: DERT
             homepage_url: https://github.com/nasa/DERT
             logo: dert.svg
@@ -235,28 +257,6 @@ categories:
                 nasa.ammos_element: IDS
                 nasa.distribution: open-source
                 nasa.missions: "M2020 (Perseverance), MSL (Curiosity), various lunar"
-
-          - name: Stereo Pipeline
-            homepage_url: https://github.com/NeoGeographyToolkit/StereoPipeline
-            logo: placeholder.svg
-            description: >-
-              NASA Ames Stereo Pipeline (ASP). Suite of automated
-              geodesy and stereogrammetry tools for processing
-              planetary imagery — produces Digital Terrain Models
-              from imagery captured by orbiting and landed robotic
-              explorers across the solar system.
-            repo_url: https://github.com/NeoGeographyToolkit/StereoPipeline
-            license: Apache-2.0
-            project: arc
-            extra:
-              tag:
-                - nasa-center
-                - arc
-              annotations:
-                submitter.org: ARC
-                submitter.type: nasa-center
-                nasa.center: ARC
-                nasa.distribution: open-source
 
           - name: VICAR
             homepage_url: https://www-mipl.jpl.nasa.gov/vicar_open.html
@@ -1673,7 +1673,9 @@ categories:
             logo: nasa-meatball.svg
             description: >-
               NASA's Silicon Valley center — intelligent systems, autonomy,
-              robotics, supercomputing, and Earth/space science.
+              robotics, supercomputing, and Earth/space science. Home of
+              the AMES Stereo Pipeline, Vision Workbench, EUROPA AI
+              planner, and contributing center for Open MCT.
             crunchbase: https://www.crunchbase.com/organization/nasa
 
           - name: Glenn Research Center
@@ -1698,7 +1700,7 @@ categories:
             description: >-
               JPL (Pasadena, CA) — robotic planetary exploration and Earth
               science, managed for NASA by Caltech. Home of AMMOS, F´,
-              Stereo Pipeline, ITS_LIVE, and many flight projects.
+              ITS_LIVE, and many flight projects.
             crunchbase: https://www.crunchbase.com/organization/nasa-jpl
 
           - name: Johnson Space Center
