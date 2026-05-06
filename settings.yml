@@ -29,7 +29,9 @@ header:
 
 images:
   favicon: https://www.nasa.gov/favicon.ico
-  header_logo: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
+  # Header wordmark hosted in this repo. landscape2's build downloads
+  # this URL at build time and bundles it into the static site.
+  header_logo: https://raw.githubusercontent.com/NASA-AMMOS/landscape/main/images/header-logo.svg
 
 # Top-level groups: shape the navigation. The "All" group is listed
 # first so it's the default tab — without it, defining the other
