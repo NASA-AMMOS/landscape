@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 220" role="img" aria-label="Open Mission Software Landscape">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 220" role="img" aria-label="Open Mission Software Landscape">
   <text x="0" y="100"
         font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif"
         font-size="96" font-weight="800" letter-spacing="-1"
         fill="#0B3D91">OPEN MISSION SOFTWARE</text>
   <text x="0" y="200"
         font-family="-apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif"
-        font-size="96" font-weight="300" letter-spacing="36"
+        font-size="76" font-weight="300"
+        textLength="1230" lengthAdjust="spacing"
         fill="#0B3D91">LANDSCAPE</text>
 </svg>
