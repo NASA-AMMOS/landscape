@@ -50,6 +50,23 @@ jobs:
             --cache-dir .landscape2-cache \
             --output-dir build
 
+      - name: Strip hardcoded "TAG " prefix from tag chips
+        # landscape2's chip template is `<div>TAG ` — every rendered tag
+        # chip reads "TAG <name>" (e.g. "TAG JPL"). The template is
+        # hardcoded in the bundled JS with no settings flag to disable.
+        # Patch the built bundle to drop the redundant "TAG " label.
+        # Re-check landscape2 versions on upgrade — this can no-op
+        # silently if the template changes.
+        run: |
+          set -e
+          before=$(grep -ohc '<div>TAG ' build/assets/*.js | paste -sd+ - | bc || echo 0)
+          find build/assets -name '*.js' -exec sed -i 's|<div>TAG |<div>|g' {} +
+          after=$(grep -ohc '<div>TAG ' build/assets/*.js | paste -sd+ - | bc || echo 0)
+          echo "stripped chip prefix: $before occurrences -> $after"
+          if [ "$before" = "0" ]; then
+            echo "WARNING: didn't find the chip-prefix template; landscape2 may have changed it." >&2
+          fi
+
       - name: Copy index.html to 404.html (SPA routing on GH Pages)
         run: cp build/index.html build/404.html
 
