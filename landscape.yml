@@ -133,6 +133,27 @@ categories:
 
       - name: Sequence Generation & Specifications
         items:
+          - name: PLEXIL
+            homepage_url: https://nasa.github.io/PLEXIL/
+            logo: placeholder.svg
+            description: >-
+              Plan Execution Interchange Language. Synchronous,
+              deterministic language and runtime for commanding and
+              monitoring autonomous systems — used to specify and
+              execute spacecraft and robotic plans with predictable
+              timing semantics.
+            repo_url: https://github.com/nasa/PLEXIL5
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-larc
+              annotations:
+                submitter.org: LaRC
+                submitter.type: nasa-center
+                nasa.center: LaRC
+                nasa.distribution: open-source
+
           - name: seq-json
             homepage_url: https://github.com/NASA-AMMOS/seq-json-schema
             logo: placeholder.svg
@@ -1079,6 +1100,26 @@ categories:
                 nasa.distribution: open-source
                 nasa.missions: "OCO-2, OCO-3"
 
+          - name: svrstormsig
+            homepage_url: https://github.com/nasa/svrstormsig
+            logo: placeholder.svg
+            description: >-
+              Severe storm signature detector. Identifies overshooting
+              cloud tops (OTs) and above-anvil cirrus plumes (AACPs)
+              in geostationary satellite imagery — operational tool
+              for severe-weather research and nowcasting.
+            repo_url: https://github.com/nasa/svrstormsig
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-larc
+              annotations:
+                submitter.org: LaRC
+                submitter.type: nasa-center
+                nasa.center: LaRC
+                nasa.distribution: open-source
+
       - name: Imagery & Visualization Services
         items:
           - name: NASA Worldview
@@ -1171,4 +1212,50 @@ categories:
                 submitter.org: JPL
                 submitter.type: nasa-center
                 nasa.center: JPL
+                nasa.distribution: open-source
+
+      - name: Verification & Formal Methods
+        items:
+          - name: Kodiak
+            homepage_url: https://github.com/nasa/Kodiak
+            logo: placeholder.svg
+            description: >-
+              C++ library for rigorous verification of expressions
+              involving nonlinear real arithmetic. Implements a
+              generic branch-and-bound algorithm used for formal
+              certification of safety-critical numerical software.
+            repo_url: https://github.com/nasa/Kodiak
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-larc
+              annotations:
+                submitter.org: LaRC
+                submitter.type: nasa-center
+                nasa.center: LaRC
+                nasa.distribution: open-source
+
+          - name: PVS Library
+            homepage_url: https://github.com/nasa/pvslib
+            logo: placeholder.svg
+            description: >-
+              NASA Langley library of formalized mathematics for the
+              Prototype Verification System (PVS) theorem prover —
+              theories spanning real analysis, control, and aerospace
+              algorithms used in mission-critical software V&V.
+              Companion VSCode-PVS IDE listed below.
+            repo_url: https://github.com/nasa/pvslib
+            license: NASA-1.3
+            additional_repos:
+              - repo_url: https://github.com/nasa/vscode-pvs
+                license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-larc
+              annotations:
+                submitter.org: LaRC
+                submitter.type: nasa-center
+                nasa.center: LaRC
                 nasa.distribution: open-source

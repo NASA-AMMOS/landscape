@@ -29,8 +29,9 @@ categories:
           activities.
       - subcategory: Sequence Generation & Specifications
         content: |
-          Open specifications and schemas for representing spacecraft
-          command sequences.
+          Open specifications, schemas, and execution languages for
+          representing — and running — spacecraft command sequences
+          and plans.
 
   - category: Instrument Data System
     content: |
@@ -82,3 +83,9 @@ categories:
       Cross-cutting tooling for software development across mission
       programs — best-practices automation, lifecycle modernization, and
       open specifications that standardize how mission software is built.
+    subcategories:
+      - subcategory: Verification & Formal Methods
+        content: |
+          Theorem provers, formal proof libraries, and software
+          verification tooling — mathematical correctness checks
+          used to gain assurance in mission-critical software.
