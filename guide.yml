@@ -30,10 +30,19 @@ categories:
 
   - category: Mission Planning, Sequencing & Analysis
     content: |
-      Tooling that translates science and engineering goals into executable
-      command sequences — activity planning, sequence generation and
-      validation, downlink and resource scheduling, relay planning, and the
-      open specifications that bridge them.
+      Tooling that translates science and engineering goals into
+      executable command sequences — activity planning, sequence
+      generation and validation, downlink and resource scheduling,
+      relay planning, and the open specifications that bridge them.
+
+      Standards in this area are coordinated by the
+      [CCSDS Mission Planning and Scheduling Working Group](https://cwe.ccsds.org/fm/Lists/Charters/DispForm.aspx?ID=87)
+      (formed 2015 with eight space agencies; published the
+      [Mission Planning Green Book](https://ccsds.org/Pubs/529x0g1.pdf)
+      in 2018) — defining common concepts of *activity*, *plan*,
+      and *schedule* for cross-agency interoperability. NASA's
+      open contributions to this stack live largely in the AMMOS
+      MPSA element (PlanDev, seq-json).
     subcategories:
       - subcategory: Activity Planning & Scheduling
         content: |
@@ -67,6 +76,19 @@ categories:
       Telemetry and command, secure uplink/downlink, data management,
       operations visualization, monitoring, and testbed support — the
       software that operations teams use to fly the spacecraft.
+
+      The domain has 25+ years of standards convergence through the
+      [CCSDS](https://ccsds.org/) — over 400 missions have used CCSDS
+      protocols. The Mission Operations and Information Management
+      Services (MOIMS) area hosts the
+      [Spacecraft Monitor & Control (SM&C) Working Group](https://ccsds.org/outreach/overview/smcvideos/),
+      which specifies a service-oriented architecture of standard
+      mission-operations services. Many flight projects also adopt
+      [XTCE](https://www.omg.org/spec/XTCE/) — XML Telemetry &
+      Command Exchange — and the ECSS
+      [Packet Utilization Standard (PUS)](https://pusopen.com/ecss-pus),
+      which defines 23 standard onboard services for scheduling, data
+      transfer, and reporting.
     subcategories:
       - subcategory: Mission Control Integration
         content: |
