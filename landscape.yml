@@ -1596,36 +1596,40 @@ categories:
               MMGIS, AIT, SLIM, OpenMCT-MCWS, seq-json) across NASA flight
               missions.
 
-          - name: NASA-DEVELOP
-            homepage_url: https://develop.larc.nasa.gov/
-            logo: nasa-meatball.svg
-            description: >-
-              Applied Sciences DEVELOP National Program — early-career
-              researchers building Earth-observation applied-science tools
-              (DRIP-SLIP and many others).
-
-          - name: ESDIS
-            homepage_url: https://www.earthdata.nasa.gov/about/esdis
-            logo: nasa-meatball.svg
-            description: >-
-              Earth Science Data and Information System — GSFC-led program
-              that operates EOSDIS and the NASA Earthdata cloud (Cumulus,
-              Harmony, Earthdata Search, CMR).
-
-          - name: NASA-IMPACT
-            homepage_url: https://www.earthdata.nasa.gov/esds/impact
-            logo: nasa-meatball.svg
-            description: >-
-              Interagency Implementation and Advanced Concepts Team at MSFC —
-              Earth-science data-product development (Harmonized Landsat
-              Sentinel-2 and others).
-
-          - name: KeplerGO
-            homepage_url: https://heasarc.gsfc.nasa.gov/docs/kepler/
-            logo: nasa-meatball.svg
-            description: >-
-              Kepler/K2 Guest Observer Office — community tools (PyKE,
-              K2fov, K2ephem) for the Kepler space telescope archive.
+          # Programs below are commented out for now — restore by removing
+          # the leading "# " on each line. They're real programs we'll
+          # likely want to surface, just deferring until needed.
+          #
+          # - name: NASA-DEVELOP
+          #   homepage_url: https://develop.larc.nasa.gov/
+          #   logo: nasa-meatball.svg
+          #   description: >-
+          #     Applied Sciences DEVELOP National Program — early-career
+          #     researchers building Earth-observation applied-science tools
+          #     (DRIP-SLIP and many others).
+          #
+          # - name: ESDIS
+          #   homepage_url: https://www.earthdata.nasa.gov/about/esdis
+          #   logo: nasa-meatball.svg
+          #   description: >-
+          #     Earth Science Data and Information System — GSFC-led program
+          #     that operates EOSDIS and the NASA Earthdata cloud (Cumulus,
+          #     Harmony, Earthdata Search, CMR).
+          #
+          # - name: NASA-IMPACT
+          #   homepage_url: https://www.earthdata.nasa.gov/esds/impact
+          #   logo: nasa-meatball.svg
+          #   description: >-
+          #     Interagency Implementation and Advanced Concepts Team at
+          #     MSFC — Earth-science data-product development (Harmonized
+          #     Landsat Sentinel-2 and others).
+          #
+          # - name: KeplerGO
+          #   homepage_url: https://heasarc.gsfc.nasa.gov/docs/kepler/
+          #   logo: nasa-meatball.svg
+          #   description: >-
+          #     Kepler/K2 Guest Observer Office — community tools (PyKE,
+          #     K2fov, K2ephem) for the Kepler space telescope archive.
 
           # Future programs to surface when relevant items land:
           #   - SBIR / STTR (small-business innovation funding)
