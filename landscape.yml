@@ -162,32 +162,6 @@ categories:
                 nasa.center: LaRC
                 nasa.distribution: open-source
 
-          - name: seq-json
-            homepage_url: https://github.com/NASA-AMMOS/seq-json-schema
-            logo: placeholder.svg
-            second_path:
-              - "AMMOS / MPSA"
-            description: >-
-              Open specification (JSON schema) for representing spacecraft
-              command sequences. The interchange format underpinning
-              Aerie's SeqN sequencing language and adopted by multiple
-              AMMOS tools.
-            repo_url: https://github.com/NASA-AMMOS/seq-json-schema
-            license: MIT
-            project: ammos
-            extra:
-              tag:
-                - nasa-center
-                - jpl
-                - mpsa
-              specification: true
-              annotations:
-                submitter.org: JPL
-                submitter.type: nasa-center
-                nasa.center: JPL
-                nasa.ammos_element: MPSA
-                nasa.distribution: open-source
-
   - name: Instrument Data System
     subcategories:
       - name: Science Data Visualization & Mapping
@@ -1583,6 +1557,32 @@ categories:
                 submitter.type: nasa-center
                 nasa.center: JPL
                 nasa.sponsor_program: PDS
+                nasa.distribution: open-source
+
+          - name: seq-json
+            homepage_url: https://github.com/NASA-AMMOS/seq-json-schema
+            logo: placeholder.svg
+            second_path:
+              - "AMMOS / MPSA"
+            description: >-
+              Open specification (JSON schema) for representing
+              spacecraft command sequences. The interchange format
+              underpinning PlanDev's SeqN sequencing language and
+              adopted by multiple AMMOS tools.
+            repo_url: https://github.com/NASA-AMMOS/seq-json-schema
+            license: MIT
+            project: ammos
+            extra:
+              tag:
+                - nasa-center
+                - jpl
+                - mpsa
+              specification: true
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.ammos_element: MPSA
                 nasa.distribution: open-source
 
       - name: Verification & Formal Methods
