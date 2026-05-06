@@ -483,7 +483,7 @@ categories:
 
           - name: cFS (Core Flight System)
             homepage_url: https://github.com/nasa/cFS
-            logo: placeholder.svg
+            logo: cfs.svg
             description: >-
               Core Flight System. A platform- and project-independent
               reusable flight software architecture and suite of
