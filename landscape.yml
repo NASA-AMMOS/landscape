@@ -1505,3 +1505,201 @@ categories:
                 submitter.type: nasa-center
                 nasa.center: LaRC
                 nasa.distribution: open-source
+
+  # ============================================================
+  # Members — organizations contributing software to the landscape.
+  # These categories only appear in the Members tab (see settings.yml
+  # `groups`). Items here are organizations, not software projects:
+  # they have name + homepage_url + logo, no repo_url/license.
+  # ============================================================
+
+  - name: NASA Centers
+    subcategories:
+      - name: Field Centers
+        items:
+          - name: Ames Research Center
+            homepage_url: https://www.nasa.gov/ames/
+            logo: nasa-meatball.svg
+            description: >-
+              NASA's Silicon Valley center — intelligent systems, autonomy,
+              robotics, supercomputing, and Earth/space science.
+            crunchbase: https://www.crunchbase.com/organization/nasa
+
+          - name: Glenn Research Center
+            homepage_url: https://www.nasa.gov/glenn/
+            logo: nasa-meatball.svg
+            description: >-
+              NASA Glenn (Cleveland, OH) — propulsion, power, communications,
+              and aeronautics systems for space and aviation.
+            crunchbase: https://www.crunchbase.com/organization/nasa
+
+          - name: Goddard Space Flight Center
+            homepage_url: https://www.nasa.gov/goddard/
+            logo: nasa-gsfc.svg
+            description: >-
+              NASA Goddard (Greenbelt, MD) — Earth observation, astrophysics,
+              heliophysics. Home of cFS, OSAL, GMSEC, and GIBS/Worldview.
+            crunchbase: https://www.crunchbase.com/organization/nasa
+
+          - name: Jet Propulsion Laboratory
+            homepage_url: https://www.jpl.nasa.gov/
+            logo: nasa-jpl.svg
+            description: >-
+              JPL (Pasadena, CA) — robotic planetary exploration and Earth
+              science, managed for NASA by Caltech. Home of AMMOS, F´,
+              Stereo Pipeline, ITS_LIVE, and many flight projects.
+            crunchbase: https://www.crunchbase.com/organization/nasa-jpl
+
+          - name: Johnson Space Center
+            homepage_url: https://www.nasa.gov/johnson/
+            logo: nasa-meatball.svg
+            description: >-
+              NASA Johnson (Houston, TX) — human spaceflight: ISS, Artemis,
+              crew vehicle development. Home of Trick and CCDD.
+            crunchbase: https://www.crunchbase.com/organization/nasa
+
+          - name: Langley Research Center
+            homepage_url: https://www.nasa.gov/langley/
+            logo: nasa-meatball.svg
+            description: >-
+              NASA Langley (Hampton, VA) — aeronautics research and formal
+              software verification (PVS, Kodiak, PLEXIL).
+            crunchbase: https://www.crunchbase.com/organization/nasa
+
+          - name: Marshall Space Flight Center
+            homepage_url: https://www.nasa.gov/marshall/
+            logo: nasa-meatball.svg
+            description: >-
+              NASA Marshall (Huntsville, AL) — propulsion, SLS, and Earth
+              science applications via NASA-IMPACT. Hosts ITSC, GHRC, MSFC
+              science teams contributing to mission software.
+            crunchbase: https://www.crunchbase.com/organization/nasa
+
+          # Future centers we might add when items appear:
+          #   - Kennedy Space Center (KSC) — launch operations
+          #   - Stennis Space Center (SSC) — propulsion test
+          #   - Armstrong Flight Research Center (AFRC) — flight testing
+          #   - Wallops Flight Facility / Goddard Institute for Space
+          #     Studies (GISS)
+          #   - JHU APL (FFRDC, often partners — could go under Academic too)
+
+  - name: NASA Programs
+    subcategories:
+      - name: Programs
+        items:
+          - name: AMMOS
+            homepage_url: https://ammos.nasa.gov/
+            logo: nasa-meatball.svg
+            description: >-
+              Advanced Multi-Mission Operations System. JPL-led, multi-center
+              program providing reusable mission ops software (PlanDev,
+              MMGIS, AIT, SLIM, OpenMCT-MCWS, seq-json) across NASA flight
+              missions.
+
+          - name: NASA-DEVELOP
+            homepage_url: https://develop.larc.nasa.gov/
+            logo: nasa-meatball.svg
+            description: >-
+              Applied Sciences DEVELOP National Program — early-career
+              researchers building Earth-observation applied-science tools
+              (DRIP-SLIP and many others).
+
+          - name: ESDIS
+            homepage_url: https://www.earthdata.nasa.gov/about/esdis
+            logo: nasa-meatball.svg
+            description: >-
+              Earth Science Data and Information System — GSFC-led program
+              that operates EOSDIS and the NASA Earthdata cloud (Cumulus,
+              Harmony, Earthdata Search, CMR).
+
+          - name: NASA-IMPACT
+            homepage_url: https://www.earthdata.nasa.gov/esds/impact
+            logo: nasa-meatball.svg
+            description: >-
+              Interagency Implementation and Advanced Concepts Team at MSFC —
+              Earth-science data-product development (Harmonized Landsat
+              Sentinel-2 and others).
+
+          - name: KeplerGO
+            homepage_url: https://heasarc.gsfc.nasa.gov/docs/kepler/
+            logo: nasa-meatball.svg
+            description: >-
+              Kepler/K2 Guest Observer Office — community tools (PyKE,
+              K2fov, K2ephem) for the Kepler space telescope archive.
+
+          # Future programs to surface when relevant items land:
+          #   - SBIR / STTR (small-business innovation funding)
+          #   - SMD Open Source Science Initiative
+          #   - HEC (High End Computing) Program
+          #   - PSI (Planetary Science Informatics)
+          #   - SPD (Science Mission Directorate Software Program)
+
+  - name: Agency Partners
+    subcategories:
+      - name: Agencies
+        items: []
+          # Empty for now. Candidates as items from these agencies land:
+          # US government:
+          #   - NOAA (weather satellites, GOES)
+          #   - USGS (Landsat ground processing)
+          #   - DOE labs: LANL, ORNL, LLNL, ANL, SNL
+          #   - DOD: USSF (Space Force), SDA (Space Development Agency),
+          #          AFRL, NRL, MIT Lincoln Lab
+          # International space agencies:
+          #   - ESA (European Space Agency)
+          #   - DLR (German Aerospace Center)
+          #   - JAXA (Japan)
+          #   - CNES (France)
+          #   - ASI (Italy)
+          #   - UKSA (UK)
+          #   - CSA (Canada)
+          #   - ISRO (India)
+          #   - KARI (Korea)
+
+  - name: Academic & FFRDC
+    subcategories:
+      - name: Institutions
+        items: []
+          # Candidates:
+          #   - APL (Johns Hopkins Applied Physics Lab) — could move from
+          #     NASA Centers when partner items appear
+          #   - LASP (Laboratory for Atmospheric and Space Physics, CU
+          #     Boulder)
+          #   - SwRI (Southwest Research Institute)
+          #   - STScI (Space Telescope Science Institute) — JWST/HST
+          #   - NRAO (National Radio Astronomy Observatory)
+          #   - ESO (European Southern Observatory)
+          #   - IPAC (Caltech)
+          #   - Universities: MIT, Stanford, Caltech, U. Mich, GA Tech,
+          #     U. Texas, U. Colorado Boulder, Penn State
+
+  - name: Commercial Partners
+    subcategories:
+      - name: Companies
+        items: []
+          # Candidates:
+          #   Major contractors: Lockheed Martin, Northrop Grumman,
+          #     Boeing, BAE Systems (formerly Ball Aerospace)
+          #   New space: SpaceX, Blue Origin, Rocket Lab, Sierra Space
+          #   Earth observation: Planet Labs, Maxar, Capella Space,
+          #     BlackSky, Spire Global
+          #   Smallsat ops: Loft Orbital, Astroscale, Astranis
+          #   Space software: AGI/Ansys, CesiumGS, Orbit Logic,
+          #     Aerospace Corp, MITRE Corporation
+          #   Open-source-friendly: KISPE Space (UK), Tethers Unlimited,
+          #     Kongsberg
+
+  - name: Foundations & Standards
+    subcategories:
+      - name: Organizations
+        items: []
+          # Candidates:
+          #   - CCSDS (Consultative Committee for Space Data Systems)
+          #   - OMG (Object Management Group) — SysML
+          #   - OGC (Open Geospatial Consortium)
+          #   - IETF (DTN protocols)
+          #   - W3C, IEEE, ISO
+          #   - Linux Foundation Aerospace Initiative
+          #   - Eclipse Foundation
+          #   - Astropy Project
+          #   - Open Source Geospatial Foundation (OSGeo)

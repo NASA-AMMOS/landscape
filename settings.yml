@@ -60,6 +60,19 @@ groups:
       - Ground Software Foundations
       - Earth & Science Data Systems
       - Developer Tools & Standards
+  # Members tab — organizations contributing software to the landscape
+  # (parallel to CNCF's Platinum/Gold/etc. members tab). The categories
+  # below are intentionally NOT in the All / Mission Operations /
+  # Foundations groups, so member orgs only show in the Members view.
+  - name: Members
+    normalized_name: members
+    categories:
+      - NASA Centers
+      - NASA Programs
+      - Agency Partners
+      - Academic & FFRDC
+      - Commercial Partners
+      - Foundations & Standards
 
 # Featured-item rules drive the under-card "NASA AMMOS" / "NASA JPL"
 # label visible in grid mode (parallel to CNCF's "CNCF GRADUATED" /
@@ -103,6 +116,7 @@ screenshot_width: 1920
 grid_items_size: large
 
 categories:
+  # ---- Software categories ----
   - name: Mission Design & Navigation
     subcategories:
       - Mission Analysis & Trajectory Design
@@ -132,3 +146,23 @@ categories:
     subcategories:
       - Best Practices & Lifecycle
       - Verification & Formal Methods
+
+  # ---- Member categories (only visible inside the Members group) ----
+  - name: NASA Centers
+    subcategories:
+      - Field Centers
+  - name: NASA Programs
+    subcategories:
+      - Programs
+  - name: Agency Partners
+    subcategories:
+      - Agencies
+  - name: Academic & FFRDC
+    subcategories:
+      - Institutions
+  - name: Commercial Partners
+    subcategories:
+      - Companies
+  - name: Foundations & Standards
+    subcategories:
+      - Organizations
