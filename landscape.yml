@@ -64,7 +64,7 @@ categories:
 
           - name: OpenMDAO
             homepage_url: https://openmdao.org/
-            logo: placeholder.svg
+            logo: openmdao.svg
             description: >-
               Open-source framework for multidisciplinary design analysis
               and optimization (MDAO). Heavily used for trajectory
