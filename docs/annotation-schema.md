@@ -56,8 +56,32 @@ URLs, GitHub team handles, or org-level roles instead.
 
 Annotations pass through to the rendered landscape but are **not**
 rendered as filterable facets by default. To make a value filterable,
-also add it to the item's top-level `tag:` list. The `settings.yml`
-`tags:` section enumerates which tag values appear as filter chips.
+also add it to the item's `extra.tag:` list. Convention used in this
+repo: each item's `tag:` is the union of the bare lowercased values
+of `submitter.type`, `nasa.center`, each entry in
+`nasa.contributing_centers`, and `nasa.ammos_element` — for example:
+
+```yaml
+extra:
+  tag:
+    - nasa-center        # mirrors submitter.type
+    - jpl                # mirrors nasa.center
+    - mpsa               # mirrors nasa.ammos_element
+  annotations:
+    submitter.org: JPL
+    submitter.type: nasa-center
+    nasa.center: JPL
+    nasa.ammos_element: MPSA
+    nasa.distribution: open-source
+```
+
+Tags are bare values (no `center-`, `ammos-`, etc. prefix) because
+landscape2's UI auto-prepends "TAG" to each chip — so a tag of
+`center-jpl` would render redundantly as "TAG CENTER JPL". Bare
+values give clean chips like "TAG JPL".
+
+The invariant is enforced by `tools/check_tag_sync.py` (run in CI
+and from `tools/validate_local.sh`).
 
 ## Examples
 

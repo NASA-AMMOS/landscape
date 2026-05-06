@@ -2,11 +2,15 @@
 """Verify that every item's `extra.tag` matches the union derived from its
 NASA / submitter annotations. Run from repo root.
 
+Tags are bare values (no namespace prefix) — landscape2's UI auto-prefixes
+each chip with "TAG", so a tag of `center-jpl` would render as
+"TAG CENTER JPL". Using bare values gives clean chips like "TAG JPL".
+
 Expected tag set per item:
-  - submitter-<submitter.type>
-  - center-<nasa.center>                   (if present)
-  - center-<x> for each x in nasa.contributing_centers
-  - ammos-<nasa.ammos_element>             (if present)
+  - <submitter.type>          e.g. nasa-center
+  - <nasa.center>              if present, e.g. jpl
+  - <x> for each x in nasa.contributing_centers
+  - <nasa.ammos_element>       if present, e.g. mpsa
 
 All values are lowercased; whitespace and surrounding quotes are stripped.
 
@@ -23,16 +27,16 @@ import yaml
 def expected_tags(annotations: dict) -> list[str]:
     tags: list[str] = []
     if (st := annotations.get("submitter.type")):
-        tags.append(f"submitter-{st.strip().lower()}")
+        tags.append(st.strip().lower())
     if (c := annotations.get("nasa.center")):
-        tags.append(f"center-{c.strip().lower()}")
+        tags.append(c.strip().lower())
     if (cc := annotations.get("nasa.contributing_centers")):
         for x in str(cc).split(","):
             x = x.strip()
             if x:
-                tags.append(f"center-{x.lower()}")
+                tags.append(x.lower())
     if (ae := annotations.get("nasa.ammos_element")):
-        tags.append(f"ammos-{ae.strip().lower()}")
+        tags.append(ae.strip().lower())
     seen: set[str] = set()
     out: list[str] = []
     for t in tags:
@@ -70,9 +74,9 @@ def main() -> int:
             print(f"  - {p}")
         print(
             "\nEvery item's `extra.tag` must equal the union of "
-            "submitter-<type>, center-<nasa.center>, center-<contributing>, "
-            "ammos-<element>. Update the item's `tag:` block to match its "
-            "annotations (or vice versa)."
+            "<submitter.type>, <nasa.center>, <each contributing center>, "
+            "<nasa.ammos_element> — bare values, all lowercased. Update the "
+            "item's `tag:` block to match its annotations (or vice versa)."
         )
         return 1
 

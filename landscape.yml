@@ -29,8 +29,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-grc
+                - nasa-center
+                - grc
               annotations:
                 submitter.org: GRC
                 submitter.type: nasa-center
@@ -50,8 +50,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-gsfc
+                - nasa-center
+                - gsfc
               documentation_url: https://documentation.help/GMAT/
               annotations:
                 submitter.org: GSFC
@@ -72,8 +72,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-grc
+                - nasa-center
+                - grc
               documentation_url: https://openmdao.org/newdocs/versions/latest/main.html
               annotations:
                 submitter.org: GRC
@@ -98,8 +98,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-arc
+                - nasa-center
+                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -119,9 +119,9 @@ categories:
             license: MIT
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
-                - ammos-mpsa
+                - nasa-center
+                - jpl
+                - mpsa
               documentation_url: https://nasa-ammos.github.io/plandev-docs/
               annotations:
                 submitter.org: JPL
@@ -146,8 +146,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-larc
+                - nasa-center
+                - larc
               annotations:
                 submitter.org: LaRC
                 submitter.type: nasa-center
@@ -166,9 +166,9 @@ categories:
             license: MIT
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
-                - ammos-mpsa
+                - nasa-center
+                - jpl
+                - mpsa
               specification: true
               annotations:
                 submitter.org: JPL
@@ -193,8 +193,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-arc
+                - nasa-center
+                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -213,8 +213,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -233,9 +233,9 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
-                - ammos-ids
+                - nasa-center
+                - jpl
+                - ids
               documentation_url: https://nasa-ammos.github.io/MMGIS/
               package_manager_url: https://pypi.org/project/mmgis-py/
               annotations:
@@ -259,8 +259,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-arc
+                - nasa-center
+                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -280,8 +280,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -301,8 +301,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-arc
+                - nasa-center
+                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -328,9 +328,9 @@ categories:
                 license: MIT
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
-                - ammos-ids
+                - nasa-center
+                - jpl
+                - ids
               documentation_url: https://ait-core.readthedocs.io/
               package_manager_url: https://pypi.org/project/ait-core/
               annotations:
@@ -354,8 +354,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-msfc
+                - nasa-center
+                - msfc
               annotations:
                 submitter.org: MSFC
                 submitter.type: nasa-center
@@ -376,9 +376,9 @@ categories:
             parent_project: Open MCT
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
-                - ammos-ids
+                - nasa-center
+                - jpl
+                - ids
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -402,8 +402,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-grc
+                - nasa-center
+                - grc
               annotations:
                 submitter.org: GRC
                 submitter.type: nasa-center
@@ -429,10 +429,10 @@ categories:
                 license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
-                - center-arc
-                - ammos-mcs
+                - nasa-center
+                - jpl
+                - arc
+                - mcs
               documentation_url: https://nasa.github.io/openmct/documentation/
               package_manager_url: https://www.npmjs.com/package/openmct
               annotations:
@@ -461,8 +461,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jsc
+                - nasa-center
+                - jsc
               annotations:
                 submitter.org: JSC
                 submitter.type: nasa-center
@@ -510,8 +510,8 @@ categories:
                 license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-gsfc
+                - nasa-center
+                - gsfc
               documentation_url: https://github.com/nasa/cFS/tree/main/docs
               annotations:
                 submitter.org: GSFC
@@ -532,8 +532,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               documentation_url: https://nasa.github.io/fprime/UsersGuide/guide.html
               annotations:
                 submitter.org: JPL
@@ -555,8 +555,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-gsfc
+                - nasa-center
+                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -578,8 +578,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jsc
+                - nasa-center
+                - jsc
               annotations:
                 submitter.org: JSC
                 submitter.type: nasa-center
@@ -597,8 +597,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-gsfc
+                - nasa-center
+                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -618,8 +618,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-arc
+                - nasa-center
+                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -639,8 +639,8 @@ categories:
             parent_project: Prognostics Algorithm Library
             extra:
               tag:
-                - submitter-nasa-center
-                - center-arc
+                - nasa-center
+                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -659,8 +659,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jsc
+                - nasa-center
+                - jsc
               documentation_url: https://nasa.github.io/trick/documentation/Documentation-Home.html
               annotations:
                 submitter.org: JSC
@@ -681,8 +681,8 @@ categories:
             parent_project: Trick
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jsc
+                - nasa-center
+                - jsc
               annotations:
                 submitter.org: JSC
                 submitter.type: nasa-center
@@ -703,8 +703,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-grc
+                - nasa-center
+                - grc
               annotations:
                 submitter.org: GRC
                 submitter.type: nasa-center
@@ -723,8 +723,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-gsfc
+                - nasa-center
+                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -750,8 +750,8 @@ categories:
                 license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -772,8 +772,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-msfc
+                - nasa-center
+                - msfc
               annotations:
                 submitter.org: MSFC
                 submitter.type: nasa-center
@@ -797,8 +797,8 @@ categories:
                 license: BSD-3-Clause
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -816,8 +816,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -836,8 +836,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -856,8 +856,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -880,8 +880,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -900,8 +900,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-gsfc
+                - nasa-center
+                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -923,8 +923,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-arc
+                - nasa-center
+                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -943,8 +943,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               documentation_url: https://nasa.github.io/cumulus/docs/cumulus-docs-readme
               annotations:
                 submitter.org: JPL
@@ -965,8 +965,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-arc
+                - nasa-center
+                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -985,8 +985,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-gsfc
+                - nasa-center
+                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -1006,8 +1006,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-gsfc
+                - nasa-center
+                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -1027,8 +1027,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-gsfc
+                - nasa-center
+                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -1049,8 +1049,8 @@ categories:
             license: MIT
             extra:
               tag:
-                - submitter-nasa-center
-                - center-msfc
+                - nasa-center
+                - msfc
               annotations:
                 submitter.org: MSFC
                 submitter.type: nasa-center
@@ -1071,8 +1071,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1092,8 +1092,8 @@ categories:
             license: MIT
             extra:
               tag:
-                - submitter-nasa-center
-                - center-gsfc
+                - nasa-center
+                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -1113,8 +1113,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-msfc
+                - nasa-center
+                - msfc
               annotations:
                 submitter.org: MSFC
                 submitter.type: nasa-center
@@ -1140,8 +1140,8 @@ categories:
                 license: GPL-3.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1162,8 +1162,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-arc
+                - nasa-center
+                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -1183,8 +1183,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-arc
+                - nasa-center
+                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -1204,8 +1204,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1225,8 +1225,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-gsfc
+                - nasa-center
+                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -1245,8 +1245,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-arc
+                - nasa-center
+                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -1270,8 +1270,8 @@ categories:
                 license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1291,8 +1291,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-larc
+                - nasa-center
+                - larc
               annotations:
                 submitter.org: LaRC
                 submitter.type: nasa-center
@@ -1312,8 +1312,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-gsfc
+                - nasa-center
+                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -1341,8 +1341,8 @@ categories:
                 license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-arc
+                - nasa-center
+                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -1365,8 +1365,8 @@ categories:
             license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1389,8 +1389,8 @@ categories:
                 license: Apache-2.0
             extra:
               tag:
-                - submitter-nasa-center
-                - center-jpl
+                - nasa-center
+                - jpl
               documentation_url: https://nasa-ammos.github.io/slim/
               annotations:
                 submitter.org: JPL
@@ -1412,8 +1412,8 @@ categories:
             license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-larc
+                - nasa-center
+                - larc
               annotations:
                 submitter.org: LaRC
                 submitter.type: nasa-center
@@ -1436,8 +1436,8 @@ categories:
                 license: NASA-1.3
             extra:
               tag:
-                - submitter-nasa-center
-                - center-larc
+                - nasa-center
+                - larc
               annotations:
                 submitter.org: LaRC
                 submitter.type: nasa-center
