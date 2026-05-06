@@ -67,7 +67,7 @@ categories:
         items:
           - name: PlanDev
             homepage_url: https://nasa-ammos.github.io/plandev-docs/
-            logo: placeholder.svg
+            logo: plandev.svg
             description: >-
               Modeling and planning system for spacecraft missions
               (formerly Aerie). Provides a modular activity-planning
