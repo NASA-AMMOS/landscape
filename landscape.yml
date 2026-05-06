@@ -168,7 +168,7 @@ categories:
         items:
           - name: DERT
             homepage_url: https://github.com/nasa/DERT
-            logo: placeholder.svg
+            logo: dert.svg
             description: >-
               Desktop Exploration of Remote Terrain. 3D viewer for
               large Digital Terrain Models — built to help science
