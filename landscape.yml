@@ -668,7 +668,7 @@ categories:
 
           - name: Trick
             homepage_url: https://nasa.github.io/trick/
-            logo: placeholder.svg
+            logo: trick.svg
             description: >-
               Trick Simulation Environment. A simulation development
               framework providing a common set of simulation capabilities
