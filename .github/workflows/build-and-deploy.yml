@@ -67,6 +67,25 @@ jobs:
             echo "WARNING: didn't find the chip-prefix template; landscape2 may have changed it." >&2
           fi
 
+      - name: Disable "all" magic-bypass in group filter
+        # landscape2's bundled JS shorts-circuits the group filter when
+        # the active group's normalized_name === "all" — it skips the
+        # category check and renders every item in every category it
+        # appears in (primary + additional_categories). With our AMMOS
+        # quick-filter using second_path, that double-renders the 6
+        # AMMOS items in our "All" view. Strip the `&&t!==ct` clause
+        # so the filter always runs normally — the All group then
+        # respects its category list (which excludes AMMOS).
+        run: |
+          set -e
+          before=$(grep -ohc 'baseDS\.groups&&t!==ct' build/assets/*.js | paste -sd+ - | bc || echo 0)
+          find build/assets -name '*.js' -exec sed -i 's|baseDS\.groups&&t!==ct|baseDS.groups|g' {} +
+          after=$(grep -ohc 'baseDS\.groups&&t!==ct' build/assets/*.js | paste -sd+ - | bc || echo 0)
+          echo "patched magic bypass: $before occurrences -> $after"
+          if [ "$before" = "0" ]; then
+            echo "WARNING: didn't find the 'all' magic-bypass; landscape2 may have changed the bundle." >&2
+          fi
+
       - name: Override page title to "Open Mission Landscape"
         # landscape2's HTML template hardcodes `{{ foundation }} Landscape`
         # for <title>, og:title, twitter:title, and the JSON-LD name. With

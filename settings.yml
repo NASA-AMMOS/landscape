@@ -37,15 +37,13 @@ images:
 # groups hides anything not listed in one of them ("when groups are
 # used, categories not listed in any group won't be displayed").
 groups:
-  # NOTE: display name must NOT be "All" — landscape2 auto-generates
-  # normalized_name from the display name, and a slug of "all" is
-  # reserved as a magic value that bypasses group-category filtering
-  # and renders every item in every category it appears in (primary
-  # plus additional_categories / second_path). That would duplicate
-  # AMMOS items in this view. "All Software" generates slug
-  # "all-software" — routes through the normal group filter so AMMOS
-  # only appears under the AMMOS tab.
-  - name: All Software
+  # NOTE: landscape2's bundled JS treats slug "all" as a magic value
+  # that bypasses group filtering — when active it renders items in
+  # every category they appear in (primary + additional_categories),
+  # double-rendering AMMOS items in this view. We patch that magic
+  # out post-build (see .github/workflows/build-and-deploy.yml step
+  # "Disable 'all' magic-bypass") so this group filters normally.
+  - name: All
     categories:
       - Mission Design & Navigation
       - Mission Planning, Sequencing & Analysis
