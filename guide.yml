@@ -63,6 +63,12 @@ categories:
       Flight software frameworks and simulation environments that mission
       software is built on top of. These are the reusable building blocks
       that underpin many flight projects across the Agency.
+    subcategories:
+      - subcategory: Communications & Networking
+        content: |
+          Spacecraft and inter-vehicle communications software — mesh
+          networks, peer-to-peer protocols, and middleware for
+          formations and small satellites.
 
   - category: Earth & Science Data Systems
     content: |
