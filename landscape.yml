@@ -140,16 +140,16 @@ categories:
 
       - name: Sequence Generation & Specifications
         items:
-          - name: PLEXIL
-            homepage_url: https://nasa.github.io/PLEXIL/
+          - name: PLEXIL-V
+            homepage_url: https://plexil.sourceforge.net/
             logo: placeholder.svg
             description: >-
-              Plan Execution Interchange Language. Synchronous,
+              Plan Execution Interchange Language (V). Synchronous,
               deterministic language and runtime for commanding and
               monitoring autonomous systems — used to specify and
               execute spacecraft and robotic plans with predictable
               timing semantics.
-            repo_url: https://github.com/nasa/PLEXIL5
+            repo_url: https://github.com/nasa/PLEXIL-V
             license: NASA-1.3
             project: larc
             extra:
