@@ -61,7 +61,39 @@ groups:
       - Earth & Science Data Systems
       - Developer Tools & Standards
 
-featured_items: []
+# Featured-item rules drive the under-card "NASA AMMOS" / "NASA JPL"
+# label visible in grid mode (parallel to CNCF's "CNCF GRADUATED" /
+# "CNCF INCUBATING" labels). Items match by their `project:` value
+# (the field is internally called `maturity`); items without a project
+# field don't get a label (reserved for future non-NASA entries).
+featured_items:
+  - field: maturity
+    options:
+      - value: ammos
+        label: NASA AMMOS
+        order: 1
+      - value: jpl
+        label: NASA JPL
+        order: 2
+      - value: gsfc
+        label: NASA GSFC
+        order: 3
+      - value: arc
+        label: NASA ARC
+        order: 4
+      - value: jsc
+        label: NASA JSC
+        order: 5
+      - value: grc
+        label: NASA GRC
+        order: 6
+      - value: msfc
+        label: NASA MSFC
+        order: 7
+      - value: larc
+        label: NASA LARC
+        order: 8
+
 screenshot_width: 1920
 
 # Default item size in the grid. landscape2 hard-codes a discrete
