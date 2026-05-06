@@ -67,6 +67,20 @@ jobs:
             echo "WARNING: didn't find the chip-prefix template; landscape2 may have changed it." >&2
           fi
 
+      - name: Override page title to "Open Mission Landscape"
+        # landscape2's HTML template hardcodes `{{ foundation }} Landscape`
+        # for <title>, og:title, twitter:title, and the JSON-LD name. With
+        # foundation=NASA (driving the per-card NASA AMMOS / NASA <CENTER>
+        # badges), the tab title becomes "NASA Landscape" — but our actual
+        # site brand is "Open Mission Landscape" (matches our header
+        # wordmark). Patch the built HTML to use the correct title.
+        run: |
+          set -e
+          before=$(grep -ohc 'NASA Landscape' build/index.html build/404.html 2>/dev/null | paste -sd+ - | bc || echo 0)
+          find build -maxdepth 2 -name '*.html' -exec sed -i 's|NASA Landscape|Open Mission Landscape|g' {} +
+          after=$(grep -ohc 'NASA Landscape' build/index.html build/404.html 2>/dev/null | paste -sd+ - | bc || echo 0)
+          echo "rewrote title: $before occurrences -> $after"
+
       - name: Copy index.html to 404.html (SPA routing on GH Pages)
         run: cp build/index.html build/404.html
 
