@@ -28,6 +28,12 @@ header:
     github: https://github.com/NASA-AMMOS/landscape
   # Header wordmark — local path is resolved by the landscape2 build.
   logo: images/header-logo.svg
+  # Banner above the header. Remove this line when the landscape
+  # leaves beta. Markdown supported.
+  motd: |
+    🚧 **Beta** — this landscape is in active development.
+    Spotted something missing or wrong?
+    [Open an issue](https://github.com/NASA-AMMOS/landscape/issues/new).
 
 images:
   favicon: https://www.nasa.gov/favicon.ico
@@ -62,7 +68,7 @@ groups:
   - name: Engineering Software
     categories:
       - Engineering Software
-  - name: Dev Tools and Standards
+  - name: Developer Tools & Standards
     categories:
       - Developer Tools & Standards
   - name: Science Data
