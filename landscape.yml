@@ -65,16 +65,16 @@ categories:
     subcategories:
       - name: Activity Planning & Scheduling
         items:
-          - name: Aerie
+          - name: PlanDev
             homepage_url: https://nasa-ammos.github.io/aerie-docs/
             logo: placeholder.svg
             description: >-
-              Modeling and planning system for spacecraft missions. Provides
-              a modular activity-planning framework with a web UI,
-              scheduler, simulation engine, and external constraint checker.
-              Used by multiple JPL missions for next-generation activity
-              planning.
-            repo_url: https://github.com/NASA-AMMOS/aerie
+              Modeling and planning system for spacecraft missions
+              (formerly Aerie). Provides a modular activity-planning
+              framework with a web UI, scheduler, simulation engine, and
+              external constraint checker. Used by multiple JPL missions
+              for next-generation activity planning.
+            repo_url: https://github.com/NASA-AMMOS/plandev
             license: MIT
             extra:
               tag:
