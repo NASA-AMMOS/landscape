@@ -31,10 +31,21 @@ images:
   favicon: https://www.nasa.gov/favicon.ico
   header_logo: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
 
-# Top-level groups: shape the navigation by source community rather than
-# by AMMOS element only — partner-developed items appear alongside NASA
-# items rather than in a second-class bucket.
+# Top-level groups: shape the navigation. The "All" group is listed
+# first so it's the default tab — without it, defining the other
+# groups hides anything not listed in one of them ("when groups are
+# used, categories not listed in any group won't be displayed").
 groups:
+  - name: All
+    normalized_name: all
+    categories:
+      - Mission Design & Navigation
+      - Mission Planning, Sequencing & Analysis
+      - Instrument Data System
+      - Mission Control System
+      - Ground Software Foundations
+      - Earth & Science Data Systems
+      - Developer Tools & Standards
   - name: Mission Operations
     normalized_name: ops
     categories:
@@ -64,10 +75,10 @@ categories:
     subcategories:
       - Science Data Visualization & Mapping
       - Instrument Toolkits & GDS
-      - Mission Control Integration
   - name: Mission Control System
     subcategories:
       - Operations Visualization
+      - Mission Control Integration
   - name: Ground Software Foundations
     subcategories:
       - Flight Software Frameworks

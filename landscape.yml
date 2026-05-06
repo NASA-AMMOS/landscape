@@ -362,30 +362,6 @@ categories:
                 nasa.center: MSFC
                 nasa.distribution: open-source
 
-      - name: Mission Control Integration
-        items:
-          - name: OpenMCT-MCWS
-            homepage_url: https://github.com/NASA-AMMOS/openmct-mcws
-            logo: placeholder.svg
-            description: >-
-              Open MCT plugins providing connectivity to AMMOS Mission
-              data Processing and Control System (MPCS) backends —
-              historical and realtime telemetry, EVRs, commands, and frames.
-            repo_url: https://github.com/NASA-AMMOS/openmct-mcws
-            license: Apache-2.0
-            parent_project: Open MCT
-            extra:
-              tag:
-                - nasa-center
-                - jpl
-                - ids
-              annotations:
-                submitter.org: JPL
-                submitter.type: nasa-center
-                nasa.center: JPL
-                nasa.ammos_element: IDS
-                nasa.distribution: open-source
-
   - name: Mission Control System
     subcategories:
       - name: Operations Visualization
@@ -443,6 +419,30 @@ categories:
                 nasa.ammos_element: MCS
                 nasa.distribution: open-source
                 nasa.missions: "Multiple JPL missions, commercial deployments"
+
+      - name: Mission Control Integration
+        items:
+          - name: OpenMCT-MCWS
+            homepage_url: https://github.com/NASA-AMMOS/openmct-mcws
+            logo: placeholder.svg
+            description: >-
+              Open MCT plugins providing connectivity to AMMOS Mission
+              data Processing and Control System (MPCS) backends —
+              historical and realtime telemetry, EVRs, commands, and frames.
+            repo_url: https://github.com/NASA-AMMOS/openmct-mcws
+            license: Apache-2.0
+            parent_project: Open MCT
+            extra:
+              tag:
+                - nasa-center
+                - jpl
+                - ids
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.ammos_element: IDS
+                nasa.distribution: open-source
 
   - name: Ground Software Foundations
     subcategories:
