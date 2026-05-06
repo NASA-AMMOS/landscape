@@ -61,12 +61,14 @@ categories:
           Plugins and adapters connecting instrument data flows to mission
           control system frontends.
 
-  - category: Software Foundations
+  - category: Engineering Software
     content: |
-      Flight software frameworks, simulation environments, communications
-      middleware, and robotics tooling that mission software is built on
-      top of — reusable building blocks that underpin many flight and
-      ground projects across the Agency.
+      Cross-cutting engineering software that mission projects build on
+      top of — flight software frameworks, simulation environments,
+      communications middleware, and robotics tooling. Spans NASA
+      technology areas TX02 (Flight Computing), TX04 (Robotic Systems),
+      TX05 (Communications), TX10 (Autonomous Systems), and TX11
+      (Software, Modeling, Simulation).
     subcategories:
       - subcategory: Communications & Networking
         content: |

@@ -44,7 +44,7 @@ groups:
       - Mission Planning, Sequencing & Analysis
       - Instrument Data System
       - Mission Control System
-      - Software Foundations
+      - Engineering Software
       - Earth & Science Data Systems
       - Developer Tools & Standards
   - name: Mission Software
@@ -57,7 +57,7 @@ groups:
   - name: Foundations & Tools
     normalized_name: foundations
     categories:
-      - Software Foundations
+      - Engineering Software
       - Developer Tools & Standards
   - name: Science Data
     normalized_name: science-data
@@ -141,7 +141,7 @@ categories:
     subcategories:
       - Operations Visualization
       - Mission Control Integration
-  - name: Software Foundations
+  - name: Engineering Software
     subcategories:
       - Flight Software Frameworks
       - Simulation & Test

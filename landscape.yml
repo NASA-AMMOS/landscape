@@ -474,7 +474,7 @@ categories:
                 nasa.ammos_element: IDS
                 nasa.distribution: open-source
 
-  - name: Software Foundations
+  - name: Engineering Software
     subcategories:
       - name: Flight Software Frameworks
         items:
