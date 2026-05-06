@@ -26,12 +26,11 @@ colors:
 header:
   links:
     github: https://github.com/NASA-AMMOS/landscape
+  # Header wordmark — local path is resolved by the landscape2 build.
+  logo: images/header-logo.svg
 
 images:
   favicon: https://www.nasa.gov/favicon.ico
-  # Header wordmark hosted in this repo. landscape2's build downloads
-  # this URL at build time and bundles it into the static site.
-  header_logo: https://raw.githubusercontent.com/NASA-AMMOS/landscape/main/images/header-logo.svg
 
 # Top-level groups: shape the navigation. The "All" group is listed
 # first so it's the default tab — without it, defining the other
