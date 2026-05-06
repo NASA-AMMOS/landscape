@@ -1743,7 +1743,7 @@ categories:
         items:
           - name: AMMOS
             homepage_url: https://ammos.nasa.gov/
-            logo: nasa-meatball.svg
+            logo: ammos.svg
             description: >-
               Advanced Multi-Mission Operations System. JPL-led, multi-center
               program providing reusable mission ops software (PlanDev,
