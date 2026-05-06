@@ -1,0 +1,8 @@
+# CODEOWNERS — every change is reviewed by the core maintainers.
+#
+# Replace the team handle below with the real GitHub team under the
+# NASA-AMMOS org before going live.
+#
+# Reference: https://docs.github.com/en/repositories/managing-your-repositories-settings-and-customizations/customizing-your-repository/about-code-owners
+
+* @NASA-AMMOS/landscape-maintainers

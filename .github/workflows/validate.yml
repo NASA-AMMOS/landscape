@@ -1,0 +1,78 @@
+name: validate
+
+on:
+  pull_request:
+    paths:
+      - 'landscape.yml'
+      - 'settings.yml'
+      - 'guide.yml'
+      - 'logos/**'
+      - '.github/workflows/validate.yml'
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    name: Validate landscape data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate landscape.yml
+        uses: cncf/landscape2-validate-action@main
+        with:
+          target_kind: data
+          target_path: landscape.yml
+
+      - name: Validate settings.yml
+        uses: cncf/landscape2-validate-action@main
+        with:
+          target_kind: settings
+          target_path: settings.yml
+
+      - name: Validate guide.yml
+        uses: cncf/landscape2-validate-action@main
+        with:
+          target_kind: guide
+          target_path: guide.yml
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install PyYAML
+        run: pip install PyYAML
+
+      - name: Check logos exist for every item
+        run: |
+          python3 - <<'PY'
+          import sys, yaml
+          from pathlib import Path
+          missing = []
+          with open("landscape.yml") as fh:
+              doc = yaml.safe_load(fh)
+          logo_dir = Path("logos")
+          placeholder_count = 0
+          total = 0
+          for cat in doc["categories"]:
+              for sub in cat.get("subcategories", []):
+                  for item in sub.get("items", []) or []:
+                      total += 1
+                      logo = item.get("logo")
+                      if not logo:
+                          missing.append(f"{cat['name']} / {sub['name']} / {item['name']}: no logo field")
+                      elif not (logo_dir / logo).is_file():
+                          missing.append(f"{item['name']}: missing logos/{logo}")
+                      elif logo == "placeholder.svg":
+                          placeholder_count += 1
+          if missing:
+              print("❌ logo problems:")
+              for m in missing:
+                  print(f"  - {m}")
+              sys.exit(1)
+          print(f"✅ all {total} items have a resolvable logo")
+          if placeholder_count:
+              print(f"ℹ️  {placeholder_count}/{total} items still use placeholder.svg "
+                    "(logo cleanup is tracked separately, not a blocker)")
+          PY

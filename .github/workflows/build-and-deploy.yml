@@ -1,0 +1,66 @@
+name: build-and-deploy
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # Nightly rebuild to refresh GitHub-derived enrichment data (stars,
+    # contributors, last commit, etc.) without requiring a code change.
+    - cron: '23 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/cncf/landscape2:latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore landscape2 cache
+        uses: actions/cache@v4
+        with:
+          path: .landscape2-cache
+          key: landscape2-${{ github.run_id }}
+          restore-keys: |
+            landscape2-
+
+      - name: Build landscape
+        env:
+          GITHUB_TOKENS: ${{ secrets.LANDSCAPE_GH_TOKENS }}
+        run: |
+          landscape2 build \
+            --data-file landscape.yml \
+            --settings-file settings.yml \
+            --guide-file guide.yml \
+            --logos-path logos \
+            --cache-dir .landscape2-cache \
+            --output-dir build
+
+      - name: Copy index.html to 404.html (SPA routing on GH Pages)
+        run: cp build/index.html build/404.html
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

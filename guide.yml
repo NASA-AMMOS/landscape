@@ -1,0 +1,77 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/cncf/landscape2/refs/heads/main/docs/config/schema/guide.schema.json
+#
+# Per-category descriptions surfaced in the landscape's Guide tab.
+# Markdown is supported in `content` fields.
+
+categories:
+  - category: Mission Design & Navigation
+    content: |
+      Software supporting the design, analysis, and optimization of spacecraft
+      trajectories and orbits — from launch through end-of-mission. Includes
+      tools for trajectory search and optimization, orbit determination,
+      maneuver design and analysis, ephemerides, and gravity modeling.
+    subcategories:
+      - subcategory: Mission Analysis & Trajectory Design
+        content: |
+          End-to-end mission analysis and multidisciplinary design optimization
+          frameworks.
+
+  - category: Mission Planning, Sequencing & Analysis
+    content: |
+      Tooling that translates science and engineering goals into executable
+      command sequences — activity planning, sequence generation and
+      validation, downlink and resource scheduling, relay planning, and the
+      open specifications that bridge them.
+    subcategories:
+      - subcategory: Activity Planning & Scheduling
+        content: |
+          Modeling, simulation, and constraint-based scheduling of mission
+          activities.
+      - subcategory: Sequence Generation & Specifications
+        content: |
+          Open specifications and schemas for representing spacecraft
+          command sequences.
+
+  - category: Instrument Data System
+    content: |
+      Capabilities for instrument operations and science data — product
+      management, calibration, visualization, image processing & mapping,
+      and autonomous instrument operations. Bridges flight instruments and
+      the science teams that use their data.
+    subcategories:
+      - subcategory: Science Data Visualization & Mapping
+        content: |
+          Web-based and desktop tools for visualizing science products on
+          Earth, lunar, and planetary surfaces.
+      - subcategory: Instrument Toolkits & GDS
+        content: |
+          Ground data system software — commanding, telemetry, sequencing,
+          and EGSE — typically Python-based for instrument-class missions.
+      - subcategory: Mission Control Integration
+        content: |
+          Plugins and adapters connecting instrument data flows to mission
+          control system frontends.
+
+  - category: Mission Control System
+    content: |
+      Telemetry and command, secure uplink/downlink, data management,
+      operations visualization, monitoring, and testbed support — the
+      software that operations teams use to fly the spacecraft.
+
+  - category: Ground Software Foundations
+    content: |
+      Flight software frameworks and simulation environments that mission
+      software is built on top of. These are the reusable building blocks
+      that underpin many flight projects across the Agency.
+
+  - category: Earth & Science Data Systems
+    content: |
+      Cloud-native pipelines, services, and visualization for Earth
+      observation and science data — ingest, transformation, archive
+      distribution, and browse imagery for NASA's science archives.
+
+  - category: Developer Tools & Standards
+    content: |
+      Cross-cutting tooling for software development across mission
+      programs — best-practices automation, lifecycle modernization, and
+      open specifications that standardize how mission software is built.

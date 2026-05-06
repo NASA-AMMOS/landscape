@@ -1,0 +1,394 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/cncf/landscape2/refs/heads/main/docs/config/schema/data.schema.json
+#
+# Open Mission Software Landscape — data file
+#
+# To add an item:
+#   * Find the right category and subcategory below.
+#   * Insert your item alphabetically by `name` within that subcategory.
+#   * Provide a real SVG logo in logos/ if you have one; otherwise reference
+#     the temporary `placeholder.svg`.
+#   * Open a PR.
+#
+# See CONTRIBUTING.md for inclusion criteria and docs/annotation-schema.md
+# for the NASA / partner annotation conventions.
+
+categories:
+  - name: Mission Design & Navigation
+    subcategories:
+      - name: Mission Analysis & Trajectory Design
+        items:
+          - name: GMAT
+            homepage_url: https://software.nasa.gov/software/GSC-17177-1
+            logo: placeholder.svg
+            description: >-
+              General Mission Analysis Tool. Open-source mission analysis,
+              trajectory optimization, orbit determination, and maneuver
+              design system used by NASA, industry, and academia for
+              end-to-end mission design from LEO through interplanetary
+              trajectories.
+            repo_url: https://github.com/nasa/GMAT
+            license: Apache-2.0
+            extra:
+              documentation_url: https://documentation.help/GMAT/
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.distribution: open-source
+                nasa.missions: "LRO, MAVEN, OSIRIS-REx, Artemis (analysis support)"
+
+          - name: OpenMDAO
+            homepage_url: https://openmdao.org/
+            logo: placeholder.svg
+            description: >-
+              Open-source framework for multidisciplinary design analysis
+              and optimization (MDAO). Heavily used for trajectory
+              optimization, aerospace vehicle design, and coupled-systems
+              analysis.
+            repo_url: https://github.com/OpenMDAO/OpenMDAO
+            license: Apache-2.0
+            extra:
+              documentation_url: https://openmdao.org/newdocs/versions/latest/main.html
+              annotations:
+                submitter.org: GRC
+                submitter.type: nasa-center
+                nasa.center: GRC
+                nasa.distribution: open-source
+
+  - name: Mission Planning, Sequencing & Analysis
+    subcategories:
+      - name: Activity Planning & Scheduling
+        items:
+          - name: Aerie
+            homepage_url: https://nasa-ammos.github.io/aerie-docs/
+            logo: placeholder.svg
+            description: >-
+              Modeling and planning system for spacecraft missions. Provides
+              a modular activity-planning framework with a web UI,
+              scheduler, simulation engine, and external constraint checker.
+              Used by multiple JPL missions for next-generation activity
+              planning.
+            repo_url: https://github.com/NASA-AMMOS/aerie
+            license: MIT
+            extra:
+              documentation_url: https://nasa-ammos.github.io/aerie-docs/
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.ammos_element: MPSA
+                nasa.distribution: open-source
+                nasa.standards: "seq-json"
+
+      - name: Sequence Generation & Specifications
+        items:
+          - name: seq-json
+            homepage_url: https://github.com/NASA-AMMOS/seq-json-schema
+            logo: placeholder.svg
+            description: >-
+              Open specification (JSON schema) for representing spacecraft
+              command sequences. The interchange format underpinning
+              Aerie's SeqN sequencing language and adopted by multiple
+              AMMOS tools.
+            repo_url: https://github.com/NASA-AMMOS/seq-json-schema
+            license: MIT
+            extra:
+              specification: true
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.ammos_element: MPSA
+                nasa.distribution: open-source
+
+  - name: Instrument Data System
+    subcategories:
+      - name: Science Data Visualization & Mapping
+        items:
+          - name: MMGIS
+            homepage_url: https://github.com/NASA-AMMOS/MMGIS
+            logo: placeholder.svg
+            description: >-
+              Multi-Mission Geographic Information System. Web-based
+              mapping and spatial data infrastructure for Earth, lunar, and
+              planetary visualization, research, science, planning, and
+              operations.
+            repo_url: https://github.com/NASA-AMMOS/MMGIS
+            license: Apache-2.0
+            extra:
+              documentation_url: https://nasa-ammos.github.io/MMGIS/
+              package_manager_url: https://pypi.org/project/mmgis-py/
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.ammos_element: IDS
+                nasa.distribution: open-source
+                nasa.missions: "M2020 (Perseverance), MSL (Curiosity), various lunar"
+
+      - name: Instrument Toolkits & GDS
+        items:
+          - name: AIT-Core
+            homepage_url: https://ait-core.readthedocs.io/
+            logo: placeholder.svg
+            description: >-
+              AMMOS Instrument Toolkit (AIT) Core. Python-based software
+              suite for ground data systems — commanding, telemetry
+              uplink/downlink, sequencing, and EGSE for instrument-class
+              missions.
+            repo_url: https://github.com/NASA-AMMOS/AIT-Core
+            license: MIT
+            additional_repos:
+              - repo_url: https://github.com/NASA-AMMOS/AIT-GUI
+                license: MIT
+              - repo_url: https://github.com/NASA-AMMOS/AIT-DSN
+                license: MIT
+            extra:
+              documentation_url: https://ait-core.readthedocs.io/
+              package_manager_url: https://pypi.org/project/ait-core/
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.ammos_element: IDS
+                nasa.distribution: open-source
+                nasa.missions: "EMIT, ECOSTRESS, OCO-3, ISS instruments"
+                nasa.standards: "CCSDS, XTCE"
+
+      - name: Mission Control Integration
+        items:
+          - name: OpenMCT-MCWS
+            homepage_url: https://github.com/NASA-AMMOS/openmct-mcws
+            logo: placeholder.svg
+            description: >-
+              Open MCT plugins providing connectivity to AMMOS Mission
+              data Processing and Control System (MPCS) backends —
+              historical and realtime telemetry, EVRs, commands, and frames.
+            repo_url: https://github.com/NASA-AMMOS/openmct-mcws
+            license: Apache-2.0
+            parent_project: Open MCT
+            extra:
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.ammos_element: IDS
+                nasa.distribution: open-source
+
+  - name: Mission Control System
+    subcategories:
+      - name: Operations Visualization
+        items:
+          - name: Open MCT
+            homepage_url: https://nasa.github.io/openmct/
+            logo: placeholder.svg
+            description: >-
+              Next-generation mission operations visualization framework.
+              Used for displaying telemetry data via a customizable,
+              web-based UI. Co-developed by JPL and Ames; deployed on
+              multiple flight missions and used in commercial spaceflight.
+            repo_url: https://github.com/nasa/openmct
+            license: Apache-2.0
+            extra:
+              documentation_url: https://nasa.github.io/openmct/documentation/
+              package_manager_url: https://www.npmjs.com/package/openmct
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.contributing_centers: "ARC"
+                nasa.ammos_element: MCS
+                nasa.distribution: open-source
+                nasa.missions: "Multiple JPL missions, commercial deployments"
+
+  - name: Ground Software Foundations
+    subcategories:
+      - name: Flight Software Frameworks
+        items:
+          - name: cFS (Core Flight System)
+            homepage_url: https://github.com/nasa/cFS
+            logo: placeholder.svg
+            description: >-
+              Core Flight System. A platform- and project-independent
+              reusable flight software architecture and suite of
+              mission-agnostic applications. Foundation for many GSFC and
+              Agency-wide flight missions.
+            repo_url: https://github.com/nasa/cFS
+            license: Apache-2.0
+            extra:
+              documentation_url: https://github.com/nasa/cFS/tree/main/docs
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.distribution: open-source
+                nasa.missions: "LRO, MMS, GPM, RBSP, SunRISE, many others"
+
+          - name: F´ (F Prime)
+            homepage_url: https://nasa.github.io/fprime/
+            logo: placeholder.svg
+            description: >-
+              Component-driven flight software framework for spaceflight
+              and embedded systems. Designed for small-scale flight systems
+              but flown on larger missions; deployed on the Mars Helicopter
+              (Ingenuity), CubeSats, and SmallSats.
+            repo_url: https://github.com/nasa/fprime
+            license: Apache-2.0
+            extra:
+              documentation_url: https://nasa.github.io/fprime/UsersGuide/guide.html
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.distribution: open-source
+                nasa.missions: "Ingenuity (Mars Helicopter), MarCO, ASTERIA, LunaH-Map, ISAAC"
+
+      - name: Simulation & Test
+        items:
+          - name: NOS3
+            homepage_url: https://github.com/nasa/nos3
+            logo: placeholder.svg
+            description: >-
+              NASA Operational Simulator for Small Satellites. A test bed
+              for small satellite missions providing a software environment
+              for flight software development, testing, and operations.
+            repo_url: https://github.com/nasa/nos3
+            license: NASA-1.3
+            extra:
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.distribution: open-source
+
+          - name: Trick
+            homepage_url: https://nasa.github.io/trick/
+            logo: placeholder.svg
+            description: >-
+              Trick Simulation Environment. A simulation development
+              framework providing a common set of simulation capabilities
+              and utilities to build simulations automatically. Used
+              extensively for human spaceflight vehicle simulation at JSC.
+            repo_url: https://github.com/nasa/trick
+            license: NASA-1.3
+            extra:
+              documentation_url: https://nasa.github.io/trick/documentation/Documentation-Home.html
+              annotations:
+                submitter.org: JSC
+                submitter.type: nasa-center
+                nasa.center: JSC
+                nasa.distribution: open-source
+
+  - name: Earth & Science Data Systems
+    subcategories:
+      - name: Data Management & Pipelines
+        items:
+          - name: Cumulus
+            homepage_url: https://nasa.github.io/cumulus/
+            logo: placeholder.svg
+            description: >-
+              Cloud-native, open-source framework for processing and
+              managing NASA Earth science data. The data management
+              framework behind multiple NASA Earth Observing System Data
+              and Information System (EOSDIS) DAACs.
+            repo_url: https://github.com/nasa/cumulus
+            license: Apache-2.0
+            extra:
+              documentation_url: https://nasa.github.io/cumulus/docs/cumulus-docs-readme
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.sponsor_program: ESDIS
+                nasa.distribution: open-source
+
+          - name: Harmony
+            homepage_url: https://harmony.earthdata.nasa.gov/
+            logo: placeholder.svg
+            description: >-
+              Service orchestration layer for NASA Earthdata services.
+              Provides a uniform API for transformation services
+              (subsetting, reformat, regrid) across NASA Earth science
+              data archives.
+            repo_url: https://github.com/nasa/harmony
+            license: Apache-2.0
+            extra:
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.sponsor_program: ESDIS
+                nasa.distribution: open-source
+
+      - name: Imagery & Visualization Services
+        items:
+          - name: NASA Worldview
+            homepage_url: https://worldview.earthdata.nasa.gov/
+            logo: placeholder.svg
+            description: >-
+              Interactive visualization of full-resolution global satellite
+              imagery from NASA's Earth observing satellites. Powered by
+              GIBS (Global Imagery Browse Services).
+            repo_url: https://github.com/nasa-gibs/worldview
+            license: NASA-1.3
+            extra:
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.sponsor_program: ESDIS
+                nasa.distribution: open-source
+
+          - name: Web WorldWind
+            homepage_url: https://worldwind.arc.nasa.gov/web/
+            logo: placeholder.svg
+            description: >-
+              Open-source virtual globe library for the web. Renders an
+              interactive 3D globe with terrain, imagery, and vector data
+              overlays. Useful for mission visualization and Earth science.
+            repo_url: https://github.com/NASAWorldWind/WebWorldWind
+            license: NASA-1.3
+            extra:
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+
+  - name: Developer Tools & Standards
+    subcategories:
+      - name: Best Practices & Lifecycle
+        items:
+          - name: SLIM
+            homepage_url: https://nasa-ammos.github.io/slim/
+            logo: placeholder.svg
+            description: >-
+              Software Lifecycle Improvement & Modernization. A
+              community-driven initiative that captures best practices for
+              NASA software development and provides automation to apply
+              and check them.
+            repo_url: https://github.com/NASA-AMMOS/slim
+            license: Apache-2.0
+            extra:
+              documentation_url: https://nasa-ammos.github.io/slim/
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.distribution: open-source
+
+          - name: slim-leaderboard
+            homepage_url: https://github.com/NASA-AMMOS/slim-leaderboard
+            logo: placeholder.svg
+            description: >-
+              Generates a report of SLIM best-practices compliance across
+              a GitHub organization or set of repositories.
+            repo_url: https://github.com/NASA-AMMOS/slim-leaderboard
+            license: Apache-2.0
+            parent_project: SLIM
+            extra:
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.distribution: open-source

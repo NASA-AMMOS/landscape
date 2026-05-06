@@ -1,0 +1,19 @@
+# Local landscape2 build artifacts
+/build/
+/.landscape2-cache/
+
+# One-shot transformer output (regenerate as needed; not source of truth)
+/tools/seed-proposals.yml
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store

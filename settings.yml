@@ -1,0 +1,102 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/cncf/landscape2/refs/heads/main/docs/config/schema/settings.schema.json
+#
+# Landscape2 settings for the Open Mission Software Landscape.
+# See https://github.com/cncf/landscape2/blob/main/docs/config/settings.yml
+# for the full reference.
+
+foundation: Open Mission Software
+
+url: https://nasa-ammos.github.io/landscape
+
+# Brand colors (RGBA strings — required format)
+colors:
+  color1: "rgba(11, 61, 145, 1)"   # NASA blue
+  color2: "rgba(252, 61, 33, 1)"   # NASA red
+  color3: "rgba(11, 61, 145, 0.75)"
+  color4: "rgba(11, 61, 145, 0.5)"
+  color5: "rgba(11, 61, 145, 0.25)"
+  color6: "rgba(0, 0, 0, 0.85)"
+  color7: "rgba(0, 0, 0, 0.65)"
+
+header:
+  links:
+    github: https://github.com/NASA-AMMOS/landscape
+
+images:
+  favicon: https://nasa.github.io/openmct/favicon.ico
+  header_logo: https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg
+
+# Top-level groups: shape the navigation by source community rather than
+# by AMMOS element only — partner-developed items appear alongside NASA
+# items rather than in a second-class bucket.
+groups:
+  - name: Mission Operations
+    normalized_name: ops
+    categories:
+      - Mission Design & Navigation
+      - Mission Planning, Sequencing & Analysis
+      - Instrument Data System
+      - Mission Control System
+  - name: Foundations & Cross-Cutting
+    normalized_name: foundations
+    categories:
+      - Ground Software Foundations
+      - Earth & Science Data Systems
+      - Developer Tools & Standards
+
+featured_items: []
+screenshot_width: 1920
+
+categories:
+  - name: Mission Design & Navigation
+    subcategories:
+      - Mission Analysis & Trajectory Design
+  - name: Mission Planning, Sequencing & Analysis
+    subcategories:
+      - Activity Planning & Scheduling
+      - Sequence Generation & Specifications
+  - name: Instrument Data System
+    subcategories:
+      - Science Data Visualization & Mapping
+      - Instrument Toolkits & GDS
+      - Mission Control Integration
+  - name: Mission Control System
+    subcategories:
+      - Operations Visualization
+  - name: Ground Software Foundations
+    subcategories:
+      - Flight Software Frameworks
+      - Simulation & Test
+  - name: Earth & Science Data Systems
+    subcategories:
+      - Data Management & Pipelines
+      - Imagery & Visualization Services
+  - name: Developer Tools & Standards
+    subcategories:
+      - Best Practices & Lifecycle
+
+# Tags rendered as filter chips. NASA-specific values from
+# `extra.annotations` should ALSO be added to each item's `tag:` list to
+# be filterable here (annotations alone are not rendered as filters).
+tags:
+  ammos:
+    - mdn
+    - mpsa
+    - ids
+    - mcs
+  centers:
+    - center-jpl
+    - center-gsfc
+    - center-arc
+    - center-jsc
+    - center-grc
+    - center-msfc
+    - center-larc
+    - center-ksc
+    - center-jhuapl
+  partners:
+    - partner-agency
+    - partner-university
+    - partner-commercial
+    - partner-foundation
+    - partner-individual
