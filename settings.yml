@@ -56,7 +56,7 @@ groups:
       - Instrument Data System
       - Mission Control System
       - Engineering Software
-      - Earth & Science Data Systems
+      - Science Data Systems
       - Developer Tools & Standards
   - name: Mission Software
     normalized_name: software
@@ -74,7 +74,7 @@ groups:
   - name: Science Data
     normalized_name: science-data
     categories:
-      - Earth & Science Data Systems
+      - Science Data Systems
   # AMMOS quick-filter view — pulls items via second_path, so AMMOS
   # entries appear here in addition to their primary category.
   - name: AMMOS
@@ -164,7 +164,7 @@ categories:
       - MPSA
       - IDS
       - MCS
-  - name: Earth & Science Data Systems
+  - name: Science Data Systems
     subcategories:
       - Data Management & Pipelines
       - Imagery & Visualization Services

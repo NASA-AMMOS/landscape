@@ -912,7 +912,7 @@ categories:
                 nasa.center: JPL
                 nasa.distribution: open-source
 
-  - name: Earth & Science Data Systems
+  - name: Science Data Systems
     subcategories:
       - name: Data Management & Pipelines
         items:
@@ -1298,6 +1298,118 @@ categories:
                 nasa.center: GSFC
                 nasa.distribution: open-source
 
+          - name: PDS API
+            homepage_url: https://nasa-pds.github.io/pds-api/
+            logo: placeholder.svg
+            description: >-
+              PDS Web API specifications and reference services
+              providing programmatic access to the Planetary Data
+              System — search, fetch, and bundle retrieval over
+              the federated PDS archive.
+            repo_url: https://github.com/nasa-pds/pds-api
+            license: Apache-2.0
+            project: jpl
+            extra:
+              tag:
+                - nasa-center
+                - jpl
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.sponsor_program: PDS
+                nasa.distribution: open-source
+
+          - name: PDS Deep Archive
+            homepage_url: https://nasa-pds.github.io/deep-archive/
+            logo: placeholder.svg
+            description: >-
+              Open Archival Information System (OAIS) component for
+              the Planetary Data System — packages PDS bundles into
+              Archive Information Packages (AIPs) and Submission
+              Information Packages (SIPs) for long-term preservation
+              and ingest into archival storage.
+            repo_url: https://github.com/nasa-pds/deep-archive
+            license: Apache-2.0
+            project: jpl
+            extra:
+              tag:
+                - nasa-center
+                - jpl
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.sponsor_program: PDS
+                nasa.distribution: open-source
+                nasa.standards: "OAIS (ISO 14721)"
+
+          - name: PDS Transform
+            homepage_url: https://nasa-pds.github.io/transform/
+            logo: placeholder.svg
+            description: >-
+              Bidirectional transform tool between PDS3 and PDS4
+              product labels — eases migration of legacy planetary
+              data into the modern PDS4 information model.
+            repo_url: https://github.com/nasa-pds/transform
+            license: Apache-2.0
+            project: jpl
+            extra:
+              tag:
+                - nasa-center
+                - jpl
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.sponsor_program: PDS
+                nasa.distribution: open-source
+
+          - name: PDS Validate
+            homepage_url: https://nasa-pds.github.io/validate/
+            logo: placeholder.svg
+            description: >-
+              Reference validator for PDS4 product labels and data
+              archives — schema validation, schematron rules, and
+              referential-integrity checks. The PDS Engineering
+              Node's QA gate for incoming planetary archives.
+            repo_url: https://github.com/nasa-pds/validate
+            license: Apache-2.0
+            project: jpl
+            extra:
+              tag:
+                - nasa-center
+                - jpl
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.sponsor_program: PDS
+                nasa.distribution: open-source
+
+          - name: PDS4 Information Model
+            homepage_url: https://nasa-pds.github.io/pds4-information-model/
+            logo: placeholder.svg
+            description: >-
+              Source of truth for the PDS4 Information Model —
+              schemas, schematrons, ontologies, and tooling that
+              defines how planetary data products are structured,
+              labeled, and exchanged across NASA's planetary
+              archives.
+            repo_url: https://github.com/nasa-pds/pds4-information-model
+            license: Apache-2.0
+            project: jpl
+            extra:
+              tag:
+                - nasa-center
+                - jpl
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.sponsor_program: PDS
+                nasa.distribution: open-source
+
           - name: PyKE
             homepage_url: https://github.com/KeplerGO/PyKE
             logo: placeholder.svg
@@ -1625,6 +1737,17 @@ categories:
               program providing reusable mission ops software (PlanDev,
               MMGIS, AIT, SLIM, OpenMCT-MCWS, seq-json) across NASA flight
               missions.
+
+          - name: NASA-PDS
+            homepage_url: https://pds.nasa.gov/
+            logo: nasa-meatball.svg
+            description: >-
+              Planetary Data System. JPL-managed, federated archive
+              for NASA's planetary science data — discipline nodes
+              (Atmospheres, Geosciences, Imaging, NAIF, Plasma,
+              Ring-Moon, Small Bodies) plus an Engineering Node that
+              maintains the PDS4 Information Model and core tooling
+              (validate, deep-archive, transform, registry).
 
           # Programs below are commented out for now — restore by removing
           # the leading "# " on each line. They're real programs we'll

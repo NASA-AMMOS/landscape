@@ -117,23 +117,37 @@ categories:
           and manipulator platforms the ability to sense, decide, and
           act in mission environments.
 
-  - category: Earth & Science Data Systems
+  - category: Science Data Systems
     content: |
-      NASA's Earth Science Data Systems (ESDS) Program oversees the
-      full life cycle of NASA's Earth science data — from acquisition
-      through processing and distribution. NASA Earth science data has
-      been *free and open to all users for any purpose* since 1994,
-      with all software made available as open source since 2015.
+      Software supporting NASA's science data archives —
+      Earth observation, planetary, and astrophysics. Two
+      programs anchor most of the work:
 
-      The data is operated through the
-      [ESDIS Project](https://www.earthdata.nasa.gov/about/esdis),
-      which runs the Earth Observing System Data and Information
-      System (EOSDIS) — a network of **eleven Distributed Active
-      Archive Centers (DAACs)** including ASF, ASDC, CDDIS, GHRC,
-      GES DISC, LP DAAC, LAADS, NSIDC, ORNL DAAC, OB.DAAC, and
-      PO.DAAC. The category collects the cloud-native pipelines,
-      services, search/discovery, and browse imagery that move
-      science data from observation to analysis.
+      - **[ESDS](https://www.earthdata.nasa.gov/about)** —
+        Earth Science Data Systems Program. The
+        [ESDIS Project](https://www.earthdata.nasa.gov/about/esdis)
+        runs EOSDIS through **eleven DAACs** (ASF, ASDC, CDDIS,
+        GHRC, GES DISC, LP DAAC, LAADS, NSIDC, ORNL DAAC,
+        OB.DAAC, PO.DAAC). NASA Earth-science data has been
+        *free and open to all users for any purpose* since
+        1994, with software open-source since 2015.
+      - **[PDS](https://pds.nasa.gov/)** — Planetary Data
+        System. Federated archive across discipline nodes
+        (Atmospheres, Geosciences, Imaging, Navigation &
+        Ancillary Information / NAIF, Plasma Interactions,
+        Ring-Moon Systems, Small Bodies) plus an Engineering
+        Node that maintains the
+        [PDS4 Information Model](https://nasa-pds.github.io/pds4-information-model/)
+        and core tooling (validate, deep-archive, transform,
+        the registry stack).
+
+      Plus astrophysics archives operated by partner institutes
+      (STScI for HST/JWST, HEASARC for high-energy, MAST for
+      observations) — items from those missions live here too.
+
+      The category collects cloud-native pipelines, services,
+      search/discovery, and browse imagery that move science
+      data from observation to analysis.
 
   - category: Developer Tools & Standards
     content: |
