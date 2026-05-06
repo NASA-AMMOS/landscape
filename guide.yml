@@ -103,20 +103,40 @@ categories:
 
   - category: AMMOS
     content: |
-      Quick-filter view of the Advanced Multi-Mission Operations System
-      (AMMOS) program's contributions, organized by AMMOS architectural
-      element. Items here also appear in their primary mission-software
-      category.
+      The **Advanced Multi-Mission Operations System** —
+      *"Software to Empower Space Exploration."* AMMOS is a
+      multi-center NASA program producing reusable mission-operations
+      software across five architectural elements:
+
+      - **MDN** (Mission Design & Navigation) — trajectory optimization
+        and orbit determination
+      - **MPSA** (Mission Planning, Sequencing & Analysis) — activity
+        planning and sequence generation
+      - **IDS** (Instrument Data System) — science data management
+        and calibration
+      - **MCS** (Mission Control System) — secure command, telemetry,
+        and operations visualization
+      - **Security** — application and data protection across the stack
+
+      The program brings together teams from JPL/Caltech, GSFC, and
+      ARC, with partners at Johns Hopkins APL and Carnegie Mellon SEI.
+      Many AMMOS products are open source — program home at
+      [ammos.nasa.gov](https://ammos.nasa.gov/), code at
+      [github.com/NASA-AMMOS](https://github.com/NASA-AMMOS).
+
+      This tab is a quick-filter view — items also appear in their
+      primary mission-software category.
     subcategories:
       - subcategory: MPSA
         content: |
-          Mission Planning, Sequencing & Analysis — activity planning,
-          sequence specifications, scheduling.
+          Mission Planning, Sequencing & Analysis — activity planning
+          and sequence generation, plus the analytical tooling around
+          them.
       - subcategory: IDS
         content: |
-          Instrument Data System — instrument toolkits, data products,
-          and ground-data-system frontends.
+          Instrument Data System — instrument toolkits, data
+          management, calibration, and ground-data-system frontends.
       - subcategory: MCS
         content: |
-          Mission Control System — operations visualization and the
-          telemetry/command frontend stack.
+          Mission Control System — secure command, telemetry, and
+          operations visualization for in-flight mission control.
