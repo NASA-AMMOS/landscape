@@ -44,26 +44,35 @@ groups:
       - Mission Planning, Sequencing & Analysis
       - Instrument Data System
       - Mission Control System
-      - Ground Software Foundations
+      - Software Foundations
       - Earth & Science Data Systems
       - Developer Tools & Standards
-  - name: Mission Operations
-    normalized_name: ops
+  - name: Mission Software
+    normalized_name: software
     categories:
       - Mission Design & Navigation
       - Mission Planning, Sequencing & Analysis
       - Instrument Data System
       - Mission Control System
-  - name: Foundations & Cross-Cutting
+  - name: Foundations & Tools
     normalized_name: foundations
     categories:
-      - Ground Software Foundations
-      - Earth & Science Data Systems
+      - Software Foundations
       - Developer Tools & Standards
+  - name: Science Data
+    normalized_name: science-data
+    categories:
+      - Earth & Science Data Systems
+  # AMMOS quick-filter view — pulls items via second_path, so AMMOS
+  # entries appear here in addition to their primary category.
+  - name: AMMOS
+    normalized_name: ammos
+    categories:
+      - AMMOS
   # Members tab — organizations contributing software to the landscape
   # (parallel to CNCF's Platinum/Gold/etc. members tab). The categories
-  # below are intentionally NOT in the All / Mission Operations /
-  # Foundations groups, so member orgs only show in the Members view.
+  # below are intentionally NOT in any other group, so member orgs
+  # only show in the Members view.
   - name: Members
     normalized_name: members
     categories:
@@ -132,12 +141,17 @@ categories:
     subcategories:
       - Operations Visualization
       - Mission Control Integration
-  - name: Ground Software Foundations
+  - name: Software Foundations
     subcategories:
       - Flight Software Frameworks
       - Simulation & Test
       - Communications & Networking
       - Robotics & Autonomy
+  - name: AMMOS
+    subcategories:
+      - MPSA
+      - IDS
+      - MCS
   - name: Earth & Science Data Systems
     subcategories:
       - Data Management & Pipelines

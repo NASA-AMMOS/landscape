@@ -113,6 +113,8 @@ categories:
           - name: PlanDev
             homepage_url: https://nasa-ammos.github.io/plandev-docs/
             logo: plandev.svg
+            second_path:
+              - "AMMOS / MPSA"
             description: >-
               Modeling and planning system for spacecraft missions
               (formerly Aerie). Provides a modular activity-planning
@@ -163,6 +165,8 @@ categories:
           - name: seq-json
             homepage_url: https://github.com/NASA-AMMOS/seq-json-schema
             logo: placeholder.svg
+            second_path:
+              - "AMMOS / MPSA"
             description: >-
               Open specification (JSON schema) for representing spacecraft
               command sequences. The interchange format underpinning
@@ -233,6 +237,8 @@ categories:
           - name: MMGIS
             homepage_url: https://github.com/NASA-AMMOS/MMGIS
             logo: mmgis.svg
+            second_path:
+              - "AMMOS / IDS"
             description: >-
               Multi-Mission Geographic Information System. Web-based
               mapping and spatial data infrastructure for Earth, lunar, and
@@ -327,6 +333,8 @@ categories:
           - name: AIT-Core
             homepage_url: https://ait-core.readthedocs.io/
             logo: placeholder.svg
+            second_path:
+              - "AMMOS / IDS"
             description: >-
               AMMOS Instrument Toolkit (AIT) Core. Python-based software
               suite for ground data systems — commanding, telemetry
@@ -406,6 +414,8 @@ categories:
           - name: Open MCT
             homepage_url: https://nasa.github.io/openmct/
             logo: openmct.svg
+            second_path:
+              - "AMMOS / MCS"
             description: >-
               Next-generation mission operations visualization framework.
               Used for displaying telemetry data via a customizable,
@@ -442,6 +452,8 @@ categories:
           - name: OpenMCT-MCWS
             homepage_url: https://github.com/NASA-AMMOS/openmct-mcws
             logo: placeholder.svg
+            second_path:
+              - "AMMOS / IDS"
             description: >-
               Open MCT plugins providing connectivity to AMMOS Mission
               data Processing and Control System (MPCS) backends —
@@ -462,7 +474,7 @@ categories:
                 nasa.ammos_element: IDS
                 nasa.distribution: open-source
 
-  - name: Ground Software Foundations
+  - name: Software Foundations
     subcategories:
       - name: Flight Software Frameworks
         items:
@@ -1505,6 +1517,24 @@ categories:
                 submitter.type: nasa-center
                 nasa.center: LaRC
                 nasa.distribution: open-source
+
+  # ============================================================
+  # AMMOS quick-filter category. Items appear here via `second_path:
+  # ["AMMOS / <element>"]` on the original entry — each AMMOS item
+  # lives in its primary mission-software category and is also
+  # surfaced under AMMOS / <element> for the program audience. The
+  # category is only referenced by the AMMOS group (settings.yml),
+  # so AMMOS items aren't duplicated in the All view.
+  # ============================================================
+
+  - name: AMMOS
+    subcategories:
+      - name: MPSA
+        items: []
+      - name: IDS
+        items: []
+      - name: MCS
+        items: []
 
   # ============================================================
   # Members — organizations contributing software to the landscape.

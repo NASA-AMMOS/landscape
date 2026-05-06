@@ -61,11 +61,12 @@ categories:
           Plugins and adapters connecting instrument data flows to mission
           control system frontends.
 
-  - category: Ground Software Foundations
+  - category: Software Foundations
     content: |
-      Flight software frameworks and simulation environments that mission
-      software is built on top of. These are the reusable building blocks
-      that underpin many flight projects across the Agency.
+      Flight software frameworks, simulation environments, communications
+      middleware, and robotics tooling that mission software is built on
+      top of — reusable building blocks that underpin many flight and
+      ground projects across the Agency.
     subcategories:
       - subcategory: Communications & Networking
         content: |
@@ -97,3 +98,23 @@ categories:
           Theorem provers, formal proof libraries, and software
           verification tooling — mathematical correctness checks
           used to gain assurance in mission-critical software.
+
+  - category: AMMOS
+    content: |
+      Quick-filter view of the Advanced Multi-Mission Operations System
+      (AMMOS) program's contributions, organized by AMMOS architectural
+      element. Items here also appear in their primary mission-software
+      category.
+    subcategories:
+      - subcategory: MPSA
+        content: |
+          Mission Planning, Sequencing & Analysis — activity planning,
+          sequence specifications, scheduling.
+      - subcategory: IDS
+        content: |
+          Instrument Data System — instrument toolkits, data products,
+          and ground-data-system frontends.
+      - subcategory: MCS
+        content: |
+          Mission Control System — operations visualization and the
+          telemetry/command frontend stack.
