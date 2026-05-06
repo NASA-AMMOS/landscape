@@ -310,16 +310,17 @@ categories:
 
       - name: Instrument Toolkit
         items:
-          - name: AIT-Core
+          - name: AIT
             homepage_url: https://ait-core.readthedocs.io/
             logo: placeholder.svg
             second_path:
               - "AMMOS / IDS"
             description: >-
-              AMMOS Instrument Toolkit (AIT) Core. Python-based software
-              suite for ground data systems — commanding, telemetry
-              uplink/downlink, sequencing, and EGSE for instrument-class
-              missions.
+              AMMOS Instrument Toolkit. Python-based software suite for
+              ground data systems — commanding, telemetry uplink/downlink,
+              sequencing, and EGSE for instrument-class missions. Suite
+              comprises AIT-Core (the foundational library, primary repo),
+              AIT-GUI (web UI), and AIT-DSN (Deep Space Network tools).
             repo_url: https://github.com/NASA-AMMOS/AIT-Core
             license: MIT
             project: ammos
