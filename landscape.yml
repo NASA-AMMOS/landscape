@@ -121,7 +121,7 @@ categories:
         items:
           - name: MMGIS
             homepage_url: https://github.com/NASA-AMMOS/MMGIS
-            logo: placeholder.svg
+            logo: mmgis.svg
             description: >-
               Multi-Mission Geographic Information System. Web-based
               mapping and spatial data infrastructure for Earth, lunar, and
