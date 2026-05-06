@@ -61,10 +61,11 @@ groups:
       - Mission Planning, Sequencing & Analysis
       - Instrument Data System
       - Mission Control System
-  - name: Foundations & Tools
-    normalized_name: foundations
+  - name: Engineering Software
     categories:
       - Engineering Software
+  - name: Dev Tools and Standards
+    categories:
       - Developer Tools & Standards
   - name: Science Data
     normalized_name: science-data
