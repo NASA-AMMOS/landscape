@@ -604,7 +604,7 @@ categories:
 
           - name: NOS3
             homepage_url: https://github.com/nasa/nos3
-            logo: placeholder.svg
+            logo: nos3.svg
             description: >-
               NASA Operational Simulator for Small Satellites. A test bed
               for small satellite missions providing a software environment
