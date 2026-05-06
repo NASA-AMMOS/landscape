@@ -27,8 +27,7 @@ operations, and science data processing**. Generated with
 │   ├── annotation-schema.md # nasa.* / partner.* annotation conventions
 │   ├── category-taxonomy.md # What goes where
 │   └── governance.md        # Maintainer team, review process, scope
-├── .github/workflows/       # validate (PR) + build-and-deploy (main + nightly)
-└── CODEOWNERS               # Single landscape-maintainers team
+└── .github/workflows/       # validate (PR) + build-and-deploy (main + nightly)
 ```
 
 ## Local development

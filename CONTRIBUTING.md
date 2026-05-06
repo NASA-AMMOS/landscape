@@ -43,8 +43,8 @@ An item is in scope if **all** of the following are true:
    over time.
 5. CI runs `landscape2 validate` automatically. Address any schema errors
    before review.
-6. The `@NASA-AMMOS/landscape-maintainers` team is auto-requested for
-   review. At least one approval is required to merge.
+6. Tag `@NASA-AMMOS/landscape-maintainers` on the PR for review. At
+   least one approval from the team is required to merge.
 
 ## Modifying or removing an item
 

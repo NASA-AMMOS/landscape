@@ -38,13 +38,12 @@ Every change goes through PR review. There is no other way to mutate
 the catalog.
 
 1. **Author opens a PR** editing `landscape.yml` (or the relevant
-   supporting file).
+   supporting file). Tag `@NASA-AMMOS/landscape-maintainers` for review.
 2. **CI runs `landscape2 validate`.** Schema errors block merge.
-3. **CODEOWNERS auto-requests review** from `@NASA-AMMOS/landscape-maintainers`.
-4. **At least one maintainer approval is required** to merge content
-   PRs. Two approvals required for governance changes (CODEOWNERS,
-   scope, taxonomy restructure).
-5. **Squash-merge to `main`** triggers the build-and-deploy workflow,
+3. **At least one maintainer approval is required** to merge content
+   PRs. Two approvals required for governance changes (scope,
+   taxonomy restructure, branch protection).
+4. **Squash-merge to `main`** triggers the build-and-deploy workflow,
    which publishes to GitHub Pages.
 
 Maintainer review focuses on:
