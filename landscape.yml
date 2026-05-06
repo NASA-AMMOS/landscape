@@ -347,9 +347,38 @@ categories:
               Core Flight System. A platform- and project-independent
               reusable flight software architecture and suite of
               mission-agnostic applications. Foundation for many GSFC and
-              Agency-wide flight missions.
+              Agency-wide flight missions. Ships with a suite of standard
+              mission applications (CF, CS, DS, FM, HK, HS, LC, MD, MM,
+              SBN, SC, SCA, SCH) listed below.
             repo_url: https://github.com/nasa/cFS
             license: Apache-2.0
+            additional_repos:
+              - repo_url: https://github.com/nasa/CF
+                license: NASA-1.3
+              - repo_url: https://github.com/nasa/CS
+                license: NASA-1.3
+              - repo_url: https://github.com/nasa/DS
+                license: NASA-1.3
+              - repo_url: https://github.com/nasa/FM
+                license: NASA-1.3
+              - repo_url: https://github.com/nasa/HK
+                license: NASA-1.3
+              - repo_url: https://github.com/nasa/HS
+                license: NASA-1.3
+              - repo_url: https://github.com/nasa/LC
+                license: NASA-1.3
+              - repo_url: https://github.com/nasa/MD
+                license: NASA-1.3
+              - repo_url: https://github.com/nasa/MM
+                license: NASA-1.3
+              - repo_url: https://github.com/nasa/SBN
+                license: NASA-1.3
+              - repo_url: https://github.com/nasa/SC
+                license: NASA-1.3
+              - repo_url: https://github.com/nasa/SCA
+                license: NASA-1.3
+              - repo_url: https://github.com/nasa/SCH
+                license: NASA-1.3
             extra:
               tag:
                 - submitter-nasa-center
