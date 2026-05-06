@@ -674,36 +674,19 @@ categories:
               framework providing a common set of simulation capabilities
               and utilities to build simulations automatically. Used
               extensively for human spaceflight vehicle simulation at JSC.
+              Companion TrickFMI extension (Functional Mockup Interface
+              bridge for Trick-based sims) listed below.
             repo_url: https://github.com/nasa/trick
             license: NASA-1.3
             project: jsc
+            additional_repos:
+              - repo_url: https://github.com/nasa/TrickFMI
+                license: NASA-1.3
             extra:
               tag:
                 - nasa-center
                 - jsc
               documentation_url: https://nasa.github.io/trick/documentation/Documentation-Home.html
-              annotations:
-                submitter.org: JSC
-                submitter.type: nasa-center
-                nasa.center: JSC
-                nasa.distribution: open-source
-
-          - name: TrickFMI
-            homepage_url: https://github.com/nasa/TrickFMI
-            logo: placeholder.svg
-            description: >-
-              Functional Mockup Interface (FMI) bridge for Trick-based
-              simulations. Lets Trick exchange models with FMI-compliant
-              tools so JSC simulations can integrate components built in
-              the broader European simulation ecosystem.
-            repo_url: https://github.com/nasa/TrickFMI
-            license: NASA-1.3
-            project: jsc
-            parent_project: Trick
-            extra:
-              tag:
-                - nasa-center
-                - jsc
               annotations:
                 submitter.org: JSC
                 submitter.type: nasa-center
