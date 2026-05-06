@@ -267,7 +267,7 @@ categories:
               continuously developed since 1966. Used to process
               multi-dimensional imaging data from Voyager, Mars
               missions, Cassini, Galileo, and many others.
-            repo_url: https://github.com/nasa/VICAR
+            repo_url: https://github.com/NASA-AMMOS/VICAR
             license: NASA-1.3
             project: jpl
             extra:
