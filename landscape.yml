@@ -17,6 +17,26 @@ categories:
     subcategories:
       - name: Mission Analysis & Trajectory Design
         items:
+          - name: Dymos
+            homepage_url: https://github.com/OpenMDAO/dymos
+            logo: placeholder.svg
+            description: >-
+              Library for solving general optimal control problems within
+              the OpenMDAO multidisciplinary optimization framework.
+              Widely used for trajectory optimization, vehicle design,
+              and coupled-systems analysis.
+            repo_url: https://github.com/OpenMDAO/dymos
+            license: Apache-2.0
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-grc
+              annotations:
+                submitter.org: GRC
+                submitter.type: nasa-center
+                nasa.center: GRC
+                nasa.distribution: open-source
+
           - name: GMAT
             homepage_url: https://software.nasa.gov/software/GSC-17177-1
             logo: placeholder.svg
@@ -247,6 +267,27 @@ categories:
     subcategories:
       - name: Operations Visualization
         items:
+          - name: cFS-EDS-GroundStation
+            homepage_url: https://github.com/nasa/cFS-EDS-GroundStation
+            logo: placeholder.svg
+            description: >-
+              Python-based graphical telemetry and telecommand frontend
+              for any mission running Core Flight System (cFS) with
+              CCSDS Electronic Data Sheets (EDS). Generic ground station
+              GUI that adapts to a mission's EDS definitions.
+            repo_url: https://github.com/nasa/cFS-EDS-GroundStation
+            license: Apache-2.0
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-grc
+              annotations:
+                submitter.org: GRC
+                submitter.type: nasa-center
+                nasa.center: GRC
+                nasa.distribution: open-source
+                nasa.standards: "CCSDS, EDS"
+
           - name: Open MCT
             homepage_url: https://nasa.github.io/openmct/
             logo: placeholder.svg
@@ -429,6 +470,26 @@ categories:
 
       - name: Communications & Networking
         items:
+          - name: Channel Emulator
+            homepage_url: https://github.com/nasa/channel-emulator
+            logo: placeholder.svg
+            description: >-
+              Software-based network testing tool providing data framing,
+              flexible protocol gateway behavior, and network emulation.
+              Used at GRC for development and testing of space
+              communications protocols.
+            repo_url: https://github.com/nasa/channel-emulator
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-grc
+              annotations:
+                submitter.org: GRC
+                submitter.type: nasa-center
+                nasa.center: GRC
+                nasa.distribution: open-source
+
           - name: meshNetwork
             homepage_url: https://github.com/nasa/meshNetwork
             logo: placeholder.svg
