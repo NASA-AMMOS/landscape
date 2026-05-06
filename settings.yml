@@ -8,6 +8,11 @@ foundation: Open Mission Software
 
 url: https://nasa-ammos.github.io/landscape
 
+# Hosted at github.io/<org>/<repo>, so the SPA needs to know the
+# subpath; without this, in-app navigation routes to /<route>
+# (root) instead of /landscape/<route> and 404s.
+base_path: /landscape
+
 # Brand colors (RGBA strings — required format)
 colors:
   color1: "rgba(11, 61, 145, 1)"   # NASA blue
