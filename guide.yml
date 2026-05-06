@@ -66,9 +66,10 @@ categories:
     subcategories:
       - subcategory: Communications & Networking
         content: |
-          Spacecraft and inter-vehicle communications software — mesh
-          networks, peer-to-peer protocols, and middleware for
-          formations and small satellites.
+          Spacecraft, inter-vehicle, and ground-systems communications
+          software — mesh networks, peer-to-peer protocols, network
+          emulation, and messaging middleware that bridges flight and
+          ground assets.
 
   - category: Earth & Science Data Systems
     content: |

@@ -384,6 +384,27 @@ categories:
                 nasa.distribution: open-source
                 nasa.missions: "Ingenuity (Mars Helicopter), MarCO, ASTERIA, LunaH-Map, ISAAC"
 
+          - name: OSAL
+            homepage_url: https://github.com/nasa/osal
+            logo: placeholder.svg
+            description: >-
+              Operating System Abstraction Layer. C library that
+              isolates embedded application software from the
+              underlying RTOS through a generic, portable interface.
+              Foundational dependency that cFS relies on for
+              portability across operating systems and hardware.
+            repo_url: https://github.com/nasa/osal
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-gsfc
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.distribution: open-source
+
       - name: Simulation & Test
         items:
           - name: Input Device Framework (IDF)
@@ -490,6 +511,26 @@ categories:
                 nasa.center: GRC
                 nasa.distribution: open-source
 
+          - name: GMSEC API
+            homepage_url: https://github.com/nasa/GMSEC_API
+            logo: placeholder.svg
+            description: >-
+              Goddard Mission Services Evolution Center API.
+              Publish-subscribe messaging middleware for ground data
+              systems integration — coordinates ground software
+              components across mission operations programs at GSFC.
+            repo_url: https://github.com/nasa/GMSEC_API
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-gsfc
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.distribution: open-source
+
           - name: meshNetwork
             homepage_url: https://github.com/nasa/meshNetwork
             logo: placeholder.svg
@@ -515,6 +556,28 @@ categories:
     subcategories:
       - name: Data Management & Pipelines
         items:
+          - name: cmr-opensearch
+            homepage_url: https://github.com/nasa/cmr-opensearch
+            logo: placeholder.svg
+            description: >-
+              OpenSearch interface to NASA's Common Metadata Repository
+              (CMR). Enables data discovery, search, and access across
+              EOSDIS Earth science data holdings via the OpenSearch
+              standard.
+            repo_url: https://github.com/nasa/cmr-opensearch
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-gsfc
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.sponsor_program: ESDIS
+                nasa.distribution: open-source
+                nasa.standards: "OpenSearch"
+
           - name: Cumulus
             homepage_url: https://nasa.github.io/cumulus/
             logo: placeholder.svg
@@ -534,6 +597,69 @@ categories:
                 submitter.org: JPL
                 submitter.type: nasa-center
                 nasa.center: JPL
+                nasa.sponsor_program: ESDIS
+                nasa.distribution: open-source
+
+          - name: DRIP-SLIP
+            homepage_url: https://github.com/NASA-DEVELOP/DRIP-SLIP
+            logo: placeholder.svg
+            description: >-
+              Detecting Real-time Increased Precipitation / Sudden
+              Landslide Identification Package. Analyzes red-band
+              spectral data plus soil moisture from Landsat 8, ASTER,
+              and SRTM to identify potential landslide events.
+            repo_url: https://github.com/NASA-DEVELOP/DRIP-SLIP
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-gsfc
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.sponsor_program: DEVELOP
+                nasa.distribution: open-source
+
+          - name: Earthdata Search
+            homepage_url: https://search.earthdata.nasa.gov/
+            logo: placeholder.svg
+            description: >-
+              Public web application for discovering, searching,
+              comparing, visualizing, and accessing EOSDIS Earth
+              science data holdings. NASA's primary user-facing portal
+              for Earth observation data discovery.
+            repo_url: https://github.com/nasa/earthdata-search
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-gsfc
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.sponsor_program: ESDIS
+                nasa.distribution: open-source
+
+          - name: earthdata-varinfo
+            homepage_url: https://github.com/nasa/earthdata-varinfo
+            logo: placeholder.svg
+            description: >-
+              Python package developed for EOSDIS that parses Earth
+              observation science granule structure — extracts
+              variable, dimension, and CF-convention metadata to
+              support Harmony backend services and other data tooling.
+            repo_url: https://github.com/nasa/earthdata-varinfo
+            license: Apache-2.0
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-gsfc
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
                 nasa.sponsor_program: ESDIS
                 nasa.distribution: open-source
 
@@ -581,6 +707,27 @@ categories:
                 nasa.sponsor_program: ESDIS
                 nasa.distribution: open-source
 
+          - name: HyperInSPACE
+            homepage_url: https://github.com/nasa/HyperInSPACE
+            logo: placeholder.svg
+            description: >-
+              Hyperspectral In situ Support for the PACE mission.
+              Processes automated above-water ocean color radiometry
+              with quality assurance, uncertainty estimation, and
+              propagation methods aligned with PACE protocols.
+            repo_url: https://github.com/nasa/HyperInSPACE
+            license: MIT
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-gsfc
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.distribution: open-source
+                nasa.missions: "PACE"
+
           - name: ISS Camera Geolocate
             homepage_url: https://github.com/nasa/ISS_Camera_Geolocate
             logo: placeholder.svg
@@ -623,6 +770,26 @@ categories:
                 nasa.center: JPL
                 nasa.distribution: open-source
                 nasa.missions: "Terra (MISR instrument)"
+
+          - name: NASAaccess
+            homepage_url: https://github.com/nasa/NASAaccess
+            logo: placeholder.svg
+            description: >-
+              R package that downloads and reformats NASA Earth
+              observation data products — climate (CMIP5) and weather
+              (GPM, TRMM, GLDAS) — into gridded ASCII tables ready
+              for hydrological modeling.
+            repo_url: https://github.com/nasa/NASAaccess
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-gsfc
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.distribution: open-source
 
           - name: RT Retrieval Framework
             homepage_url: https://github.com/nasa/RtRetrievalFramework
