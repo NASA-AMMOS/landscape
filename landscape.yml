@@ -19,7 +19,7 @@ categories:
         items:
           - name: Dymos
             homepage_url: https://github.com/OpenMDAO/dymos
-            logo: placeholder.svg
+            logo: dymos.svg
             description: >-
               Library for solving general optimal control problems within
               the OpenMDAO multidisciplinary optimization framework.
@@ -40,7 +40,7 @@ categories:
 
           - name: GMAT
             homepage_url: https://software.nasa.gov/software/GSC-17177-1
-            logo: placeholder.svg
+            logo: gmat.svg
             description: >-
               General Mission Analysis Tool. Open-source mission analysis,
               trajectory optimization, orbit determination, and maneuver
