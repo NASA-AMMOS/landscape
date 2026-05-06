@@ -69,6 +69,7 @@ MISSION_CATEGORY_TOKENS = {
 LICENSE_MAP = {
     "NASA Open Source": "NASA-1.3",
     "NASA Open Source Agreement": "NASA-1.3",
+    "NASA Open Source Agreement 1.3": "NASA-1.3",
     "NOSA": "NASA-1.3",
     "Apache License, Version 2.0": "Apache-2.0",
     "Apache 2.0": "Apache-2.0",
@@ -77,8 +78,11 @@ LICENSE_MAP = {
     "BSD 3-Clause": "BSD-3-Clause",
     "BSD 2-Clause": "BSD-2-Clause",
     "GPL v2": "GPL-2.0",
+    "GPLv2": "GPL-2.0",
     "GPL v3": "GPL-3.0",
+    "GPLv3": "GPL-3.0",
     "MPL 2.0": "MPL-2.0",
+    "MPLv2": "MPL-2.0",
     "Public Domain": "CC0-1.0",
 }
 
@@ -140,6 +144,46 @@ def load_source(source: str) -> Any:
             return json.load(resp)
     with open(source, "r", encoding="utf-8") as fh:
         return json.load(fh)
+
+
+def _supplementary_urls(release: dict) -> list[str]:
+    """Pull URLs out of Code.gov 2.0's heterogeneous `supplementaryURLs`
+    (list of dicts with a `URL` key, sometimes plain strings)."""
+    out: list[str] = []
+    for s in release.get("supplementaryURLs") or []:
+        if isinstance(s, dict) and isinstance(s.get("URL"), str):
+            out.append(s["URL"])
+        elif isinstance(s, str):
+            out.append(s)
+    return out
+
+
+def normalize_code_gov(release: dict) -> dict:
+    """Translate a Code.gov 2.0 `release` into the catalog.json shape the
+    rest of the pipeline expects. Concatenates repositoryURL + homepageURL
+    + supplementaryURLs into `Public Code Repo` so the GitHub regex finds
+    a GH link wherever it lives."""
+    perms = release.get("permissions") or {}
+    license_names = [
+        l.get("name") for l in (perms.get("licenses") or [])
+        if isinstance(l, dict) and l.get("name")
+    ]
+    repo_blob = " ".join(
+        filter(None, [
+            release.get("repositoryURL", ""),
+            release.get("homepageURL", ""),
+            *_supplementary_urls(release),
+        ])
+    )
+    return {
+        "Software": release.get("name", ""),
+        "Description": release.get("description", ""),
+        "Public Code Repo": repo_blob,
+        "External Link": release.get("homepageURL", ""),
+        "License": license_names,
+        "NASA Center": release.get("organization", ""),
+        "Categories": release.get("tags", []) or [],
+    }
 
 
 def existing_repo_urls() -> set[str]:
@@ -259,17 +303,45 @@ def main() -> int:
         default=str(REPO_ROOT / "tools" / "seed-proposals.yml"),
         help="Output file for proposals",
     )
+    parser.add_argument(
+        "--format",
+        choices=["auto", "catalog-json", "code-gov"],
+        default="auto",
+        help=(
+            "Source schema. 'catalog-json' is the legacy Open-Source-Catalog "
+            "shape (top-level list with capitalized fields). 'code-gov' is "
+            "the federal Code.gov 2.0 schema (`releases` list with lowercase "
+            "fields). 'auto' (default) picks based on the top-level keys."
+        ),
+    )
     args = parser.parse_args()
 
     print(f"Loading {args.source} ...")
     raw = load_source(args.source)
 
-    if isinstance(raw, dict) and "projects" in raw:
-        entries = raw["projects"]
-    elif isinstance(raw, list):
-        entries = raw
-    else:
-        raise SystemExit("❌ unrecognized source schema")
+    fmt = args.format
+    if fmt == "auto":
+        if isinstance(raw, dict) and "releases" in raw:
+            fmt = "code-gov"
+        elif isinstance(raw, dict) and "projects" in raw:
+            fmt = "catalog-json"  # historical alias
+        elif isinstance(raw, list):
+            fmt = "catalog-json"
+        else:
+            raise SystemExit("❌ unrecognized source schema (use --format to override)")
+        print(f"  detected format: {fmt}")
+
+    if fmt == "code-gov":
+        if not (isinstance(raw, dict) and isinstance(raw.get("releases"), list)):
+            raise SystemExit("❌ --format code-gov expects a dict with a 'releases' list")
+        entries = [normalize_code_gov(r) for r in raw["releases"]]
+    else:  # catalog-json
+        if isinstance(raw, dict) and "projects" in raw:
+            entries = raw["projects"]
+        elif isinstance(raw, list):
+            entries = raw
+        else:
+            raise SystemExit("❌ --format catalog-json expects a top-level list or {projects: [...]}")
 
     print(f"  {len(entries)} entries in source")
 
