@@ -85,6 +85,27 @@ categories:
     subcategories:
       - name: Activity Planning & Scheduling
         items:
+          - name: EUROPA
+            homepage_url: https://github.com/nasa/europa
+            logo: placeholder.svg
+            description: >-
+              Extendable Uniform Remote Operations Planning
+              Architecture. General-purpose AI planning and
+              constraint-reasoning framework — generates plans for
+              complex parallel activities, with reusable components
+              for time, resources, and constraint propagation.
+            repo_url: https://github.com/nasa/europa
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-arc
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+
           - name: PlanDev
             homepage_url: https://nasa-ammos.github.io/plandev-docs/
             logo: plandev.svg
@@ -139,6 +160,26 @@ categories:
     subcategories:
       - name: Science Data Visualization & Mapping
         items:
+          - name: DERT
+            homepage_url: https://github.com/nasa/DERT
+            logo: placeholder.svg
+            description: >-
+              Desktop Exploration of Remote Terrain. 3D viewer for
+              large Digital Terrain Models — built to help science
+              and engineering teams explore topography and spatial
+              relationships on planetary surfaces.
+            repo_url: https://github.com/nasa/DERT
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-arc
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+
           - name: MMGIS
             homepage_url: https://github.com/NASA-AMMOS/MMGIS
             logo: mmgis.svg
@@ -164,6 +205,27 @@ categories:
                 nasa.distribution: open-source
                 nasa.missions: "M2020 (Perseverance), MSL (Curiosity), various lunar"
 
+          - name: Stereo Pipeline
+            homepage_url: https://github.com/NeoGeographyToolkit/StereoPipeline
+            logo: placeholder.svg
+            description: >-
+              NASA Ames Stereo Pipeline (ASP). Suite of automated
+              geodesy and stereogrammetry tools for processing
+              planetary imagery — produces Digital Terrain Models
+              from imagery captured by orbiting and landed robotic
+              explorers across the solar system.
+            repo_url: https://github.com/NeoGeographyToolkit/StereoPipeline
+            license: Apache-2.0
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-arc
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+
           - name: VICAR
             homepage_url: https://www-mipl.jpl.nasa.gov/vicar_open.html
             logo: placeholder.svg
@@ -185,6 +247,26 @@ categories:
                 nasa.center: JPL
                 nasa.distribution: open-source
                 nasa.missions: "Voyager, Mars (multiple), Cassini, Galileo, many others"
+
+          - name: Vision Workbench
+            homepage_url: https://github.com/nasa/visionworkbench
+            logo: placeholder.svg
+            description: >-
+              Modular, extensible computer vision framework for
+              automated science and engineering analysis of large
+              satellite and planetary imagery. Foundation that NASA
+              Ames Stereo Pipeline is built on top of.
+            repo_url: https://github.com/nasa/visionworkbench
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-arc
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
 
       - name: Instrument Toolkits & GDS
         items:
@@ -296,8 +378,14 @@ categories:
               Used for displaying telemetry data via a customizable,
               web-based UI. Co-developed by JPL and Ames; deployed on
               multiple flight missions and used in commercial spaceflight.
+              Companion demo and tutorial repos listed below.
             repo_url: https://github.com/nasa/openmct
             license: Apache-2.0
+            additional_repos:
+              - repo_url: https://github.com/nasa/openmct-demo
+                license: NASA-1.3
+              - repo_url: https://github.com/nasa/openmct-tutorial
+                license: NASA-1.3
             extra:
               tag:
                 - submitter-nasa-center
@@ -476,6 +564,48 @@ categories:
                 nasa.center: GSFC
                 nasa.distribution: open-source
 
+          - name: Prognostics Algorithm Library
+            homepage_url: https://github.com/nasa/PrognosticsAlgorithmLibrary
+            logo: placeholder.svg
+            description: >-
+              Suite of MATLAB algorithms for model-based prognostics —
+              state estimation, prediction, and remaining-useful-life
+              computation for engineering systems. Developed at the
+              ARC Prognostics Center of Excellence and applied to
+              spacecraft electrical-power V&V.
+            repo_url: https://github.com/nasa/PrognosticsAlgorithmLibrary
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-arc
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+
+          - name: Prognostics Model Library
+            homepage_url: https://github.com/nasa/PrognosticsModelLibrary
+            logo: placeholder.svg
+            description: >-
+              Modeling framework for prognostics — defines and builds
+              models of engineering systems used in remaining-useful-
+              life computation. Companion to Prognostics Algorithm
+              Library.
+            repo_url: https://github.com/nasa/PrognosticsModelLibrary
+            license: NASA-1.3
+            parent_project: Prognostics Algorithm Library
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-arc
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+
           - name: Trick
             homepage_url: https://nasa.github.io/trick/
             logo: placeholder.svg
@@ -607,6 +737,27 @@ categories:
                 nasa.distribution: open-source
                 nasa.standards: "OpenSearch"
 
+          - name: Crisis Mapping Toolkit
+            homepage_url: https://github.com/nasa/CrisisMappingToolkit
+            logo: placeholder.svg
+            description: >-
+              Geospatial data processing toolkit for cartographic
+              products that improve understanding of large-scale
+              crises — flood mapping, fire detection, and other
+              event-driven Earth-observation analysis built on
+              satellite imagery.
+            repo_url: https://github.com/nasa/CrisisMappingToolkit
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-arc
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+
           - name: Cumulus
             homepage_url: https://nasa.github.io/cumulus/
             logo: placeholder.svg
@@ -627,6 +778,26 @@ categories:
                 submitter.type: nasa-center
                 nasa.center: JPL
                 nasa.sponsor_program: ESDIS
+                nasa.distribution: open-source
+
+          - name: DELTA
+            homepage_url: https://github.com/nasa/delta
+            logo: placeholder.svg
+            description: >-
+              Deep Earth Learning, Training and Analysis. Toolkit for
+              applying deep learning techniques to satellite imagery
+              classification — built so Earth scientists can use
+              state-of-the-art ML without specialized infrastructure.
+            repo_url: https://github.com/nasa/delta
+            license: Apache-2.0
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-arc
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
                 nasa.distribution: open-source
 
           - name: DRIP-SLIP
@@ -778,6 +949,48 @@ categories:
                 nasa.distribution: open-source
                 nasa.missions: "ISS"
 
+          - name: kepler-pipeline
+            homepage_url: https://github.com/nasa/kepler-pipeline
+            logo: placeholder.svg
+            description: >-
+              Kepler Science Data Processing Pipeline. The official
+              science processing pipeline for the Kepler space
+              telescope mission — photometric calibration, cotrending,
+              and transiting-planet detection on Kepler long- and
+              short-cadence data.
+            repo_url: https://github.com/nasa/kepler-pipeline
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-arc
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+                nasa.missions: "Kepler"
+
+          - name: legacy-mars-global-climate-model
+            homepage_url: https://github.com/nasa/legacy-mars-global-climate-model
+            logo: placeholder.svg
+            description: >-
+              NASA Ames Legacy Mars Global Climate Model. Public
+              release of the ARIES/GEOS-based Mars GCM with Mars
+              physics packages — simulates Martian atmospheric
+              circulation, surface conditions, and seasonal cycles.
+            repo_url: https://github.com/nasa/legacy-mars-global-climate-model
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-arc
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+
           - name: MISR Toolkit
             homepage_url: https://nasa.github.io/MISR-Toolkit/
             logo: placeholder.svg
@@ -819,6 +1032,27 @@ categories:
                 submitter.type: nasa-center
                 nasa.center: GSFC
                 nasa.distribution: open-source
+
+          - name: PyKE
+            homepage_url: https://github.com/KeplerGO/PyKE
+            logo: placeholder.svg
+            description: >-
+              Kepler Community Data Analysis Tools. Python tools for
+              working with Kepler/K2 archive products — calibration,
+              detrending, and visualization for time-series and
+              pixel-level data from the Kepler space telescope.
+            repo_url: https://github.com/KeplerGO/PyKE
+            license: NASA-1.3
+            extra:
+              tag:
+                - submitter-nasa-center
+                - center-arc
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+                nasa.missions: "Kepler, K2"
 
           - name: RT Retrieval Framework
             homepage_url: https://github.com/nasa/RtRetrievalFramework
@@ -874,8 +1108,17 @@ categories:
               Open-source virtual globe library for the web. Renders an
               interactive 3D globe with terrain, imagery, and vector data
               overlays. Useful for mission visualization and Earth science.
+              Part of the broader NASA WorldWind family with companion
+              Java SDK, Android SDK, and Server Kit listed below.
             repo_url: https://github.com/NASAWorldWind/WebWorldWind
             license: NASA-1.3
+            additional_repos:
+              - repo_url: https://github.com/NASAWorldWind/WorldWindAndroid
+                license: NASA-1.3
+              - repo_url: https://github.com/NASAWorldWind/WorldWindJava
+                license: NASA-1.3
+              - repo_url: https://github.com/NASAWorldWind/WorldWindServerKit
+                license: NASA-1.3
             extra:
               tag:
                 - submitter-nasa-center
