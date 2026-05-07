@@ -1763,10 +1763,14 @@ categories:
             homepage_url: https://ammos.nasa.gov/
             logo: ammos.svg
             description: >-
-              Advanced Multi-Mission Operations System. JPL-led, multi-center
-              program providing reusable mission ops software (PlanDev,
-              MMGIS, AIT, SLIM, OpenMCT-MCWS, seq-json) across NASA flight
-              missions.
+              The Advanced Multi-Mission Operations System (AMMOS) offers
+              a common set of adaptable software products used to support
+              robotic mission operations across NASA. The AMMOS products
+              help you plan your mission, navigate, connect with your
+              spacecraft and instruments, and generate science data. The
+              AMMOS supports all mission phases, from proposal through
+              operations. When a mission utilizes the AMMOS products, it
+              saves resources for other mission needs.
 
           - name: NASA-PDS
             homepage_url: https://pds.nasa.gov/
