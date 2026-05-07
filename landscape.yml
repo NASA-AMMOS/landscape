@@ -1218,6 +1218,41 @@ categories:
                 nasa.center: ARC
                 nasa.distribution: open-source
 
+          - name: MAAP
+            homepage_url: https://maap-project.org/
+            logo: placeholder.svg
+            description: >-
+              Multi-Mission Algorithm and Analysis Platform — joint
+              ESA-NASA collaborative data system providing collocated
+              datasets, processing, and analysis tools for biomass
+              and Earth-observation research. The single entry below
+              rolls in the canonical platform repos: maap-py (Python
+              client), maap-api-nasa (NASA-side API), maap-eoapi
+              (STAC infrastructure), maap-documentation, and the
+              stac_ipyleaflet visualization extension.
+            repo_url: https://github.com/maap-project/maap-py
+            license: Apache-2.0
+            project: gsfc
+            additional_repos:
+              - repo_url: https://github.com/maap-project/maap-api-nasa
+                license: Apache-2.0
+              - repo_url: https://github.com/maap-project/maap-documentation
+                license: Apache-2.0
+              - repo_url: https://github.com/maap-project/maap-eoapi
+                license: Apache-2.0
+              - repo_url: https://github.com/maap-project/stac_ipyleaflet
+                license: Apache-2.0
+            extra:
+              tag:
+                - nasa-center
+                - gsfc
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.sponsor_program: ESDIS
+                nasa.distribution: open-source
+
           - name: MISR Toolkit
             homepage_url: https://nasa.github.io/MISR-Toolkit/
             logo: placeholder.svg
