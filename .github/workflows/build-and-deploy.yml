@@ -86,6 +86,34 @@ jobs:
             echo "WARNING: didn't find the 'all' magic-bypass; landscape2 may have changed the bundle." >&2
           fi
 
+      - name: Uppercase tag-formatter (filter chip labels)
+        # landscape2's chip-label formatter `hi(e)` Title-Cases each
+        # word ("jpl" -> "Jpl"). Card chips have CSS text-uppercase
+        # so it's masked there, but filter-modal options don't —
+        # showing "Jpl"/"Ammos"/"Mpsa" instead of the proper acronyms.
+        # Replace the formatter body with toUpperCase + hyphen->space
+        # so all our identifier-style tags render as proper acronyms.
+        run: |
+          python3 <<'PY'
+          import re, glob
+          pat = (
+              r'hi=e=>\{const r=e\.replace\([^,]+," "\)\.split\(" "\);'
+              r'for\(let n=0;n<r\.length;n\+\+\)r\[n\]=[A-Za-z0-9_]+\(r\[n\]\);'
+              r'return r\.join\(" "\)\}'
+          )
+          patched = 0
+          for js in glob.glob('build/assets/*.js'):
+              with open(js) as f: text = f.read()
+              new = re.sub(pat, 'hi=e=>e.toUpperCase().replace(/-/g," ")', text)
+              if new != text:
+                  with open(js, 'w') as f: f.write(new)
+                  patched += 1
+          print(f'patched tag-formatter in {patched} bundle(s)')
+          if patched == 0:
+              import sys
+              print('WARNING: tag-formatter pattern not found; landscape2 may have changed it.', file=sys.stderr)
+          PY
+
       - name: Hide "Powered by CNCF" footer line
         # landscape2 hardcodes a "Powered by [CNCF interactive
         # landscapes generator]." line in the footer DOM template;
