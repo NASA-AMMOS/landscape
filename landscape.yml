@@ -1772,6 +1772,23 @@ categories:
               operations. When a mission utilizes the AMMOS products, it
               saves resources for other mission needs.
 
+              AMMOS software supports five mission system functions.
+              **Mission Design and Navigation** handles trajectory search
+              and optimization, orbit determination, maneuver design and
+              analysis, solar-system ephemerides, and gravity modeling.
+              **Mission Planning, Sequencing, and Analysis** covers
+              activity planning, sequence generation and validation,
+              mission downlink analysis, multi-mission resource
+              scheduling, and relay planning. The **Instrument Data
+              System** manages science products, performs instrument
+              calibration, supports science data visualization, provides
+              image processing and mapping, and enables instrument
+              autonomy. The **Mission Control System** handles secure
+              uplink and downlink, data management, data visualization,
+              monitoring, and testbed support. **Security** spans
+              application and data security plus system monitoring
+              across the stack.
+
           - name: NASA-PDS
             homepage_url: https://pds.nasa.gov/
             logo: nasa-meatball.svg
