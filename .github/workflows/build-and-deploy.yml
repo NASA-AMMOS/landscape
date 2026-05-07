@@ -50,21 +50,47 @@ jobs:
             --cache-dir .landscape2-cache \
             --output-dir build
 
-      - name: Strip hardcoded "TAG " prefix from tag chips
-        # landscape2's chip template is `<div>TAG ` — every rendered tag
-        # chip reads "TAG <name>" (e.g. "TAG JPL"). The template is
-        # hardcoded in the bundled JS with no settings flag to disable.
-        # Patch the built bundle to drop the redundant "TAG " label.
-        # Re-check landscape2 versions on upgrade — this can no-op
-        # silently if the template changes.
+      - name: Strip hardcoded "TAG " prefix from chips and stats table
+        # landscape2 hardcodes "TAG " into two separate template strings:
+        #   - main bundle: `<div>TAG `   used by chip rendering on cards
+        #   - stats bundle: `<tr><td>TAG </td>` used by the stats-page
+        #     "Distribution by ... TAG" table (each row reads "TAG <value>")
+        # No settings flag suppresses either. Patch both so chips/rows
+        # show just the value. Defensive: warns if patterns disappear
+        # upstream.
         run: |
           set -e
-          before=$(grep -ohc '<div>TAG ' build/assets/*.js | paste -sd+ - | bc || echo 0)
+          before_div=$(grep -ohc '<div>TAG ' build/assets/*.js | paste -sd+ - | bc || echo 0)
+          before_td=$(grep -ohc '<tr><td>TAG ' build/assets/*.js | paste -sd+ - | bc || echo 0)
           find build/assets -name '*.js' -exec sed -i 's|<div>TAG |<div>|g' {} +
-          after=$(grep -ohc '<div>TAG ' build/assets/*.js | paste -sd+ - | bc || echo 0)
-          echo "stripped chip prefix: $before occurrences -> $after"
-          if [ "$before" = "0" ]; then
-            echo "WARNING: didn't find the chip-prefix template; landscape2 may have changed it." >&2
+          find build/assets -name '*.js' -exec sed -i 's|<tr><td>TAG </td>|<tr><td></td>|g' {} +
+          after_div=$(grep -ohc '<div>TAG ' build/assets/*.js | paste -sd+ - | bc || echo 0)
+          after_td=$(grep -ohc '<tr><td>TAG ' build/assets/*.js | paste -sd+ - | bc || echo 0)
+          echo "stripped chip <div> prefix:  $before_div -> $after_div"
+          echo "stripped stats <tr><td> prefix: $before_td -> $after_td"
+          if [ "$before_div" = "0" ] && [ "$before_td" = "0" ]; then
+            echo "WARNING: didn't find chip-prefix or stats-prefix templates; landscape2 may have changed them." >&2
+          fi
+
+      - name: Uppercase stats-page tag/maturity labels via CSS
+        # Stats-page tables and the maturity chart legend pass tag/project
+        # values raw ("arc", "jpl", "ammos") — they should render as
+        # acronyms. Inject a CSS rule that uppercases the relevant
+        # cells. The existing Content-*.css that ships the stats table
+        # styles is the right target (one file with `_table_` class names).
+        run: |
+          set -e
+          rule='table td:first-child,.apexcharts-legend-text{text-transform:uppercase}'
+          patched=0
+          for css in build/assets/Content-*.css; do
+            if grep -q '_table_' "$css"; then
+              echo "$rule" >> "$css"
+              patched=$((patched + 1))
+            fi
+          done
+          echo "uppercase rule appended to $patched stats CSS file(s)"
+          if [ "$patched" = "0" ]; then
+            echo "WARNING: stats CSS file not found." >&2
           fi
 
       - name: Disable "all" magic-bypass in group filter
