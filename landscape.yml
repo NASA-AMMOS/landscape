@@ -30,7 +30,6 @@ categories:
             project: grc
             extra:
               tag:
-                - nasa-center
                 - grc
               annotations:
                 submitter.org: GRC
@@ -52,7 +51,6 @@ categories:
             project: gsfc
             extra:
               tag:
-                - nasa-center
                 - gsfc
               documentation_url: https://documentation.help/GMAT/
               annotations:
@@ -75,7 +73,6 @@ categories:
             project: grc
             extra:
               tag:
-                - nasa-center
                 - grc
               documentation_url: https://openmdao.org/newdocs/versions/latest/main.html
               annotations:
@@ -102,7 +99,6 @@ categories:
             project: arc
             extra:
               tag:
-                - nasa-center
                 - arc
               annotations:
                 submitter.org: ARC
@@ -126,7 +122,6 @@ categories:
             project: ammos
             extra:
               tag:
-                - nasa-center
                 - jpl
                 - mpsa
               documentation_url: https://nasa-ammos.github.io/plandev-docs/
@@ -154,7 +149,6 @@ categories:
             project: larc
             extra:
               tag:
-                - nasa-center
                 - larc
               annotations:
                 submitter.org: LaRC
@@ -180,7 +174,6 @@ categories:
             project: arc
             extra:
               tag:
-                - nasa-center
                 - arc
               annotations:
                 submitter.org: ARC
@@ -201,7 +194,6 @@ categories:
             project: arc
             extra:
               tag:
-                - nasa-center
                 - arc
               annotations:
                 submitter.org: ARC
@@ -222,7 +214,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -245,7 +236,6 @@ categories:
             project: ammos
             extra:
               tag:
-                - nasa-center
                 - jpl
                 - ids
               documentation_url: https://nasa-ammos.github.io/MMGIS/
@@ -276,7 +266,6 @@ categories:
             project: ammos
             extra:
               tag:
-                - nasa-center
                 - jpl
                 - ids
               annotations:
@@ -300,7 +289,6 @@ categories:
             project: arc
             extra:
               tag:
-                - nasa-center
                 - arc
               annotations:
                 submitter.org: ARC
@@ -331,7 +319,6 @@ categories:
                 license: MIT
             extra:
               tag:
-                - nasa-center
                 - jpl
                 - ids
               documentation_url: https://ait-core.readthedocs.io/
@@ -358,7 +345,6 @@ categories:
             project: msfc
             extra:
               tag:
-                - nasa-center
                 - msfc
               annotations:
                 submitter.org: MSFC
@@ -383,7 +369,6 @@ categories:
             project: grc
             extra:
               tag:
-                - nasa-center
                 - grc
               annotations:
                 submitter.org: GRC
@@ -413,7 +398,6 @@ categories:
                 license: NASA-1.3
             extra:
               tag:
-                - nasa-center
                 - jpl
                 - arc
                 - mcs
@@ -445,7 +429,6 @@ categories:
             parent_project: Open MCT
             extra:
               tag:
-                - nasa-center
                 - jpl
                 - ids
               annotations:
@@ -473,7 +456,6 @@ categories:
             project: jsc
             extra:
               tag:
-                - nasa-center
                 - jsc
               annotations:
                 submitter.org: JSC
@@ -523,7 +505,6 @@ categories:
                 license: NASA-1.3
             extra:
               tag:
-                - nasa-center
                 - gsfc
               documentation_url: https://github.com/nasa/cFS/tree/main/docs
               annotations:
@@ -546,7 +527,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               documentation_url: https://nasa.github.io/fprime/UsersGuide/guide.html
               annotations:
@@ -570,7 +550,6 @@ categories:
             project: gsfc
             extra:
               tag:
-                - nasa-center
                 - gsfc
               annotations:
                 submitter.org: GSFC
@@ -594,7 +573,6 @@ categories:
             project: jsc
             extra:
               tag:
-                - nasa-center
                 - jsc
               annotations:
                 submitter.org: JSC
@@ -614,7 +592,6 @@ categories:
             project: gsfc
             extra:
               tag:
-                - nasa-center
                 - gsfc
               annotations:
                 submitter.org: GSFC
@@ -636,7 +613,6 @@ categories:
             project: arc
             extra:
               tag:
-                - nasa-center
                 - arc
               annotations:
                 submitter.org: ARC
@@ -658,7 +634,6 @@ categories:
             parent_project: Prognostics Algorithm Library
             extra:
               tag:
-                - nasa-center
                 - arc
               annotations:
                 submitter.org: ARC
@@ -684,7 +659,6 @@ categories:
                 license: NASA-1.3
             extra:
               tag:
-                - nasa-center
                 - jsc
               documentation_url: https://nasa.github.io/trick/documentation/Documentation-Home.html
               annotations:
@@ -708,7 +682,6 @@ categories:
             project: grc
             extra:
               tag:
-                - nasa-center
                 - grc
               annotations:
                 submitter.org: GRC
@@ -729,7 +702,6 @@ categories:
             project: gsfc
             extra:
               tag:
-                - nasa-center
                 - gsfc
               annotations:
                 submitter.org: GSFC
@@ -757,7 +729,6 @@ categories:
                 license: Apache-2.0
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -780,7 +751,6 @@ categories:
             project: msfc
             extra:
               tag:
-                - nasa-center
                 - msfc
               annotations:
                 submitter.org: MSFC
@@ -806,7 +776,6 @@ categories:
                 license: BSD-3-Clause
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -826,7 +795,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -847,7 +815,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -868,7 +835,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -893,7 +859,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -914,7 +879,6 @@ categories:
             project: gsfc
             extra:
               tag:
-                - nasa-center
                 - gsfc
               annotations:
                 submitter.org: GSFC
@@ -938,7 +902,6 @@ categories:
             project: arc
             extra:
               tag:
-                - nasa-center
                 - arc
               annotations:
                 submitter.org: ARC
@@ -959,7 +922,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               documentation_url: https://nasa.github.io/cumulus/docs/cumulus-docs-readme
               annotations:
@@ -982,7 +944,6 @@ categories:
             project: arc
             extra:
               tag:
-                - nasa-center
                 - arc
               annotations:
                 submitter.org: ARC
@@ -1003,7 +964,6 @@ categories:
             project: gsfc
             extra:
               tag:
-                - nasa-center
                 - gsfc
               annotations:
                 submitter.org: GSFC
@@ -1025,7 +985,6 @@ categories:
             project: gsfc
             extra:
               tag:
-                - nasa-center
                 - gsfc
               annotations:
                 submitter.org: GSFC
@@ -1047,7 +1006,6 @@ categories:
             project: gsfc
             extra:
               tag:
-                - nasa-center
                 - gsfc
               annotations:
                 submitter.org: GSFC
@@ -1070,7 +1028,6 @@ categories:
             project: msfc
             extra:
               tag:
-                - nasa-center
                 - msfc
               annotations:
                 submitter.org: MSFC
@@ -1093,7 +1050,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -1115,7 +1071,6 @@ categories:
             project: gsfc
             extra:
               tag:
-                - nasa-center
                 - gsfc
               annotations:
                 submitter.org: GSFC
@@ -1137,7 +1092,6 @@ categories:
             project: msfc
             extra:
               tag:
-                - nasa-center
                 - msfc
               annotations:
                 submitter.org: MSFC
@@ -1165,7 +1119,6 @@ categories:
                 license: GPL-3.0
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -1188,7 +1141,6 @@ categories:
             project: arc
             extra:
               tag:
-                - nasa-center
                 - arc
               annotations:
                 submitter.org: ARC
@@ -1210,7 +1162,6 @@ categories:
             project: arc
             extra:
               tag:
-                - nasa-center
                 - arc
               annotations:
                 submitter.org: ARC
@@ -1244,7 +1195,6 @@ categories:
                 license: Apache-2.0
             extra:
               tag:
-                - nasa-center
                 - gsfc
               annotations:
                 submitter.org: GSFC
@@ -1267,7 +1217,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -1289,7 +1238,6 @@ categories:
             project: gsfc
             extra:
               tag:
-                - nasa-center
                 - gsfc
               annotations:
                 submitter.org: GSFC
@@ -1310,7 +1258,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -1333,7 +1280,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -1355,7 +1301,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -1377,7 +1322,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -1399,7 +1343,6 @@ categories:
             project: arc
             extra:
               tag:
-                - nasa-center
                 - arc
               annotations:
                 submitter.org: ARC
@@ -1425,7 +1368,6 @@ categories:
                 license: NASA-1.3
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -1447,7 +1389,6 @@ categories:
             project: larc
             extra:
               tag:
-                - nasa-center
                 - larc
               annotations:
                 submitter.org: LaRC
@@ -1469,7 +1410,6 @@ categories:
             project: gsfc
             extra:
               tag:
-                - nasa-center
                 - gsfc
               annotations:
                 submitter.org: GSFC
@@ -1499,7 +1439,6 @@ categories:
                 license: NASA-1.3
             extra:
               tag:
-                - nasa-center
                 - arc
               annotations:
                 submitter.org: ARC
@@ -1524,7 +1463,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -1549,7 +1487,6 @@ categories:
                 license: Apache-2.0
             extra:
               tag:
-                - nasa-center
                 - jpl
               documentation_url: https://nasa-ammos.github.io/slim/
               annotations:
@@ -1575,7 +1512,6 @@ categories:
             project: jpl
             extra:
               tag:
-                - nasa-center
                 - jpl
               annotations:
                 submitter.org: JPL
@@ -1599,7 +1535,6 @@ categories:
             project: ammos
             extra:
               tag:
-                - nasa-center
                 - jpl
                 - mpsa
               specification: true
@@ -1625,7 +1560,6 @@ categories:
             project: larc
             extra:
               tag:
-                - nasa-center
                 - larc
               annotations:
                 submitter.org: LaRC
@@ -1650,7 +1584,6 @@ categories:
                 license: NASA-1.3
             extra:
               tag:
-                - nasa-center
                 - larc
               annotations:
                 submitter.org: LaRC

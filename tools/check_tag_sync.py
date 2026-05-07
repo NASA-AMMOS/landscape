@@ -7,10 +7,14 @@ each chip with "TAG", so a tag of `center-jpl` would render as
 "TAG CENTER JPL". Using bare values gives clean chips like "TAG JPL".
 
 Expected tag set per item:
-  - <submitter.type>          e.g. nasa-center
   - <nasa.center>              if present, e.g. jpl
   - <x> for each x in nasa.contributing_centers
   - <nasa.ammos_element>       if present, e.g. mpsa
+
+The submitter.type field is intentionally NOT mirrored as a tag —
+the foundation+project badge already conveys the NASA-affiliation,
+and "nasa-center" was true for every item, making it redundant as
+a filter axis.
 
 All values are lowercased; whitespace and surrounding quotes are stripped.
 
@@ -26,8 +30,6 @@ import yaml
 
 def expected_tags(annotations: dict) -> list[str]:
     tags: list[str] = []
-    if (st := annotations.get("submitter.type")):
-        tags.append(st.strip().lower())
     if (c := annotations.get("nasa.center")):
         tags.append(c.strip().lower())
     if (cc := annotations.get("nasa.contributing_centers")):
@@ -74,9 +76,11 @@ def main() -> int:
             print(f"  - {p}")
         print(
             "\nEvery item's `extra.tag` must equal the union of "
-            "<submitter.type>, <nasa.center>, <each contributing center>, "
-            "<nasa.ammos_element> — bare values, all lowercased. Update the "
-            "item's `tag:` block to match its annotations (or vice versa)."
+            "<nasa.center>, <each contributing center>, and "
+            "<nasa.ammos_element> — bare values, all lowercased. "
+            "submitter.type is intentionally NOT mirrored as a tag. "
+            "Update the item's `tag:` block to match its annotations "
+            "(or vice versa)."
         )
         return 1
 
