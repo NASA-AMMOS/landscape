@@ -1689,7 +1689,7 @@ categories:
         items:
           - name: Ames Research Center
             homepage_url: https://www.nasa.gov/ames/
-            logo: nasa-meatball.svg
+            logo: nasa-arc.svg
             description: >-
               NASA's Silicon Valley center — intelligent systems, autonomy,
               robotics, supercomputing, and Earth/space science. Home of
