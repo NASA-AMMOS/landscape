@@ -203,7 +203,7 @@ categories:
 
           - name: MMGIS
             homepage_url: https://github.com/NASA-AMMOS/MMGIS
-            logo: mmgis.svg
+            logo: mmgis.png
             second_path:
               - "AMMOS / IDS"
             description: >-
@@ -671,7 +671,7 @@ categories:
 
           - name: ION-DTN
             homepage_url: https://github.com/NASA-JPL/ION-DTN
-            logo: placeholder.svg
+            logo: ion-dtn.png
             description: >-
               Interplanetary Overlay Network. NASA's reference
               implementation of the CCSDS/IETF Delay-Tolerant
