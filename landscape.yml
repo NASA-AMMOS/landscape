@@ -29,8 +29,6 @@ categories:
             license: Apache-2.0
             project: grc
             extra:
-              tag:
-                - grc
               annotations:
                 submitter.org: GRC
                 submitter.type: nasa-center
@@ -50,8 +48,6 @@ categories:
             license: Apache-2.0
             project: gsfc
             extra:
-              tag:
-                - gsfc
               documentation_url: https://documentation.help/GMAT/
               annotations:
                 submitter.org: GSFC
@@ -72,8 +68,6 @@ categories:
             license: Apache-2.0
             project: grc
             extra:
-              tag:
-                - grc
               documentation_url: https://openmdao.org/newdocs/versions/latest/main.html
               annotations:
                 submitter.org: GRC
@@ -98,8 +92,6 @@ categories:
             license: NASA-1.3
             project: arc
             extra:
-              tag:
-                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -122,7 +114,6 @@ categories:
             project: ammos
             extra:
               tag:
-                - jpl
                 - mpsa
               documentation_url: https://nasa-ammos.github.io/plandev-docs/
               annotations:
@@ -148,8 +139,6 @@ categories:
             license: NASA-1.3
             project: larc
             extra:
-              tag:
-                - larc
               annotations:
                 submitter.org: LaRC
                 submitter.type: nasa-center
@@ -173,8 +162,6 @@ categories:
             license: Apache-2.0
             project: arc
             extra:
-              tag:
-                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -193,8 +180,6 @@ categories:
             license: NASA-1.3
             project: arc
             extra:
-              tag:
-                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -216,7 +201,6 @@ categories:
             project: ammos
             extra:
               tag:
-                - jpl
                 - ids
               documentation_url: https://nasa-ammos.github.io/MMGIS/
               package_manager_url: https://pypi.org/project/mmgis-py/
@@ -246,7 +230,6 @@ categories:
             project: ammos
             extra:
               tag:
-                - jpl
                 - ids
               annotations:
                 submitter.org: JPL
@@ -279,7 +262,6 @@ categories:
                 license: MIT
             extra:
               tag:
-                - jpl
                 - ids
               documentation_url: https://ait-core.readthedocs.io/
               package_manager_url: https://pypi.org/project/ait-core/
@@ -304,8 +286,6 @@ categories:
             license: NASA-1.3
             project: msfc
             extra:
-              tag:
-                - msfc
               annotations:
                 submitter.org: MSFC
                 submitter.type: nasa-center
@@ -328,8 +308,6 @@ categories:
             license: Apache-2.0
             project: grc
             extra:
-              tag:
-                - grc
               annotations:
                 submitter.org: GRC
                 submitter.type: nasa-center
@@ -358,7 +336,6 @@ categories:
                 license: NASA-1.3
             extra:
               tag:
-                - jpl
                 - arc
                 - mcs
               documentation_url: https://nasa.github.io/openmct/documentation/
@@ -389,7 +366,6 @@ categories:
             parent_project: Open MCT
             extra:
               tag:
-                - jpl
                 - mcs
               annotations:
                 submitter.org: JPL
@@ -415,8 +391,6 @@ categories:
             license: NASA-1.3
             project: jsc
             extra:
-              tag:
-                - jsc
               annotations:
                 submitter.org: JSC
                 submitter.type: nasa-center
@@ -464,8 +438,6 @@ categories:
               - repo_url: https://github.com/nasa/SCH
                 license: NASA-1.3
             extra:
-              tag:
-                - gsfc
               documentation_url: https://github.com/nasa/cFS/tree/main/docs
               annotations:
                 submitter.org: GSFC
@@ -486,8 +458,6 @@ categories:
             license: Apache-2.0
             project: jpl
             extra:
-              tag:
-                - jpl
               documentation_url: https://nasa.github.io/fprime/UsersGuide/guide.html
               annotations:
                 submitter.org: JPL
@@ -509,8 +479,6 @@ categories:
             license: NASA-1.3
             project: gsfc
             extra:
-              tag:
-                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -532,8 +500,6 @@ categories:
             license: NASA-1.3
             project: jsc
             extra:
-              tag:
-                - jsc
               annotations:
                 submitter.org: JSC
                 submitter.type: nasa-center
@@ -551,8 +517,6 @@ categories:
             license: NASA-1.3
             project: gsfc
             extra:
-              tag:
-                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -572,8 +536,6 @@ categories:
             license: NASA-1.3
             project: arc
             extra:
-              tag:
-                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -593,8 +555,6 @@ categories:
             project: arc
             parent_project: Prognostics Algorithm Library
             extra:
-              tag:
-                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -618,8 +578,6 @@ categories:
               - repo_url: https://github.com/nasa/TrickFMI
                 license: NASA-1.3
             extra:
-              tag:
-                - jsc
               documentation_url: https://nasa.github.io/trick/documentation/Documentation-Home.html
               annotations:
                 submitter.org: JSC
@@ -641,8 +599,6 @@ categories:
             license: NASA-1.3
             project: grc
             extra:
-              tag:
-                - grc
               annotations:
                 submitter.org: GRC
                 submitter.type: nasa-center
@@ -661,8 +617,6 @@ categories:
             license: NASA-1.3
             project: gsfc
             extra:
-              tag:
-                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -688,8 +642,6 @@ categories:
               - repo_url: https://github.com/NASA-JPL/pyion
                 license: Apache-2.0
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -710,8 +662,6 @@ categories:
             license: NASA-1.3
             project: msfc
             extra:
-              tag:
-                - msfc
               annotations:
                 submitter.org: MSFC
                 submitter.type: nasa-center
@@ -735,8 +685,6 @@ categories:
               - repo_url: https://github.com/NASA-JPL/jsd
                 license: BSD-3-Clause
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -754,8 +702,6 @@ categories:
             license: Apache-2.0
             project: jpl
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -774,8 +720,6 @@ categories:
             license: Apache-2.0
             project: jpl
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -794,8 +738,6 @@ categories:
             license: Apache-2.0
             project: jpl
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -818,8 +760,6 @@ categories:
             license: Apache-2.0
             project: jpl
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -838,8 +778,6 @@ categories:
             license: NASA-1.3
             project: gsfc
             extra:
-              tag:
-                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -861,8 +799,6 @@ categories:
             license: NASA-1.3
             project: arc
             extra:
-              tag:
-                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -881,8 +817,6 @@ categories:
             license: Apache-2.0
             project: jpl
             extra:
-              tag:
-                - jpl
               documentation_url: https://nasa.github.io/cumulus/docs/cumulus-docs-readme
               annotations:
                 submitter.org: JPL
@@ -903,8 +837,6 @@ categories:
             license: Apache-2.0
             project: arc
             extra:
-              tag:
-                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -923,8 +855,6 @@ categories:
             license: NASA-1.3
             project: gsfc
             extra:
-              tag:
-                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -944,8 +874,6 @@ categories:
             license: NASA-1.3
             project: gsfc
             extra:
-              tag:
-                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -965,8 +893,6 @@ categories:
             license: Apache-2.0
             project: gsfc
             extra:
-              tag:
-                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -987,8 +913,6 @@ categories:
             license: MIT
             project: msfc
             extra:
-              tag:
-                - msfc
               annotations:
                 submitter.org: MSFC
                 submitter.type: nasa-center
@@ -1009,8 +933,6 @@ categories:
             license: Apache-2.0
             project: jpl
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1030,8 +952,6 @@ categories:
             license: MIT
             project: gsfc
             extra:
-              tag:
-                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -1051,8 +971,6 @@ categories:
             license: NASA-1.3
             project: msfc
             extra:
-              tag:
-                - msfc
               annotations:
                 submitter.org: MSFC
                 submitter.type: nasa-center
@@ -1078,8 +996,6 @@ categories:
               - repo_url: https://github.com/nasa-jpl/itslive-py
                 license: GPL-3.0
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1100,8 +1016,6 @@ categories:
             license: NASA-1.3
             project: arc
             extra:
-              tag:
-                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -1137,7 +1051,6 @@ categories:
             extra:
               tag:
                 - gsfc
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1159,8 +1072,6 @@ categories:
             license: NASA-1.3
             project: jpl
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1180,8 +1091,6 @@ categories:
             license: NASA-1.3
             project: gsfc
             extra:
-              tag:
-                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -1200,8 +1109,6 @@ categories:
             license: Apache-2.0
             project: jpl
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1222,8 +1129,6 @@ categories:
             license: Apache-2.0
             project: jpl
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1243,8 +1148,6 @@ categories:
             license: Apache-2.0
             project: jpl
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1264,8 +1167,6 @@ categories:
             license: Apache-2.0
             project: jpl
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1285,8 +1186,6 @@ categories:
             license: NASA-1.3
             project: arc
             extra:
-              tag:
-                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -1310,8 +1209,6 @@ categories:
               - repo_url: https://github.com/nasa/RtRetrievalFrameworkDoc
                 license: NASA-1.3
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1331,8 +1228,6 @@ categories:
             license: NASA-1.3
             project: larc
             extra:
-              tag:
-                - larc
               annotations:
                 submitter.org: LaRC
                 submitter.type: nasa-center
@@ -1352,8 +1247,6 @@ categories:
             license: NASA-1.3
             project: gsfc
             extra:
-              tag:
-                - gsfc
               annotations:
                 submitter.org: GSFC
                 submitter.type: nasa-center
@@ -1381,8 +1274,6 @@ categories:
               - repo_url: https://github.com/NASAWorldWind/WorldWindServerKit
                 license: NASA-1.3
             extra:
-              tag:
-                - arc
               annotations:
                 submitter.org: ARC
                 submitter.type: nasa-center
@@ -1405,8 +1296,6 @@ categories:
             license: Apache-2.0
             project: jpl
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1429,8 +1318,6 @@ categories:
               - repo_url: https://github.com/NASA-AMMOS/slim-leaderboard
                 license: Apache-2.0
             extra:
-              tag:
-                - jpl
               documentation_url: https://nasa-ammos.github.io/slim/
               annotations:
                 submitter.org: JPL
@@ -1454,8 +1341,6 @@ categories:
             license: Apache-2.0
             project: jpl
             extra:
-              tag:
-                - jpl
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
@@ -1478,7 +1363,6 @@ categories:
             project: ammos
             extra:
               tag:
-                - jpl
                 - mpsa
               specification: true
               annotations:
@@ -1502,8 +1386,6 @@ categories:
             license: NASA-1.3
             project: larc
             extra:
-              tag:
-                - larc
               annotations:
                 submitter.org: LaRC
                 submitter.type: nasa-center
@@ -1526,8 +1408,6 @@ categories:
               - repo_url: https://github.com/nasa/vscode-pvs
                 license: NASA-1.3
             extra:
-              tag:
-                - larc
               annotations:
                 submitter.org: LaRC
                 submitter.type: nasa-center
