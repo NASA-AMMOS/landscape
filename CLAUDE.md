@@ -20,8 +20,11 @@ that meets the inclusion criteria.
   subcategory are kept alphabetical by `name`.
 - `settings.yml` — landscape2 colors, groups, facets, category ordering.
 - `guide.yml` — per-category descriptions for the Guide tab.
-- `logos/` — SVG logos. `placeholder.svg` is the temporary fallback for
-  items without a real logo yet.
+- `logos/` — project logos. SVG strongly preferred (vector scales
+  cleanly to both small chip and large grid sizes); PNG / JPEG /
+  WEBP / GIF / TIFF / BMP are also accepted when no SVG exists
+  upstream. `placeholder.svg` is the temporary fallback for items
+  without a real logo yet.
 - `tools/transform_code_json.py` — one-shot helper that proposes items
   from `nasa/Open-Source-Catalog` for triage. Not run on a schedule.
 - `tools/validate_local.sh` — runs the same checks CI runs, locally.
@@ -61,8 +64,11 @@ or non-mission software.
    `nasa.distribution: open-source`. Optional NASA fields:
    `nasa.ammos_element`, `nasa.missions`, `nasa.standards`,
    `nasa.sponsor_program`.
-6. If no real SVG logo exists yet, reference `placeholder.svg`. File a
-   follow-up issue tagged `logo-needed`.
+6. Drop the logo file in `logos/` and reference its filename. SVG is
+   strongly preferred; if only a raster (PNG / JPEG / WEBP / etc.)
+   exists upstream, that's acceptable but flag it for an SVG upgrade
+   later. If no real logo exists yet, reference `placeholder.svg` and
+   file a follow-up issue tagged `logo-needed`.
 
 ### Commands
 
@@ -110,8 +116,8 @@ Validate failures usually fall into three buckets:
 
 1. **Schema** — landscape2 schema rejected something. Run
    `./tools/validate_local.sh` to see the error inline.
-2. **Logo** — referenced an SVG that doesn't exist in `logos/`. Either
-   add it or reference `placeholder.svg`.
+2. **Logo** — referenced a file that doesn't exist in `logos/`. Add
+   it (SVG preferred, raster acceptable) or reference `placeholder.svg`.
 3. **Annotations** — missing `submitter.org` or `submitter.type`, or
    `nasa.distribution` is set to anything other than `open-source`.
 

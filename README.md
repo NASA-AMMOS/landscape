@@ -18,8 +18,8 @@ operations, and science data processing**. Generated with
 ├── landscape.yml            # Canonical data file — all items live here
 ├── settings.yml             # landscape2 settings (facets, groups, colors)
 ├── guide.yml                # Per-category guide content
-├── logos/
-│   └── placeholder.svg      # Temporary logo for items without a real SVG
+├── logos/                  # SVG preferred, raster (PNG/JPEG/etc.) accepted
+│   └── placeholder.svg      # Temporary fallback for items without a logo yet
 ├── tools/
 │   ├── transform_code_json.py # ONE-SHOT seed importer (not a recurring sync)
 │   └── validate_local.sh    # Run validate locally with the landscape2 image
