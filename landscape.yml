@@ -201,26 +201,6 @@ categories:
                 nasa.center: ARC
                 nasa.distribution: open-source
 
-          - name: landmark_tools
-            homepage_url: https://github.com/NASA-JPL/landmark_tools
-            logo: placeholder.svg
-            description: >-
-              Cross-validates planetary Digital Elevation Models
-              (DEMs) using dense correlation patch matching —
-              identifies inconsistencies between independent
-              terrain reconstructions of the same area.
-            repo_url: https://github.com/NASA-JPL/landmark_tools
-            license: Apache-2.0
-            project: jpl
-            extra:
-              tag:
-                - jpl
-              annotations:
-                submitter.org: JPL
-                submitter.type: nasa-center
-                nasa.center: JPL
-                nasa.distribution: open-source
-
           - name: MMGIS
             homepage_url: https://github.com/NASA-AMMOS/MMGIS
             logo: mmgis.svg
