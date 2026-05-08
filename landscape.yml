@@ -1573,10 +1573,10 @@ categories:
         items: []
 
   # ============================================================
-  # Members — organizations contributing software to the landscape.
-  # These categories only appear in the Members tab (see settings.yml
-  # `groups`). Items here are organizations, not software projects:
-  # they have name + homepage_url + logo, no repo_url/license.
+  # Organizations — orgs contributing software to the landscape.
+  # These categories only appear in the Organizations tab (see
+  # settings.yml `groups`). Items here are organizations, not software
+  # projects: they have name + homepage_url + logo, no repo_url/license.
   # ============================================================
 
   - name: NASA Centers

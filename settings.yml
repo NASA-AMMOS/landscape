@@ -88,12 +88,13 @@ groups:
     normalized_name: ammos
     categories:
       - AMMOS
-  # Members tab — organizations contributing software to the landscape
-  # (parallel to CNCF's Platinum/Gold/etc. members tab). The categories
-  # below are intentionally NOT in any other group, so member orgs
-  # only show in the Members view.
-  - name: Members
-    normalized_name: members
+  # Organizations tab — orgs contributing software to the landscape.
+  # Renamed from "Members" since we don't have a formal membership
+  # program; this is just a directory of who's here. The categories
+  # below are intentionally NOT in any other group, so these orgs
+  # only show in the Organizations view.
+  - name: Organizations
+    normalized_name: organizations
     categories:
       - NASA Centers
       - NASA Programs
@@ -181,7 +182,7 @@ categories:
       - Information Models
       - Verification & Formal Methods
 
-  # ---- Member categories (only visible inside the Members group) ----
+  # ---- Organization categories (only visible inside the Organizations group) ----
   - name: NASA Centers
     subcategories:
       - Field Centers
