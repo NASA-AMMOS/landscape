@@ -871,7 +871,7 @@ categories:
 
           - name: Cumulus
             homepage_url: https://nasa.github.io/cumulus/
-            logo: placeholder.svg
+            logo: cumulus.svg
             description: >-
               Cloud-native, open-source framework for processing and
               managing NASA Earth science data. The data management
