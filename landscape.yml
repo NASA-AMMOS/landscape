@@ -1176,14 +1176,15 @@ categories:
               Multi-Mission Algorithm and Analysis Platform — joint
               ESA-NASA collaborative data system providing collocated
               datasets, processing, and analysis tools for biomass
-              and Earth-observation research. The single entry below
-              rolls in the canonical platform repos: maap-py (Python
-              client), maap-api-nasa (NASA-side API), maap-eoapi
-              (STAC infrastructure), maap-documentation, and the
-              stac_ipyleaflet visualization extension.
+              and Earth-observation research. NASA side is sponsored
+              by GSFC (ESDIS) and implemented at JPL. The single
+              entry below rolls in the canonical platform repos:
+              maap-py (Python client), maap-api-nasa (NASA-side API),
+              maap-eoapi (STAC infrastructure), maap-documentation,
+              and the stac_ipyleaflet visualization extension.
             repo_url: https://github.com/maap-project/maap-py
             license: Apache-2.0
-            project: gsfc
+            project: jpl
             additional_repos:
               - repo_url: https://github.com/maap-project/maap-api-nasa
                 license: Apache-2.0
@@ -1196,10 +1197,12 @@ categories:
             extra:
               tag:
                 - gsfc
+                - jpl
               annotations:
-                submitter.org: GSFC
+                submitter.org: JPL
                 submitter.type: nasa-center
-                nasa.center: GSFC
+                nasa.center: JPL
+                nasa.contributing_centers: "GSFC"
                 nasa.sponsor_program: ESDIS
                 nasa.distribution: open-source
 
