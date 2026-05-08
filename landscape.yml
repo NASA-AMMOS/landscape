@@ -162,7 +162,7 @@ categories:
         items:
           - name: AMES Stereo Pipeline
             homepage_url: https://github.com/NeoGeographyToolkit/StereoPipeline
-            logo: placeholder.svg
+            logo: asp.png
             description: >-
               NASA Ames Stereo Pipeline (ASP). Suite of automated
               geodesy and stereogrammetry tools for processing
