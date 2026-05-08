@@ -174,7 +174,8 @@ categories:
       - MCS
   - name: Science Data Systems
     subcategories:
-      - Data Management & Pipelines
+      - Data Access & APIs
+      - Processing Pipelines & Algorithms
       - Imagery & Visualization Services
   - name: Developer Tools & Standards
     subcategories:

@@ -784,26 +784,8 @@ categories:
 
   - name: Science Data Systems
     subcategories:
-      - name: Data Management & Pipelines
+      - name: Data Access & APIs
         items:
-          - name: autoRIFT
-            homepage_url: https://github.com/nasa-jpl/autoRIFT
-            logo: placeholder.svg
-            description: >-
-              Fast, intelligent feature-tracking algorithm. The
-              algorithm engine behind ITS_LIVE — derives global
-              glacier and ice-sheet velocities from satellite
-              imagery time series.
-            repo_url: https://github.com/nasa-jpl/autoRIFT
-            license: Apache-2.0
-            project: jpl
-            extra:
-              annotations:
-                submitter.org: JPL
-                submitter.type: nasa-center
-                nasa.center: JPL
-                nasa.distribution: open-source
-
           - name: cmr-opensearch
             homepage_url: https://github.com/nasa/cmr-opensearch
             logo: placeholder.svg
@@ -823,63 +805,6 @@ categories:
                 nasa.sponsor_program: ESDIS
                 nasa.distribution: open-source
                 nasa.standards: "OpenSearch"
-
-          - name: Cumulus
-            homepage_url: https://nasa.github.io/cumulus/
-            logo: cumulus.svg
-            description: >-
-              Cloud-native, open-source framework for processing and
-              managing NASA Earth science data. The data management
-              framework behind multiple NASA Earth Observing System Data
-              and Information System (EOSDIS) DAACs.
-            repo_url: https://github.com/nasa/cumulus
-            license: Apache-2.0
-            project: jpl
-            extra:
-              documentation_url: https://nasa.github.io/cumulus/docs/cumulus-docs-readme
-              annotations:
-                submitter.org: JPL
-                submitter.type: nasa-center
-                nasa.center: JPL
-                nasa.sponsor_program: ESDIS
-                nasa.distribution: open-source
-
-          - name: DELTA
-            homepage_url: https://github.com/nasa/delta
-            logo: placeholder.svg
-            description: >-
-              Deep Earth Learning, Training and Analysis. Toolkit for
-              applying deep learning techniques to satellite imagery
-              classification — built so Earth scientists can use
-              state-of-the-art ML without specialized infrastructure.
-            repo_url: https://github.com/nasa/delta
-            license: Apache-2.0
-            project: arc
-            extra:
-              annotations:
-                submitter.org: ARC
-                submitter.type: nasa-center
-                nasa.center: ARC
-                nasa.distribution: open-source
-
-          - name: DRIP-SLIP
-            homepage_url: https://github.com/NASA-DEVELOP/DRIP-SLIP
-            logo: placeholder.svg
-            description: >-
-              Detecting Real-time Increased Precipitation / Sudden
-              Landslide Identification Package. Analyzes red-band
-              spectral data plus soil moisture from Landsat 8, ASTER,
-              and SRTM to identify potential landslide events.
-            repo_url: https://github.com/NASA-DEVELOP/DRIP-SLIP
-            license: NASA-1.3
-            project: gsfc
-            extra:
-              annotations:
-                submitter.org: GSFC
-                submitter.type: nasa-center
-                nasa.center: GSFC
-                nasa.sponsor_program: DEVELOP
-                nasa.distribution: open-source
 
           - name: Earthdata Search
             homepage_url: https://search.earthdata.nasa.gov/
@@ -919,27 +844,6 @@ categories:
                 nasa.sponsor_program: ESDIS
                 nasa.distribution: open-source
 
-          - name: Harmonized Landsat Sentinel-2
-            homepage_url: https://hls.gsfc.nasa.gov/
-            logo: placeholder.svg
-            description: >-
-              NASA-IMPACT collaboration with USGS producing compatible
-              surface reflectance data from a virtual constellation of
-              Landsat (Operational Land Imager) and Sentinel-2
-              (Multi-Spectral Instrument) sensors. Operational Earth
-              science product.
-            repo_url: https://github.com/NASA-IMPACT/hls-project
-            license: MIT
-            project: msfc
-            extra:
-              annotations:
-                submitter.org: MSFC
-                submitter.type: nasa-center
-                nasa.center: MSFC
-                nasa.sponsor_program: IMPACT
-                nasa.distribution: open-source
-                nasa.missions: "Landsat 8/9, Sentinel-2 (joint with ESA)"
-
           - name: Harmony
             homepage_url: https://harmony.earthdata.nasa.gov/
             logo: placeholder.svg
@@ -956,106 +860,6 @@ categories:
                 submitter.org: JPL
                 submitter.type: nasa-center
                 nasa.center: JPL
-                nasa.sponsor_program: ESDIS
-                nasa.distribution: open-source
-
-          - name: HyperCP
-            homepage_url: https://github.com/nasa/HyperCP
-            logo: hypercp.png
-            description: >-
-              Hyperspectral Community Processor (formerly HyperInSPACE).
-              Processes automated above-water ocean color radiometry
-              with quality assurance, uncertainty estimation, and
-              propagation methods aligned with PACE-mission protocols.
-            repo_url: https://github.com/nasa/HyperCP
-            license: MIT
-            project: gsfc
-            extra:
-              annotations:
-                submitter.org: GSFC
-                submitter.type: nasa-center
-                nasa.center: GSFC
-                nasa.distribution: open-source
-                nasa.missions: "PACE"
-
-          - name: ITS_LIVE
-            homepage_url: https://its-live.jpl.nasa.gov/
-            logo: placeholder.svg
-            description: >-
-              Inter-mission Time Series of Land Ice Velocity and
-              Elevation. NASA MEaSUREs project providing automated,
-              low-latency, global glacier velocity and ice-sheet
-              elevation time series. Production code and Python
-              client listed below.
-            repo_url: https://github.com/nasa-jpl/its_live
-            license: MIT
-            project: jpl
-            additional_repos:
-              - repo_url: https://github.com/nasa-jpl/its_live_production
-                license: MIT
-              - repo_url: https://github.com/nasa-jpl/itslive-py
-                license: GPL-3.0
-            extra:
-              annotations:
-                submitter.org: JPL
-                submitter.type: nasa-center
-                nasa.center: JPL
-                nasa.sponsor_program: MEaSUREs
-                nasa.distribution: open-source
-
-          - name: kepler-pipeline
-            homepage_url: https://github.com/nasa/kepler-pipeline
-            logo: kepler.png
-            description: >-
-              Kepler Science Data Processing Pipeline. The official
-              science processing pipeline for the Kepler space
-              telescope mission — photometric calibration, cotrending,
-              and transiting-planet detection on Kepler long- and
-              short-cadence data.
-            repo_url: https://github.com/nasa/kepler-pipeline
-            license: NASA-1.3
-            project: arc
-            extra:
-              annotations:
-                submitter.org: ARC
-                submitter.type: nasa-center
-                nasa.center: ARC
-                nasa.distribution: open-source
-                nasa.missions: "Kepler"
-
-          - name: MAAP
-            homepage_url: https://maap-project.org/
-            logo: maap.jpg
-            description: >-
-              Multi-Mission Algorithm and Analysis Platform — joint
-              ESA-NASA collaborative data system providing collocated
-              datasets, processing, and analysis tools for biomass
-              and Earth-observation research. NASA side is sponsored
-              by GSFC (ESDIS) and implemented at JPL. The single
-              entry below rolls in the canonical platform repos:
-              maap-py (Python client), maap-api-nasa (NASA-side API),
-              maap-eoapi (STAC infrastructure), maap-documentation,
-              and the stac_ipyleaflet visualization extension.
-            repo_url: https://github.com/maap-project/maap-py
-            license: Apache-2.0
-            project: jpl
-            additional_repos:
-              - repo_url: https://github.com/maap-project/maap-api-nasa
-                license: Apache-2.0
-              - repo_url: https://github.com/maap-project/maap-documentation
-                license: Apache-2.0
-              - repo_url: https://github.com/maap-project/maap-eoapi
-                license: Apache-2.0
-              - repo_url: https://github.com/maap-project/stac_ipyleaflet
-                license: Apache-2.0
-            extra:
-              tag:
-                - gsfc
-              annotations:
-                submitter.org: JPL
-                submitter.type: nasa-center
-                nasa.center: JPL
-                nasa.contributing_centers: "GSFC"
                 nasa.sponsor_program: ESDIS
                 nasa.distribution: open-source
 
@@ -1172,6 +976,204 @@ categories:
                 nasa.center: ARC
                 nasa.distribution: open-source
                 nasa.missions: "Kepler, K2"
+
+      - name: Processing Pipelines & Algorithms
+        items:
+          - name: autoRIFT
+            homepage_url: https://github.com/nasa-jpl/autoRIFT
+            logo: placeholder.svg
+            description: >-
+              Fast, intelligent feature-tracking algorithm. The
+              algorithm engine behind ITS_LIVE — derives global
+              glacier and ice-sheet velocities from satellite
+              imagery time series.
+            repo_url: https://github.com/nasa-jpl/autoRIFT
+            license: Apache-2.0
+            project: jpl
+            extra:
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.distribution: open-source
+
+          - name: Cumulus
+            homepage_url: https://nasa.github.io/cumulus/
+            logo: cumulus.svg
+            description: >-
+              Cloud-native, open-source framework for processing and
+              managing NASA Earth science data. The data management
+              framework behind multiple NASA Earth Observing System Data
+              and Information System (EOSDIS) DAACs.
+            repo_url: https://github.com/nasa/cumulus
+            license: Apache-2.0
+            project: jpl
+            extra:
+              documentation_url: https://nasa.github.io/cumulus/docs/cumulus-docs-readme
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.sponsor_program: ESDIS
+                nasa.distribution: open-source
+
+          - name: DELTA
+            homepage_url: https://github.com/nasa/delta
+            logo: placeholder.svg
+            description: >-
+              Deep Earth Learning, Training and Analysis. Toolkit for
+              applying deep learning techniques to satellite imagery
+              classification — built so Earth scientists can use
+              state-of-the-art ML without specialized infrastructure.
+            repo_url: https://github.com/nasa/delta
+            license: Apache-2.0
+            project: arc
+            extra:
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+
+          - name: DRIP-SLIP
+            homepage_url: https://github.com/NASA-DEVELOP/DRIP-SLIP
+            logo: placeholder.svg
+            description: >-
+              Detecting Real-time Increased Precipitation / Sudden
+              Landslide Identification Package. Analyzes red-band
+              spectral data plus soil moisture from Landsat 8, ASTER,
+              and SRTM to identify potential landslide events.
+            repo_url: https://github.com/NASA-DEVELOP/DRIP-SLIP
+            license: NASA-1.3
+            project: gsfc
+            extra:
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.sponsor_program: DEVELOP
+                nasa.distribution: open-source
+
+          - name: Harmonized Landsat Sentinel-2
+            homepage_url: https://hls.gsfc.nasa.gov/
+            logo: placeholder.svg
+            description: >-
+              NASA-IMPACT collaboration with USGS producing compatible
+              surface reflectance data from a virtual constellation of
+              Landsat (Operational Land Imager) and Sentinel-2
+              (Multi-Spectral Instrument) sensors. Operational Earth
+              science product.
+            repo_url: https://github.com/NASA-IMPACT/hls-project
+            license: MIT
+            project: msfc
+            extra:
+              annotations:
+                submitter.org: MSFC
+                submitter.type: nasa-center
+                nasa.center: MSFC
+                nasa.sponsor_program: IMPACT
+                nasa.distribution: open-source
+                nasa.missions: "Landsat 8/9, Sentinel-2 (joint with ESA)"
+
+          - name: HyperCP
+            homepage_url: https://github.com/nasa/HyperCP
+            logo: hypercp.png
+            description: >-
+              Hyperspectral Community Processor (formerly HyperInSPACE).
+              Processes automated above-water ocean color radiometry
+              with quality assurance, uncertainty estimation, and
+              propagation methods aligned with PACE-mission protocols.
+            repo_url: https://github.com/nasa/HyperCP
+            license: MIT
+            project: gsfc
+            extra:
+              annotations:
+                submitter.org: GSFC
+                submitter.type: nasa-center
+                nasa.center: GSFC
+                nasa.distribution: open-source
+                nasa.missions: "PACE"
+
+          - name: ITS_LIVE
+            homepage_url: https://its-live.jpl.nasa.gov/
+            logo: placeholder.svg
+            description: >-
+              Inter-mission Time Series of Land Ice Velocity and
+              Elevation. NASA MEaSUREs project providing automated,
+              low-latency, global glacier velocity and ice-sheet
+              elevation time series. Production code and Python
+              client listed below.
+            repo_url: https://github.com/nasa-jpl/its_live
+            license: MIT
+            project: jpl
+            additional_repos:
+              - repo_url: https://github.com/nasa-jpl/its_live_production
+                license: MIT
+              - repo_url: https://github.com/nasa-jpl/itslive-py
+                license: GPL-3.0
+            extra:
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.sponsor_program: MEaSUREs
+                nasa.distribution: open-source
+
+          - name: kepler-pipeline
+            homepage_url: https://github.com/nasa/kepler-pipeline
+            logo: kepler.png
+            description: >-
+              Kepler Science Data Processing Pipeline. The official
+              science processing pipeline for the Kepler space
+              telescope mission — photometric calibration, cotrending,
+              and transiting-planet detection on Kepler long- and
+              short-cadence data.
+            repo_url: https://github.com/nasa/kepler-pipeline
+            license: NASA-1.3
+            project: arc
+            extra:
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+                nasa.missions: "Kepler"
+
+          - name: MAAP
+            homepage_url: https://maap-project.org/
+            logo: maap.jpg
+            description: >-
+              Multi-Mission Algorithm and Analysis Platform — joint
+              ESA-NASA collaborative data system providing collocated
+              datasets, processing, and analysis tools for biomass
+              and Earth-observation research. NASA side is sponsored
+              by GSFC (ESDIS) and implemented at JPL. The single
+              entry below rolls in the canonical platform repos:
+              maap-py (Python client), maap-api-nasa (NASA-side API),
+              maap-eoapi (STAC infrastructure), maap-documentation,
+              and the stac_ipyleaflet visualization extension.
+            repo_url: https://github.com/maap-project/maap-py
+            license: Apache-2.0
+            project: jpl
+            additional_repos:
+              - repo_url: https://github.com/maap-project/maap-api-nasa
+                license: Apache-2.0
+              - repo_url: https://github.com/maap-project/maap-documentation
+                license: Apache-2.0
+              - repo_url: https://github.com/maap-project/maap-eoapi
+                license: Apache-2.0
+              - repo_url: https://github.com/maap-project/stac_ipyleaflet
+                license: Apache-2.0
+            extra:
+              tag:
+                - gsfc
+              annotations:
+                submitter.org: JPL
+                submitter.type: nasa-center
+                nasa.center: JPL
+                nasa.contributing_centers: "GSFC"
+                nasa.sponsor_program: ESDIS
+                nasa.distribution: open-source
 
           - name: RT Retrieval Framework
             homepage_url: https://github.com/nasa/RtRetrievalFramework

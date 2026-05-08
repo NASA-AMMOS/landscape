@@ -52,8 +52,8 @@ Cloud-native pipelines, services, and visualization for Earth and
 space science archives. ESDIS-class infrastructure rather than
 mission-specific operations software.
 
-**Subcategories:** Data Management & Pipelines; Imagery &
-Visualization Services.
+**Subcategories:** Data Access & APIs; Processing Pipelines &
+Algorithms; Imagery & Visualization Services.
 
 ## Developer Tools & Standards
 
