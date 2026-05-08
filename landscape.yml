@@ -1687,7 +1687,7 @@ categories:
 
           - name: NASA-PDS
             homepage_url: https://pds.nasa.gov/
-            logo: nasa-meatball.svg
+            logo: pds.png
             description: >-
               Planetary Data System. JPL-managed, federated archive
               for NASA's planetary science data — discipline nodes
