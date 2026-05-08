@@ -651,7 +651,7 @@ categories:
 
           - name: GMSEC API
             homepage_url: https://github.com/nasa/GMSEC_API
-            logo: placeholder.svg
+            logo: gmsec.png
             description: >-
               Goddard Mission Services Evolution Center API.
               Publish-subscribe messaging middleware for ground data
@@ -1018,15 +1018,15 @@ categories:
                 nasa.sponsor_program: ESDIS
                 nasa.distribution: open-source
 
-          - name: HyperInSPACE
-            homepage_url: https://github.com/nasa/HyperInSPACE
-            logo: placeholder.svg
+          - name: HyperCP
+            homepage_url: https://github.com/nasa/HyperCP
+            logo: hypercp.png
             description: >-
-              Hyperspectral In situ Support for the PACE mission.
+              Hyperspectral Community Processor (formerly HyperInSPACE).
               Processes automated above-water ocean color radiometry
               with quality assurance, uncertainty estimation, and
-              propagation methods aligned with PACE protocols.
-            repo_url: https://github.com/nasa/HyperInSPACE
+              propagation methods aligned with PACE-mission protocols.
+            repo_url: https://github.com/nasa/HyperCP
             license: MIT
             project: gsfc
             extra:
@@ -1089,7 +1089,7 @@ categories:
 
           - name: kepler-pipeline
             homepage_url: https://github.com/nasa/kepler-pipeline
-            logo: placeholder.svg
+            logo: kepler.png
             description: >-
               Kepler Science Data Processing Pipeline. The official
               science processing pipeline for the Kepler space
@@ -1210,7 +1210,7 @@ categories:
 
           - name: PDS API
             homepage_url: https://nasa-pds.github.io/pds-api/
-            logo: placeholder.svg
+            logo: pds.png
             description: >-
               PDS Web API specifications and reference services
               providing programmatic access to the Planetary Data
@@ -1231,7 +1231,7 @@ categories:
 
           - name: PDS Deep Archive
             homepage_url: https://nasa-pds.github.io/deep-archive/
-            logo: placeholder.svg
+            logo: pds.png
             description: >-
               Open Archival Information System (OAIS) component for
               the Planetary Data System — packages PDS bundles into
@@ -1254,7 +1254,7 @@ categories:
 
           - name: PDS Transform
             homepage_url: https://nasa-pds.github.io/transform/
-            logo: placeholder.svg
+            logo: pds.png
             description: >-
               Bidirectional transform tool between PDS3 and PDS4
               product labels — eases migration of legacy planetary
@@ -1274,7 +1274,7 @@ categories:
 
           - name: PDS Validate
             homepage_url: https://nasa-pds.github.io/validate/
-            logo: placeholder.svg
+            logo: pds.png
             description: >-
               Reference validator for PDS4 product labels and data
               archives — schema validation, schematron rules, and
@@ -1363,7 +1363,7 @@ categories:
         items:
           - name: NASA Worldview
             homepage_url: https://worldview.earthdata.nasa.gov/
-            logo: placeholder.svg
+            logo: worldview.png
             description: >-
               Interactive visualization of full-resolution global satellite
               imagery from NASA's Earth observing satellites. Powered by
@@ -1462,7 +1462,7 @@ categories:
         items:
           - name: PDS4 Information Model
             homepage_url: https://nasa-pds.github.io/pds4-information-model/
-            logo: placeholder.svg
+            logo: pds.png
             description: >-
               Source of truth for the PDS4 Information Model —
               schemas, schematrons, ontologies, and tooling that
