@@ -398,7 +398,7 @@ categories:
             homepage_url: https://github.com/NASA-AMMOS/openmct-mcws
             logo: placeholder.svg
             second_path:
-              - "AMMOS / IDS"
+              - "AMMOS / MCS"
             description: >-
               Open MCT plugins providing connectivity to AMMOS Mission
               data Processing and Control System (MPCS) backends —
@@ -410,12 +410,12 @@ categories:
             extra:
               tag:
                 - jpl
-                - ids
+                - mcs
               annotations:
                 submitter.org: JPL
                 submitter.type: nasa-center
                 nasa.center: JPL
-                nasa.ammos_element: IDS
+                nasa.ammos_element: MCS
                 nasa.distribution: open-source
 
   - name: Engineering Software
