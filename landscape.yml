@@ -168,6 +168,25 @@ categories:
                 nasa.center: ARC
                 nasa.distribution: open-source
 
+          - name: Crisis Mapping Toolkit
+            homepage_url: https://github.com/nasa/CrisisMappingToolkit
+            logo: placeholder.svg
+            description: >-
+              Geospatial data processing toolkit for cartographic
+              products that improve understanding of large-scale
+              crises — flood mapping, fire detection, and other
+              event-driven Earth-observation analysis built on
+              satellite imagery.
+            repo_url: https://github.com/nasa/CrisisMappingToolkit
+            license: NASA-1.3
+            project: arc
+            extra:
+              annotations:
+                submitter.org: ARC
+                submitter.type: nasa-center
+                nasa.center: ARC
+                nasa.distribution: open-source
+
           - name: DERT
             homepage_url: https://github.com/nasa/DERT
             logo: dert.svg
@@ -273,6 +292,25 @@ categories:
                 nasa.distribution: open-source
                 nasa.missions: "EMIT, ECOSTRESS, OCO-3, ISS instruments"
                 nasa.standards: "CCSDS, XTCE"
+
+          - name: ISS Camera Geolocate
+            homepage_url: https://github.com/nasa/ISS_Camera_Geolocate
+            logo: placeholder.svg
+            description: >-
+              Python library that geolocates photographs and video
+              frames captured from the International Space Station —
+              translating ISS attitude and camera pointing into
+              ground-referenced coordinates.
+            repo_url: https://github.com/nasa/ISS_Camera_Geolocate
+            license: NASA-1.3
+            project: msfc
+            extra:
+              annotations:
+                submitter.org: MSFC
+                submitter.type: nasa-center
+                nasa.center: MSFC
+                nasa.distribution: open-source
+                nasa.missions: "ISS"
 
           - name: PyAMPR
             homepage_url: https://github.com/nasa/PyAMPR
@@ -786,25 +824,6 @@ categories:
                 nasa.distribution: open-source
                 nasa.standards: "OpenSearch"
 
-          - name: Crisis Mapping Toolkit
-            homepage_url: https://github.com/nasa/CrisisMappingToolkit
-            logo: placeholder.svg
-            description: >-
-              Geospatial data processing toolkit for cartographic
-              products that improve understanding of large-scale
-              crises — flood mapping, fire detection, and other
-              event-driven Earth-observation analysis built on
-              satellite imagery.
-            repo_url: https://github.com/nasa/CrisisMappingToolkit
-            license: NASA-1.3
-            project: arc
-            extra:
-              annotations:
-                submitter.org: ARC
-                submitter.type: nasa-center
-                nasa.center: ARC
-                nasa.distribution: open-source
-
           - name: Cumulus
             homepage_url: https://nasa.github.io/cumulus/
             logo: cumulus.svg
@@ -959,25 +978,6 @@ categories:
                 nasa.distribution: open-source
                 nasa.missions: "PACE"
 
-          - name: ISS Camera Geolocate
-            homepage_url: https://github.com/nasa/ISS_Camera_Geolocate
-            logo: placeholder.svg
-            description: >-
-              Python library that geolocates photographs and video
-              frames captured from the International Space Station —
-              translating ISS attitude and camera pointing into
-              ground-referenced coordinates.
-            repo_url: https://github.com/nasa/ISS_Camera_Geolocate
-            license: NASA-1.3
-            project: msfc
-            extra:
-              annotations:
-                submitter.org: MSFC
-                submitter.type: nasa-center
-                nasa.center: MSFC
-                nasa.distribution: open-source
-                nasa.missions: "ISS"
-
           - name: ITS_LIVE
             homepage_url: https://its-live.jpl.nasa.gov/
             logo: placeholder.svg
@@ -1058,26 +1058,6 @@ categories:
                 nasa.contributing_centers: "GSFC"
                 nasa.sponsor_program: ESDIS
                 nasa.distribution: open-source
-
-          - name: MISR Toolkit
-            homepage_url: https://nasa.github.io/MISR-Toolkit/
-            logo: placeholder.svg
-            description: >-
-              Simplified C/IDL programming interface for accessing
-              MISR L1B2 and L2 science data products. Built on top
-              of HDF-EOS, lets users work with Multi-angle Imaging
-              SpectroRadiometer products without dealing with the
-              underlying HDF-EOS internals.
-            repo_url: https://github.com/nasa/MISR-Toolkit
-            license: NASA-1.3
-            project: jpl
-            extra:
-              annotations:
-                submitter.org: JPL
-                submitter.type: nasa-center
-                nasa.center: JPL
-                nasa.distribution: open-source
-                nasa.missions: "Terra (MISR instrument)"
 
           - name: NASAaccess
             homepage_url: https://github.com/nasa/NASAaccess
